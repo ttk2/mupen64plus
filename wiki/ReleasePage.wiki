@@ -1,7 +1,6 @@
 #summary Mupen64Plus Release Notes
 
-----------------------------------------
-=Mupen64-amd64 v1.2 - February 10th, 2008=
+==Mupen64-amd64 v1.2 - February 10th, 2008==
  * New feature: Dynamic Recompiler for 64-bit
  * New feature: New ROM Browser for Mupen64 GUI build
  * New feature: LIRC remote control integration for NOGUI build
@@ -16,7 +15,8 @@
  * Bugfix: spurious noise blip when running game from gui after first time
 
 ----------------------------------------
-=Mupen64-amd64 v1.1 - December 9th, 2007=
+
+==Mupen64-amd64 v1.1 - December 9th, 2007==
  * New icons for GTK GUI
  * Removed GTK 1.2 GUI build; GTK 2.0 is required now
  * Added file pointer checking for frwite() calls and error logging
@@ -34,7 +34,8 @@
  * Bugfix: Added makefile to root folder for building releases
 
 ----------------------------------------
-=Mupen64-amd64 v1.0 - November 12th, 2007=
+
+==Mupen64-amd64 v1.0 - November 12th, 2007==
  * Forked from Mupen64 v0.5
  * Ported to 64-bit architecture by NMN/SirRichard42
  * Fixed texture cache problem in glN64
