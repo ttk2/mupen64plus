@@ -3,11 +3,11 @@
 !Mupen64Plus is based off of mupen64, originally created by Hacktarux. The !Mupen64Plus package contains the mupen64 emulator program (renamed mupen64plus) plus graphics, sound, input, and RSP plugins.
 
 *README Sections*
-  * Building From Source
-  * Installation
-  * Multi-user Support
-  * Key Commands In Emulator
-  * Known Issues
+  # Building From Source
+  # Installation
+  # Multi-user Support
+  # Key Commands In Emulator
+  # Known Issues
 
 ==1. Building From Source==
 
