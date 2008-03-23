@@ -44,7 +44,7 @@
  * Added SDL_GL_SWAP_CONTROL attribute in glN64 to prevent tearing
  * Changed glVoids to voids due to strange compilation bug that occurs on certain systems
  * Totally refactored makefiles; now plugins are built as sub-modules
- * Better logging for R4300 core selection, disallow Dynamic Recompilation for 64-bit builds at compile time
+ * Better logging for r4300 core selection, disallow Dynamic Recompilation for 64-bit builds at compile time
  * Set execstack attribute for all mupen64 binaries, to prevent segfault when Dynamic Recompilation is used
  * Lots of code cleanup
  * Removed 'multi-user' mode of operation
