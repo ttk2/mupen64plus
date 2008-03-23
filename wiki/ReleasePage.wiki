@@ -28,7 +28,7 @@
  * Bugfix: segfault from playing same game twice in a row from GUI
  * Bugfix: segfault from fwrite() failure in dma_pi_read in memory/dma.c
  * Bugfix: exit properly instead of segfault after dyna_stop is called
- * Bugfix: blight input: SDL_PumpEvents must be called from thread which initialized SDL video mode
+ * Bugfix: blight input: !SDL_PumpEvents must be called from thread which initialized SDL video mode
  * Bugfix: blight_input: joystick handling caused glitch in config dialog
  * Bugfix: makefile: 32-bit CFLAGS must be used when doing 32-bit build on 64-bit machine
  * Bugfix: Added makefile to root folder for building releases
@@ -37,7 +37,7 @@
 
 ==Mupen64-amd64 v1.0 - November 12th, 2007==
  * Forked from Mupen64 v0.5
- * Ported to 64-bit architecture by NMN/SirRichard42
+ * Ported to 64-bit architecture by NMN/!SirRichard42
  * Fixed texture cache problem in glN64
  * Print more information during plugin loading process
  * Added blight input config file for logitech dual-action style controllers
