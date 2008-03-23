@@ -4,8 +4,8 @@
  * New feature: Dynamic Recompiler for 64-bit
  * New feature: New ROM Browser for Mupen64 GUI build
  * New feature: LIRC remote control integration for NOGUI build
- * Added R4300 instruction counting capability to 64-bit Dynarec
- * Added R4300 profile data output for 32-bit and 64-bit dynamic recompilers
+ * Added r4300 instruction counting capability to 64-bit Dynarec
+ * Added r4300 profile data output for 32-bit and 64-bit dynamic recompilers
  * TLB Optimization / bugfix
  * Revised makefiles to support PPC builds
  * Bugfix: memory leaks in mupenIniApi.c
