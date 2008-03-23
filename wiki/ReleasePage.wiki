@@ -28,7 +28,7 @@
  * Bugfix: segfault from playing same game twice in a row from GUI
  * Bugfix: segfault from fwrite() failure in dma_pi_read in memory/dma.c
  * Bugfix: exit properly instead of segfault after dyna_stop is called
- * Bugfix: blight input: !SDL_PumpEvents must be called from thread which initialized SDL video mode
+ * Bugfix: blight input: `SDL_PumpEvents` must be called from thread which initialized SDL video mode
  * Bugfix: blight_input: joystick handling caused glitch in config dialog
  * Bugfix: makefile: 32-bit CFLAGS must be used when doing 32-bit build on 64-bit machine
  * Bugfix: Added makefile to root folder for building releases
@@ -49,7 +49,7 @@
  * Lots of code cleanup
  * Removed 'multi-user' mode of operation
  * Removed 'configure' script and config.h file
- * Refactored plugin loading code in _nogui build, much more user-friendly now
+ * Refactored plugin loading code in *nogui* build, much more user-friendly now
  * Added comments and SDL shutdown code to main.c
  * Bugfix: fixed memory leaks in plugin.c
  * Bugfix: strcpy in main/gui_gtk/config.c should not copy overlapping strings
