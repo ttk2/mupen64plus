@@ -11,7 +11,24 @@
 
 ==1. Building From Source==
 
-If you downloaded the binary distribution of !Mupen64Plus, skip to the Installation section. To build the source distribution, unzip and cd into the source directory, then build using make:
+If you downloaded the binary distribution of !Mupen64Plus, skip to the Installation section.  Otherwise, you will need both the libraries and development packages (header files) for the prerequisites listed below:
+
+Common Prerequisites: (you probably have these)
+ * SDL
+ * OpenGL / mesa
+ * GTK 2 (not necessary for NOGUI_ONLY=1 build)
+
+Somewhat Uncommon Prerequisites: (you may not have these)
+ * yasm
+ * SDL_ttf
+
+Here is an example for adding these packages on Fedora systems:
+{{{
+  # yum install yasm SDL_ttf SDL_ttf-devel
+}}}
+
+Once you have all prerequisites installed, you can build the source distribution by unzipping and cd'ing into the source directory, then build using make: 
+
 {{{
  $ unzip Mupen64Plus-x-y-z-src.zip
  $ cd Mupen64Plus-x-y-z-src
