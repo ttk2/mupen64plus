@@ -1,0 +1,31 @@
+#summary One-sentence summary of this page.
+#labels Phase-Deploy,LIRC
+
+= Introduction =
+
+Mupen64Plus now supports interfacing with a [http://www.lirc.org Linux Infrared Remote Control] (LIRC) daemon. This can be used to send commands to Mupen64Plus using a remote control.
+
+
+= Building with LIRC support =
+
+To build Mupen64Plus with LIRC support, download and unzip the source code (see README for details), and pass "LIRC=1" to when building:
+
+{{{
+ $ make LIRC=1 all
+}}}
+
+= Configuring LIRC Commands =
+
+TODO
+
+= Supported Commands =
+
+The following table lists the Mupen64Plus commands that can be mapped to remote control buttons in your lirc config file:
+
+|| Command String || Description ||
+|| 0-9 || Set current statesave slot to given slot number. ||
+|| save || Save game state to currently selected statesave slot. ||
+|| load || Load game statesave from currently selected statesave slot. ||
+|| quit || Stop Emulation. ||
+|| fullscreen || Toggle fullscreen mode. ||
+|| screenshot || Take a screenshot. ||
