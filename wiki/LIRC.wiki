@@ -8,7 +8,7 @@ Mupen64Plus now supports interfacing with a [http://www.lirc.org Linux Infrared 
 
 = Building with LIRC support =
 
-To build Mupen64Plus with LIRC support, download and unzip the source code (see README for details), and pass "LIRC=1" to when building:
+To build Mupen64Plus with LIRC support, download and unzip the source code (see [README README] for details), and pass "LIRC=1" to when building:
 
 {{{
  $ make LIRC=1 all
