@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Enabling LIRC support in Mupen64Plus.
 #labels Phase-Deploy,LIRC
 
 = Introduction =
