@@ -28,7 +28,7 @@ begin
 end
 }}}
 
-This defines the "Back/Exit" button on the remote control to the "quit" mupen64plus command.
+This maps the "Back/Exit" button on the remote control to the "quit" mupen64plus command.
 
 == Supported Commands ==
 
