@@ -1,5 +1,5 @@
 #summary Enabling LIRC support in Mupen64Plus.
-#labels Phase-Deploy,LIRC
+#labels Phase-Deploy
 
 = Introduction =
 
