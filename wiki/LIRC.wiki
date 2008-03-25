@@ -3,12 +3,12 @@
 
 = Introduction =
 
-Mupen64Plus now includes support for [http://www.lirc.org Linux Infrared Remote Control] (LIRC). This can be used to send commands to Mupen64Plus using a remote control.
+!Mupen64Plus now includes support for [http://www.lirc.org Linux Infrared Remote Control] (LIRC). This can be used to send commands to !Mupen64Plus using a remote control.
 
 
 = Building with LIRC support =
 
-To build Mupen64Plus with LIRC support, download and unzip the source code, and pass "LIRC=1" to make. See the [README README] for full details on build/installation of Mupen64Plus.
+To build !Mupen64Plus with LIRC support, download and unzip the source code, and pass "LIRC=1" to make. See the [README README] for full details on build/installation of !Mupen64Plus.
 
 {{{
  $ make LIRC=1 all
@@ -16,7 +16,7 @@ To build Mupen64Plus with LIRC support, download and unzip the source code, and 
 
 = Configuring LIRC Commands =
 
-LIRC uses a config file to define mappings between buttons on your remote control (as defined in lircd.conf) and the commands you want to send to Mupen64Plus. Mupen64Plus expects the LIRC config to be in a file called .lircrc in the user's home directory.
+LIRC uses a config file to define mappings between buttons on your remote control (as defined in lircd.conf) and the commands you want to send to !Mupen64Plus. !Mupen64Plus expects the LIRC config to be in a file called .lircrc in the user's home directory.
 
 The LIRC config file contains a block for each button mapping. Here is an example block:
 
@@ -32,7 +32,7 @@ This maps the "Back/Exit" button on the remote control to the "quit" mupen64plus
 
 == Supported Commands ==
 
-The following table lists the Mupen64Plus commands that can be mapped to remote control buttons in your LIRC config file:
+The following table lists the !Mupen64Plus commands that can be mapped to remote control buttons in your LIRC config file:
 
 || *Config String* || *Description* ||
 || 0-9 || Set current statesave slot to given slot number. ||
