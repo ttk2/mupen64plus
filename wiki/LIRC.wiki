@@ -38,6 +38,7 @@ The following table lists the Mupen64Plus commands that can be mapped to remote 
 || 0-9 || Set current statesave slot to given slot number. ||
 || save || Save game state to currently selected statesave slot. ||
 || load || Load game statesave from currently selected statesave slot. ||
+|| pause || Pause/continue emulation. ||
 || quit || Stop Emulation. ||
 || fullscreen || Toggle fullscreen mode. ||
 || screenshot || Take a screenshot. ||
