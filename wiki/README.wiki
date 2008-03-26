@@ -124,14 +124,14 @@ Run 'mupen64plus --help' for a complete list of commandline options:
 ==4. Key Commands In Emulator==
 
 The keys or joystick/mouse inputs which will be mapped to the N64 controller for playing the games are determined by the input plugin.  The emulator core also supports several key commands, which are fixed and cannot be changed.  They are:
-{{{
-   Escape == Quit the emulator
-      0-9 == Select virtual 'slot' for save/load state (F5 and F7) commands
-       F5 == Save emulator state
-       F7 == Load emulator state
-Alt-Enter == Toggle between windowed and fullscreen (may not be supported by all video plugins)
-   p or P == Pause on/off
-}}}
+
+|| *Key* || *Description* ||
+|| Escape || Quit the emulator ||
+|| 0-9 || Select virtual 'slot' for save/load state (F5 and F7) commands ||
+|| F5 || Save emulator state ||
+|| F7 || Load emulator state ||
+|| Alt-Enter || Toggle between windowed and fullscreen (may not be supported by all video plugins) ||
+|| p or P || Pause on/off ||
 
 ==5. Known Issues==
 
