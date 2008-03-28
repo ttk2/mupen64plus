@@ -1,4 +1,4 @@
-#summary !Mupen64Plus Screenshots
+#summary Mupen64Plus Screenshots
 
 == Paper Mario ==
 
