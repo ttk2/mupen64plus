@@ -1,0 +1,6 @@
+#summary !Mupen64Plus Screenshots
+
+== Paper Mario ==
+
+http://mupen64plus.googlecode.com/svn/wiki/Screenshot-01-PaperMario.png
+http://mupen64plus.googlecode.com/svn/wiki/Screenshot-02-PaperMario.png
