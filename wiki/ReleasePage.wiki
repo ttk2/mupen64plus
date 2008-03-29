@@ -1,5 +1,44 @@
 #summary Mupen64Plus Release Notes
 
+==Mupen64Plus v1.3 - March 29th, 2008==
+ * New feature: Glide64 video plugin for 32-bit and 64-bit, renamed project Mupen64Plus
+ * New feature: Combine mupen64 and mupen64_nogui into a single binary
+ * New feature: ability to change icon size
+ * New feature: support different directories for install (plugins, icons, etc) and config (save games, config files)
+ * New feature: support for creating/using ~/.mupen64plus dir for storing user data
+ * New feature: support for installation via "make install" or "./install.sh"
+ * New feature: support for plugins given via command line option in GUI mode
+ * New feature: config dialog checkbox to toggle "noask" setting
+ * New feauter: pause/continue functionality with LIRC
+ * Removed messagebox utility and replaced it with cleaner alert_message/confirm_message calls
+ * GTK GUI: Set parent window for all popups so WM will center popup windows over the main gui window
+ * Added README file with information about usage of Mupen64Plus and plugins
+ * Removed mupen64_soft_gfx, as it didn't work
+ * Removed Win32 code from RSP HLE plugin, 
+ * Change fullscreen hotkey to Alt+Enter
+ * Only plugin filenames (not paths) are stored in the mupen64plus.conf file
+ * Modified pre.mk and glide64 makefile to auto-select yasm or nasm
+ * Bugfix: Rice Video: Make configuration during gameplay possible again
+ * Bugfix: many compiler warnings and errors in Glide64
+ * Bugfix: segfault in Goldeneye and Perfect Dark for 64-bit dynarec
+ * Bugfix: 64-bit dynarec bug in genld()
+ * Bugfix: buffer overflow allocating temp strings for basename/dirname
+ * Bugfix: GTK GUI: Exiting via File -> Exit wasn't writing out config file to disk
+ * Bugfix: GTK GUI: "About" menu does not pop up while emulation is running
+ * Bugfix: Glide64: Refactored a bunch of inline asm code with potential bugs
+ * Bugfix: Added plugin error checking before emulator is started
+ * Bugfix: Logo not loading in "about" window
+ * Bugfix: Segfault in plugin_scan_directory()
+ * Bugfix: ROM pause/continue while playing
+ * Bugfix: Too many dialog windows when loading a bad dump or hacked rom
+ * Bugfix: Closing emulation window now stops emulator
+ * Bugfix: Rice Video: config dialog bug, now it displays proper resolution
+ * Bugfix: GTK GUI: "Toolbar Style" now works
+ * Bugfix: Glide64: changed inline asm label syntax, for compatibility with gcc 4.3.0
+ * Bugfix: Many other minor bug fixes, GTK warnings fixes, translation corrections, etc
+
+----------------------------------------
+
 ==Mupen64-amd64 v1.2 - February 10th, 2008==
  * New feature: Dynamic Recompiler for 64-bit
  * New feature: New ROM Browser for Mupen64 GUI build
