@@ -119,3 +119,6 @@
  || _ver:_ mupen64plus-1.3-RC1-bin-64 || _plugins:_ rice-1.2-dev AND glN64-0.4.1 ||
  * In Level 4-1 Astair's Lair you have to run away from a rolling stone. The sad thing is that's invisible. There are most likely more objects in the game which are invisible because of this bug but I only noticed this one so far.
  * The message "two events of type 8 in queue" appears countless times in the console
+
+*San Francisco Rush*
+ * textures are not aligned correctly
