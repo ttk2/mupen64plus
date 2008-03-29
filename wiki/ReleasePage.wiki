@@ -1,7 +1,7 @@
 #summary Mupen64Plus Release Notes
 
-==Mupen64Plus v1.3 - March 29th, 2008==
- * New feature: Glide64 video plugin for 32-bit and 64-bit, renamed project Mupen64Plus
+==!Mupen64Plus v1.3 - March 29th, 2008==
+ * New feature: Glide64 video plugin for 32-bit and 64-bit, renamed project !Mupen64Plus
  * New feature: Combine mupen64 and mupen64_nogui into a single binary
  * New feature: ability to change icon size
  * New feature: support different directories for install (plugins, icons, etc) and config (save games, config files)
