@@ -19,6 +19,9 @@ In order to maintain a high level of software quality in the !Mupen64Plus projec
   # Remember the life cycle of source code: it's written once but read many times.  Strive to make it readable and understandable.
 
 == Issue Tracking Guidelines ==
+  * Before you begin work on a bug fix or feature, look in the issue list on this Google Code site to see if someone is already working on it or assigned to it.
+  * If someone else is already working on it but you have some ideas or requirements, then post them as comments in the issue report (preferably), or email the current owner.
+  * If no-one is working on the issue, then create a new issue if necessary or assign yourself as the owner to the existing issue report.
   * Use the comments in the issue report for technical discussions; enable the star in the Google Code issue list to receive email notification about this bug
   * Please do not mark an issue as fixed if there is remaining work to fulfill the described functionality 
   * Before closing an issue report, please:
