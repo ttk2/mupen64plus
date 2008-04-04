@@ -4,7 +4,7 @@
 
 Mupen64Plus, Originally Mupen64-64bit, created by Richard42, is a fork of Mupen64, An N64 emulator created by Hacktarux. Mupen64-64bit was started sometime after the first release of a quick attempt to port Mupen64 to x86_64/AMD64/EM64T was released.
 
-Mupen64Plus is Open Source, as it is required as a derivative of the GPLv2 software, Mupen64 . All source code to all plug-ins are redistributed under the license they were originally redistributed under. The latest snapshot of source is publicly available via Google Code SVN under a special user (who's information is listed on the Project Homepage.)
+Mupen64Plus is Open Source, as it is required as a derivative of the GPLv2 software, Mupen64 . All source code to all plug-ins are redistributed under the license they were originally redistributed under. The latest snapshot of source is publicly available via offsite SVN under a special user (who's information is listed on the Project Homepage.)
 
 
 = History =
