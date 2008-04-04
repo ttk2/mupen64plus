@@ -1,0 +1,45 @@
+#summary How to use High Resolution texture packs with Rice Video
+
+= Introduction =
+
+In Windows it is quite easy to install high resolution texture packs and use them with Rice Video provided you know where the plug in is looking to get these textures. Similarly, Mupen64Plus's Rice Video plug in is that simple. Normally it's about as easy as copying a folder to ~/.mupen64plus/hires_texture/, but upon first configuration of using High Resolution Texture packs there is just a little more configuration.
+
+
+= Details =
+
+NOTE: The first part may be done on either the GUI or the terminal, but should not be done on both. Be sure to skip past "Using the Terminal:" if you go the GUI route.
+
+Notice that whence you must type out a path with spaces in the terminal you should either escape them (put slashes before them) or surround the path with double quotation marks. 
+
+Using the GUI:
+
+  * Enter your file browser, and type in the directory "~/.mupen64plus".
+  * Create the subfolder "hires_texture" and enter it.
+  * Extract the hires texture archive and copy the texture folder into the "hires_texture" window. The texture folder will obviously have images inside and no sub-folders.
+  * Exit your file browser window(s).
+
+Using the Terminal:
+  * Log into your terminal as the user you wish to play with high resolution textures as.
+  * Use "md" to ensure that "~/.mupen64plus/" and "~/.mupen64plus/hires_texture" exist. ("md ~/.mupen64plus/; md ~/.mupen64plus/hires_texture" will create them if they do not exist)
+  * Use the "cd" command to find the directory your texture pack archive is stored. You can use the "ls" command to see all files in a directory.
+  * If the texture pack is not alone in the directory, create a new directory ("md texture_pack"), move the archive into the new directory ("mv archive.tar.gz texture_pack/"), and use "cd" to enter the new directory. ("cd texture_pack/")
+  * Use the appropriate archiver command to extract the texture pack. (For *.tar.bz, *.tar.gz, *.tgz, use "tar -xf archive.tar.gz". For *.zip, use "unzip archive.zip". for rar, use "unrar e archive.rar")
+  * Use "cd" and "ls" to locate the folder with the textures (use "cd folder/" to enter the new folders, until "ls" reports a huge list of files. You can use "cd .." to go up one level in the directory tree.)
+  * Once you have located the folder with all of the textures, "cd .." so that you can see the folder name with "ls".
+  * Use "mv" to move the textures into "~/.mupen64plus/hires_texture" ("mv MY\ GAME\ NAME ~/.mupen64plus/hires_texture")
+
+
+The following must be done using the Mupen64Plus GUI at this time.
+
+  * Start Mupen64Plus.
+  * Enter Options->Configure.
+  * If you are not already in it, enter the "Mupen64Plus Configuration" tab.
+  * If your Video Plug-In drop down list does not have "Rice Video" selected, Click the drop down box and select it.
+  * Click on the configure button. You should now see another dialog.
+  * Find the check box, "Use Highres Textures". Check this box.
+  * Press "OK" on the Rice Video Configuration Window
+  * Press "OK" on the Mupen64Plus Configuration Window
+  * Test your new high resolution texture pack by running the game in question. Often times you will notice immediate changes.
+  * If it does not work, make sure that all of the directories are named properly and that you placed "hires_texture" inside of "~/.mupen64plus". Also be sure that the texture pack was properly extracted and is properly installed into "~/.mupen64plus/hires_texture".
+
+GlideHQ is not yet supported by Mupen64Plus, So you are in fact limited to using Rice Video to use High Resolution textures at this time.
