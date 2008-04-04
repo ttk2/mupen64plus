@@ -23,61 +23,63 @@ Notice that whence you must type out a path with spaces in the terminal you shou
   * Log into your terminal as the user you wish to play with high resolution textures as.
   * Use `mkdir` to ensure that `~/.mupen64plus/` and `~/.mupen64plus/hires_texture` exist.
 {{{
-# This will create the folders if they do not exist.
-mkdir ~/.mupen64plus/
-mkdir ~/.mupen64plus/hires_texture
+This will create the folders if they do not exist.
+$ mkdir ~/.mupen64plus/
+$ mkdir ~/.mupen64plus/hires_texture
 }}}
   * Use the `cd` command to find the directory your texture pack archive is stored. You can use the `ls` command to see all files in a directory.
 {{{
-# Traverse into the directory which stores your texture pack
-cd ~/Downloads/
-# Look to see if the archive is there
-ls
+Traverse into the directory which stores your texture pack
+$ cd ~/Downloads/
+
+Look to see if the archive is there
+$ ls
 }}}
   * If the texture pack is not alone in the directory, create a new directory 
 {{{
-mkdir texture_pack
+$ mkdir texture_pack
 }}}
   * Move the archive into the new directory
 {{{
-mv archive.tar.gz texture_pack/
+$ mv archive.tar.gz texture_pack/
 }}}
   * Use `cd` to enter the new directory.
 {{{
-cd texture_pack/
+$ cd texture_pack/
 }}}
   * Use the appropriate archiver command to extract the texture pack. 
 {{{
-# For *.tar.bz, *.tar.gz, *.tgz files
-tar -xzvf archive.tar.gz. 
-# For *.zip
-unzip archive.zip
-# for *.rar
-unrar e archive.rar
+For *.tar.bz, *.tar.gz, *.tgz files
+$ tar -xzvf archive.tar.gz
+
+For *.zip
+$ unzip archive.zip
+
+For *.rar
+$ unrar e archive.rar
 }}}
   * Use "cd" and "ls" to locate the folder with the textures 
 {{{
-# Enter the new extracted folder
-cd folder/
-# Look and see if there are many image files. If not, cd into other directories.
-ls
-# We can traverse back up the directory tree if we do not find the right folder.
-cd ..
+Enter the new extracted folder
+$ cd folder/
+
+Look and see if there are many image files. If not, cd into other directories.
+$ ls
+
+We can traverse back up the directory tree if we do not find the right folder.
+$ cd ..
 }}}
   * Once you have located the folder with all of the textures, `cd ..` so that you can see the folder name with `ls`.
   * Use `mv` to move the textures into `~/.mupen64plus/hires_texture` 
 {{{
-# Move the folder. Remember, you need to tell your shell that our spaces are part of the path.
-mv MY\ GAME\ NAME ~/.mupen64plus/hires_texture
+Move the folder. Remember, you need to tell your shell that our spaces are part of the path.
+$ mv MY\ GAME\ NAME ~/.mupen64plus/hires_texture
 
-# Instead of using escape before spaces part of the path, you can surround the path in 
-# double quotation marks.
-mv "MY GAME NAME" ~/.mupen64plus/hires_texture
+Instead of using escape before spaces part of the path, you can surround the path in double quotation marks.
+$ mv "MY GAME NAME" ~/.mupen64plus/hires_texture
 
-# Because Linux is case sensitive, you probably need to make the folder name all capitals
-# if it is not already. Your mv command will allow you to specify the output name by 
-# specifying a nonexistent sub folder in the destination.
-mv "My game name" ~/.mupen64plus/hires_texture/MY\ GAME\ NAME
+Because Linux is case sensitive, you probably need to make the folder name all capitals if it is not already. Your mv command will allow you to specify the output name by  specifying a nonexistent sub folder in the destination.
+$ mv "My game name" ~/.mupen64plus/hires_texture/MY\ GAME\ NAME
 }}}
 
 
