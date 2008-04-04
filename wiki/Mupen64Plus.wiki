@@ -4,12 +4,12 @@
 
 Mupen64Plus, Originally Mupen64-64bit, created by Richard42, is a fork of Mupen64, An N64 emulator created by Hacktarux. Mupen64-64bit was started sometime after the first release of a quick attempt to port Mupen64 to x86_64/AMD64/EM64T was released.
 
-Mupen64Plus is Open Source, as it is required as a derivative of the GPLv2 software, Mupen64 . All source code to all plug-ins are redistributed under the license they were originally redistributed under. The latest snapshot of source is publicly available via offsite SVN under a special user (who's information is listed on the Project Homepage.)
+Mupen64Plus is Open Source, as it is required as a derivative of the GPLv2 software, Mupen64 . All source code to all plug-ins are redistributed under the license they were originally redistributed under. The latest snapshot of source is publicly available via offsite SVN under a special user (Who's information is listed on the Project Homepage.)
 
 
 = History =
 
-On October 10th, 2007, A branch off of Mupen64 was presented to the public as "Mupen 64bit".First released by nmn, it contained a buggy version of glN64, JTTL's Audio Plug-in, A broken release of Blight's SDL Input plug-in, And the original r4300 emulation minus dynamic recompiling. (No attempt to port it was made as of the original release) On October 14th, 2007, Richard42 had decided to help on the project. (-> http://emutalk.net/showthread.php?t=42243) On October 21st, 2007, the original port was finally dumped and the project gained a new name, Mupen64-64bit. Essentially, It was a new project, being started from the vanilla Mupen64 0.5 source code. 
+On October 10th, 2007, A branch off of Mupen64 was presented to the public as "Mupen 64bit". ([http://emutalk.net/showthread.php?t=42243 Go→]) First released by nmn, it contained a buggy version of glN64, JTTL's Audio Plug-in, A broken release of Blight's SDL Input plug-in, And the original r4300 emulation minus dynamic recompiling. (No attempt to port it was made as of the original release) On October 14th, 2007, Richard42 had decided to help on the project. On October 21st, 2007, the original port was finally dumped and the project gained a new name, Mupen64-64bit. Essentially, It was a new project, being started from the vanilla Mupen64 0.5 source code. 
 
 Mupen64-64bit was soon renamed Mupen64-amd64. During this next period many of the fork's most important achievements were made. A Dynamic Recompiler was developed, Many of the largest bugs were fixed, and the emulator's GUI was renovated.
 
