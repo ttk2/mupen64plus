@@ -28,7 +28,7 @@ Although the original goals of the initial project were only to port the emulato
 
 = Usage =
 
-Currently, Mupen64Plus only compiles under Intel processors on the Linux platform (Other *NIX like Operating Systems should work as long as you have GNU Make and GCC for compilation). Simply use "make all" to compile the emulator, provided all prerequisites are properly installed and working.
+Currently, Mupen64Plus only compiles under Intel processors on the Linux platform (Other UNIX like Operating Systems should work as long as you have GNU Make and GCC for compilation). Simply use "make all" to compile the emulator, provided all prerequisites are properly installed and working.
 
 An effort to port Mupen64Plus to Microsoft Windows is under way. Fixes to the build system that will allow users of PowerPC Linux to run Mupen64Plus should be released soon.
 
