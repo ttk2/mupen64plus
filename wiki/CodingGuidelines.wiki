@@ -5,7 +5,7 @@
 In order to maintain a high level of software quality in the !Mupen64Plus project, to reduce bugs and debugging time, and to make our jobs easier and take pride in our creation, please read and consider the following guidelines for software development in the !Mupen64Plus project.
 
 == SVN Guidelines ==
-  # Always give a good descriptive log message when making a commit
+  # Always give a good descriptive log message when making a commit.  The SVN server will reject your commit with an error if you do not provide a log message.
   # Make sure that the project builds cleanly before committing code.  Do not commit code which does not compile.
   # Please fix compiler warnings before committing code
   # Please understand and follow the proper conflict resolution process with SVN: If you get a conflict while making a commit because someone else committed since your last update, you need to do an 'svn update', then open the file and search for the block markers "<<<<".  Fix them all by manually merging, then save the file, do "svn resolved <filename>", and then commit.  Do not blindly overwrite the previous commit's changes.
