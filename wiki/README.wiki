@@ -135,4 +135,4 @@ The keys or joystick/mouse inputs which will be mapped to the N64 controller for
 
 ==5. Known Issues==
 
-As of March 2008, the !RiceVideoLinux plugin may be unstable with users of the open source drivers for an ATI Radeon graphics adapter when fog is enabled.  If you have are using the open source Radeon driver, you should set the "!EnableFog" value in !RiceVideo.cfg to 0.
+As of March 2008, the !RiceVideoLinux plugin causes artifacts in most games for users of the open source drivers for an ATI Radeon graphics adapter when fog is enabled.  If you have are using the open source Radeon driver, you should set the "!EnableFog" value in !RiceVideo.cfg to 0.
