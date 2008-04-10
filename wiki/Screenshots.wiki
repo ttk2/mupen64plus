@@ -4,4 +4,7 @@
 
 http://mupen64plus.googlecode.com/svn/wiki/Screenshot-01-PaperMario.png
 http://mupen64plus.googlecode.com/svn/wiki/Screenshot-02-PaperMario.png
+
+== Hi-res Mario 64 ==
+
 http://img85.imageshack.us/img85/6503/powerofm64nc3.png
