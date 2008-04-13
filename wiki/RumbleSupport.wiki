@@ -2,7 +2,7 @@
 
 = Introduction =
 
-The Rumble Pak feature was added to the !Mupen64Plus project after the v1.3 release.  It is currently available in our Subversion repository and is expected to be included in the v1.4 release.
+The Rumble Pak feature was added to the !Mupen64Plus project after the v1.3 release.  It is currently available in our Subversion repository and is expected to be included in the v1.4 release.  This feature has been tested and is known to work with Logitech Rumble Pad 2 wireless controllers.
 
 = Prerequisites =
 
@@ -22,7 +22,7 @@ This is usually caused by restrictive permissions.  It is easy to set the correc
 
  * `[blight's SDL input plugin]: Linux kernel communication failed for force feedback (rumble)`
 
-This error message can occur when your kernel does not have support for HID Force Feedback built into it or as a module.  You must rebuild your kernel to include support for both HID force feedback and the correct driver for your gamepad.  This feature has been tested and is known to work with Logitech Rumble Pad 2 wireless controllers.
+This error message can occur when your kernel does not have support for HID Force Feedback built into it or as a module.  You must rebuild your kernel to include support for both HID force feedback and the correct driver for your gamepad.
 
  * `[blight's SDL input plugin]: No rumble supported on N64 joystick #1`
 
