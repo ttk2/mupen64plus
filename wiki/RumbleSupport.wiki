@@ -20,6 +20,10 @@ This suggests that your kernel does not have the required support for the rumble
 
 This is usually caused by restrictive permissions.  It is easy to set the correct permissions on this device file.  You can do this by entering "sudo chmod 666 /dev/input/eventX" where X is the number given in the error message.
 
+ * `[blight's SDL input plugin]: Linux kernel communication failed for force feedback (rumble)`
+
+This error message can occur when your kernel does not have support for HID Force Feedback built into it or as a module.  You must rebuild your kernel to include support for both HID force feedback and the correct driver for your gamepad.  This feature has been tested and is known to work with Logitech Rumble Pad 2 wireless controllers.
+
  * `[blight's SDL input plugin]: No rumble supported on N64 joystick #1`
 
 This could be caused by lack of kernel support or by using a joystick which does not support force feedback
