@@ -8,3 +8,11 @@ http://mupen64plus.googlecode.com/svn/wiki/Screenshot-02-PaperMario.png
 == Hi-res Mario 64 ==
 
 http://img85.imageshack.us/img85/6503/powerofm64nc3.png
+
+== Hi-res Zelda Ocarina of Time ==
+
+This is a cel-shaded pack, by Djipi.
+
+http://mupen64plus.googlecode.com/svn/wiki/Zelda-OOT-01.jpg
+http://mupen64plus.googlecode.com/svn/wiki/Zelda-OOT-02.jpg
+http://mupen64plus.googlecode.com/svn/wiki/Zelda-OOT-03.jpg
