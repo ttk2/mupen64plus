@@ -1,0 +1,56 @@
+#summary Tutorial on how to compile and build from the SVN
+#labels Phase-Deploy
+
+= What is this? =
+
+This guide is for people who want to play with the latest SVN version but are not sure how to use SVN to download and make the latest version of Mupen64Plus.
+
+== Requirements ==
+
+  * Must know how to launch a Terminal.
+  * Must have SVN installed.
+  * Must be able to follow simple instructions.
+
+= Tutorials =
+
+== Installing Subversion ==
+
+If you do not have sub-version installed launch your favorite application manager and search for *subversion*. If you are on Ubuntu or Debian this line will work in the console:
+
+{{{$ sudo apt-get install subversion}}}
+
+== Creating Directories ==
+
+For this example we will build Mupen64Plus in your */home/username/emulators/* directory, you can change this path if you know how to, and you should being a proactive Linux user.
+
+First we want to get to your user directory. In your terminal type the following command:
+
+{{{$ cd}}}
+
+Now we want to make our 'emulators' directory, type the following command:
+
+{{{$ mkdir emulators}}}
+
+Now we want to navigate to our directory,  type the following command:
+
+{{{$ cd emulators}}}
+
+Good, we are almost there! Also, you only need to make your directory once and if your savy enough you will be able to set this up in any directory you want to. Onwards to accessing the SVN!
+
+== Checking out the SVN ==
+
+Once you are in your 'emulators' directory, type the following command inside the Terminal:
+
+{{{$ svn co svn://fascination.homelinux.net:7684/mupen64plus/trunk --username mupen64 --password Dyson5632-kart}}}
+
+Hopefully if everything is working, you will see a bunch of files start to download, now is a good time to go grab a glass of water or something. If you are on cable you might not have to wait that long.
+
+== Updating the source ==
+
+If you want to update the source code to latest SVN code, enter the 'mupen64plus' directory ('cd mupen64plus') then type the following commands in the Terminal:
+
+{{{$ svn up --username muepn64 --password Dyson5632-kart}}}
+
+== Building the source ==
+
+[http://code.google.com/p/mupen64plus/wiki/README This is probably the best guide as of now.]
