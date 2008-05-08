@@ -7,7 +7,7 @@
 
 *Objective:* Create a system that passively retrieves/loads information about the Rom Browser, and current ROM being played.
 
-*Operations:* Start the RCS when Mupen64Plus is executed. If -–nogui is specified then do not worry about the Rom Browser operations.
+*Operations:* Start the RCS when !Mupen64Plus is executed. If -–nogui is specified then do not worry about the Rom Browser operations.
 
 _The RCS will be responsible for the following tasks:_
   * Caching the MD5, Filename, Good Name (from database), and OS Timestamp (for checking if a file has changed) of each of the entries in the Rom Browser. This file will be external and will be loaded when the GUI version boots up to speed up the Rom Browser creation.
