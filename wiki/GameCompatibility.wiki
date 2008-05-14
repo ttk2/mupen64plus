@@ -19,6 +19,7 @@
  * Super Mario 64
  * Iggy's Reckin' Balls (!RiceVideo) - ExpansionPackDisabled
  * Charlie Blast's Territory (glN64)
+ * Super Bowling 64 (!RiceVideo)
 
 == Known stability problems in games ==
 
