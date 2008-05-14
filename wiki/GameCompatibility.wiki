@@ -1,8 +1,8 @@
 #summary List of games and status with Mupen64Plus
 
-== Games known to work well with !Mupen64Plus (best video plugin) ==
+== Games known to work well with the latest SVN of !Mupen64Plus (best video plugin) ==
 
-(this list is a work in progress, and is not complete)
+(this list is a work in progress, and is not complete -- feel free to contact a developer about adding to this list.)
 
  * 1080 Snowboarding (Glide64)
  * Aerogauge
@@ -17,7 +17,8 @@
  * Kirby 64
  * Mario Kart 64
  * Super Mario 64
- * Iggy's Reckin' Balls (!RiceVideo) (ExpansionPackDisabled)
+ * Iggy's Reckin' Balls (!RiceVideo) - ExpansionPackDisabled
+ * Charlie Blast's Territory (!glN64)
 
 == Known stability problems in games ==
 
@@ -28,6 +29,10 @@
 * Battle Tanx *
  * _version:_ mupen64plus-1.3-RC1-bin-64
  * hangs with any video plugin
+
+* Blast Corps (
+ * _version:_ mupen64plus-1.3.-RC1-bin-32
+ * loads then crashes very fast *
 
 * Yoshi's Story *
  * _version:_ mupen64plug-svn-__r93__
