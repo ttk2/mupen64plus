@@ -17,11 +17,12 @@
  * Kirby 64
  * Mario Kart 64
  * Super Mario 64
- * Iggy's Reckin' Balls (!RiceVideo) - ExpansionPackDisabled
+ * Iggy's Reckin' Balls (!RiceVideo) - Expansion Pack Disabled
  * Charlie Blast's Territory (glN64)
  * Super Bowling 64 (!RiceVideo)
  * 40 Winks (Glide64)
  * Star Fox 64 (!RiceVideo or Glide64)
+ * Mortal Kombat 4 (Glide64) - Enable Sound Sync, Enable Compiled Jump, Disable Expansion Pack
 
 == Known stability problems in games ==
 
