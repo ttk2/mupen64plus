@@ -20,11 +20,13 @@ After a while, it became clear that the name *Mupen64-amd64* was giving the impr
 Although the original goals of the initial project were only to port the emulator to 64-bit Intel and fix bugs, not long after Richard42 arrived, it was decided that the project should also aim to improve the quality of *Mupen64*. Currently, the project has deviated off of the original *Mupen64* quite much. The main differences are:
 
   * New Makefile, supporting PPC (broken as of now) and x86 targets for 64-bit and 32-bit.
-  * New GUI code, with much less deprecated GTK functions and widgets
+  * New GTK code, with much less deprecated GTK functions and widgets
+  * A Qt4 GUI
   * A port of Rice Video, with countless fixes and renovations
   * A port of Glide64 Wonder Plus
   * Improvements to glN64
   * 64-bit Dynamic Recompiler
+  * A brand new Windows port using GTK
 
 = Usage =
 
@@ -40,10 +42,10 @@ Currently, *!Mupen64Plus* has 10 Plug-ins. 4 Video plug-ins, 3 audio plug-ins, 2
   * glN64
   * No Video
   * Glide64 Wonder Plus
-  * Rice's Video Plugin
+  * Rice's Video Plugin (With mudlord's extensions)
 
 *Audio:*
-  * Mupen64 Audio Plugin
+  * Mupen64 Audio Plugin (May become obsolete)
   * No Audio
   * JttL's SDL Audio
 
