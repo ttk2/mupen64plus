@@ -17,6 +17,7 @@
  * Kirby 64
  * Mario Kart 64
  * Super Mario 64
+ * Iggy's Reckin' Balls (!RiceVideo) [ExpansionPackDisabled]
 
 == Known stability problems in games ==
 
