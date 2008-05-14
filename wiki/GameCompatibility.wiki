@@ -21,6 +21,7 @@
  * Charlie Blast's Territory (glN64)
  * Super Bowling 64 (!RiceVideo)
  * 40 Winks (Glide64)
+ * Star Fox 64 (!RiceVideo or Glide64)
 
 == Known stability problems in games ==
 
