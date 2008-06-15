@@ -29,23 +29,14 @@ In addition to the binary libraries, the following packages are required if you 
  * libsamplerate (aka Secret Rabbit Code)
  * yasm v0.6.2 or newer
 
-==2. Building From Source==
-
-If you downloaded the binary distribution of !Mupen64Plus, skip to the Installation section.  Otherwise, you will need both the libraries and development packages (header files) for the prerequisites listed below:
-
-Common Prerequisites: (you probably have these)
- * SDL
- * OpenGL / mesa
- * GTK 2 (not necessary for NOGUI_ONLY=1 build)
-
-Somewhat Uncommon Prerequisites: (you may not have these)
- * yasm
- * SDL_ttf
-
-Here is an example for adding these packages on Fedora systems:
+Most of these pre-requisites are installed by default, but some are more uncommon.  Here is an example for adding the 'yasm' and 'SDL_ttf' development packages on Fedora systems:
 {{{
   # yum install yasm SDL_ttf SDL_ttf-devel
 }}}
+
+==2. Building From Source==
+
+If you downloaded the binary distribution of !Mupen64Plus, skip to the Installation section.  Otherwise, you will need both the libraries and development packages (header files) for the prerequisites listed above.
 
 Once you have all prerequisites installed, you can build the source distribution by unzipping and cd'ing into the source directory, then build using make: 
 
@@ -68,7 +59,11 @@ Type 'make' by itself to view all available build options:
      BITS=32       == build 32-bit binaries on 64-bit machine
      VCR=1         == enable video recording
      LIRC=1        == enable LIRC support
-     NOGUI_ONLY=1  == build without GUI support
+     NO_RESAMP=1   == disable libsamplerate support in jttl_audio
+     NO_ASM=1      == build without assembly (no dynamic recompiler or MMX/SSE code)
+     GUI=NONE      == build without GUI support
+     GUI=GTK2      == build with GTK2 GUI support (default)
+     GUI=KDE4      == build with KDE4 GUI support
      PREFIX=path   == specify install/uninstall prefix (default: /usr/local)
    Debugging Options:
      PROFILE=1     == build gprof instrumentation into binaries for profiling
@@ -82,9 +77,9 @@ Type 'make' by itself to view all available build options:
 
 Previous to version 1.3, building mupen64 built two programs: mupen64 and mupen64_nogui. mupen64 had a gtk graphical frontend including a rom browser. mupen64_nogui contained no graphical frontend and all options were specified via the commandline. As of version 1.3, the mupen64 and mupen64_nogui codebases have been combined. Now, building mupen64plus results in one executable called mupen64plus that can either be run with a gui (default) or without a gui, by specifying --nogui at the commandline. For backwards compatability, if a symbolic link to the mupen64plus executable called mupen64plus_nogui (or mupen64_nogui) is created, running the mupen64plus_nogui symlink is equivalent to running mupen64plus with the --nogui flag.
 
-NOTE: If you want to build a nogui-only version of mupen64plus (without gtk+ dependencies), pass the NOGUI_ONLY=1 option to make, like this:
+NOTE: If you want to build a nogui-only version of mupen64plus (without gtk+ dependencies), pass the GUI=NONE option to make, like this:
 {{{
- $ make NOGUI_ONLY=1 all
+ $ make GUI=NONE all
 }}}
 
 ==3. Installation==
@@ -129,6 +124,7 @@ Run 'mupen64plus --help' for a complete list of commandline options:
  Parameters:
          --nogui                 : do not display GUI
          --fullscreen            : turn fullscreen mode on
+         --noosd                 : disable onscreen display.
          --gfx (path)            : use gfx plugin given by (path)
          --audio (path)          : use audio plugin given by (path)
          --input (path)          : use input plugin given by (path)
@@ -138,6 +134,7 @@ Run 'mupen64plus --help' for a complete list of commandline options:
          --configdir (dir)       : force config dir (must contain mupen64plus.conf)
          --installdir (dir)      : force install dir (place to look for plugins, icons, lang, etc)
          --noask                 : don't ask to force load on bad dumps
+         --testshots (list)      : take screenshots at frames given in comma-separated list, then quit
          -h, --help              : see this help message
 }}}
 
@@ -150,8 +147,16 @@ The keys or joystick/mouse inputs which will be mapped to the N64 controller for
 || 0-9 || Select virtual 'slot' for save/load state (F5 and F7) commands ||
 || F5 || Save emulator state ||
 || F7 || Load emulator state ||
-|| Alt-Enter || Toggle between windowed and fullscreen (may not be supported by all video plugins) ||
-|| p or P || Pause on/off ||
+|| F10 || slow down emulator by 5% ||
+|| F11 || speed up emulator by 5% ||
+|| F12 || take screenshot ||
+|| Alt-Enter || Toggle between windowed and fullscreen ||
+|| Pause || Pause on/off ||
+|| m or M || Mute/unmute sound ||
+|| / or ? || single frame advance while paused ||
+|| F || Fast Forward (playback at 250% normal speed while F key is pressed) ||
+|| [ || Decrease volume ||
+|| ] || Increase volume ||
 
 ==6. Known Issues==
 
