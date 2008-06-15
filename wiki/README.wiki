@@ -133,7 +133,7 @@ Run 'mupen64plus --help' for a complete list of commandline options:
          --sshotdir (dir)        : set screenshot directory to (dir)
          --configdir (dir)       : force config dir (must contain mupen64plus.conf)
          --installdir (dir)      : force install dir (place to look for plugins, icons, lang, etc)
-         --noask                 : don't ask to force load on bad dumps
+         --noask                 : dont ask to force load on bad dumps
          --testshots (list)      : take screenshots at frames given in comma-separated list, then quit
          -h, --help              : see this help message
 }}}
