@@ -22,7 +22,9 @@
  * zlib
 
 *Source Build Requirements*
+
 In addition to the binary libraries, the following packages are required if you build !Mupen64Plus from source:
+
  * GNU C and C++ compiler, libraries, and headers
  * GNU make
  * Development packages for all the libraries above
