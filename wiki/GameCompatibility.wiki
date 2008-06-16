@@ -17,7 +17,7 @@
  * Kirby 64
  * Mario Kart 64
  * Super Mario 64
- * Iggy's Reckin' Balls (!RiceVideo) - Expansion Pack Disabled
+ * Iggy's Reckin' Balls (!RiceVideo) - Expansion Pack Disabled (Hangs at certain part of game)
  * Charlie Blast's Territory (glN64)
  * Super Bowling 64 (!RiceVideo)
  * 40 Winks (Glide64)
