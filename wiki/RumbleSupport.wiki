@@ -2,7 +2,7 @@
 
 = Introduction =
 
-The Rumble Pak feature was added to the !Mupen64Plus project after the v1.3 release.  It is currently available in our Subversion repository and is expected to be included in the v1.4 release.  This feature has been tested and is known to work with Logitech Rumble Pad 2 wireless controllers.
+The first official !Mupen64Plus release which includes support for the Rumble Pak feature is v1.4.  This feature has been tested and is known to work with Logitech Rumble Pad 2 wireless controllers.
 
 = Prerequisites =
 
