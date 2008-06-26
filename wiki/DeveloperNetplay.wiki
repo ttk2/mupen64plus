@@ -10,7 +10,10 @@ An additional want that is planned for inclusion, are peers who are not playing 
 
 == Terminology ==
 
-More to come here soon!
+  * Input Latency - The delay between a button being pressed on a controller, and it's effects becoming apparent in gameplay.  This should be kept as equal as possible to ensure fairness.
+  * Network Latency - The delay from when information is sent from one host to when it arrives at another host over a network.  Commonly referred to as ping time.
+
+More to come
 
 = Establishing a Connection =
 == Issues ==
