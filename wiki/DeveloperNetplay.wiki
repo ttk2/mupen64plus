@@ -1,0 +1,40 @@
+#summary Proposed framework for design of P2P networking subsystem
+#labels Phase-Implementation,Phase-Requirements,Phase-Design
+
+= Introduction =
+This document outlines the design of the P2P networking protocol.  This is a work in progress, and will change drastically as development progresses.  Please note that this document is intended for *DEVELOPERS ONLY* however anyone is more than welcome to read.
+
+This protocol is designed with latency in mind, not only of network latency but also input latency, and any apparent pauses or skips in gameplay.  Perhaps the most crucial issue when playing any game is distortion of sound, followed by delays in video.  It is our goal to have no distortion of sound or video due to netplay (except perhaps in cases where the connection is interrupted or severed completely), to have very little input lag (hopefully comparable to network latency), and above all, a level playing field.
+
+An additional want that is planned for inclusion, are peers who are not playing along with the emulation, but merely spectating.  Once the initial hurdles of establishing and maintaining sync between the players has been conquered, this too will see inclusion in the design.
+
+== Terminology ==
+
+More to come here soon!
+
+= Establishing a Connection =
+== Issues ==
+In the spirit of P2P, any client is capable of acting as a server, and all connected clients must collectively act as one bootstrapping server.  All nodes should be able to handle requests by new players wanting to join, and should respond with all the needed information for that new client to connect to the other peers, currently:
+  # IP addresses of connected peers
+  # Unique identifier to assign to the joining node (player number/spectator number)
+
+Now, a node that's just received a join request from a new client cannot immediately respond with a list of clients and id number.  Considering the case where we have two players already connected (players 1 and 2) and two simultaneous join requests are sent by two new players, (new player A, and new player B).  If both players 1 & 2 respond immediately to the join requests, without first confirming the slots are still available, than both new players A&B may be assigned the slot for player 3.
+
+== Steps ==
+To confirm a consistent state of the network, the join process is as follows
+  # New player issues a join_request to one of the existing nodes (Node A)
+  # Node A sends a join_notification to each node it's connected to
+  # Nodes receiving a join_notification respond to Node A with a join_reply (which can confirm or deny the request to join)
+  # Once Node A receives all join_reply packets it issues a join packet to the new player
+  # Upon receiving the join packet, the new player connects to all existing nodes
+ 
+= Staying in Sync =
+== Issues ==
+Due to issues with network latency, and possible delays in emulation nodes may fall behind or lead ahead of other nodes.  Either of these scenarios are problematic.  For this reason all nodes in the network use a frame counter that is synchronized using a flocking technique.
+
+= Tables = 
+== Packet Structure ==
+2-byte header
+  * 0xFFFF - Join request
+  * 0xFFFE - Join response
+  * 0x0000-0x7FFF - Frame counters, these packets can contain 'piggybacked' packets including start-emulation requests, input updates, etc
