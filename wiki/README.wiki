@@ -163,3 +163,5 @@ The keys or joystick/mouse inputs which will be mapped to the N64 controller for
 ==6. Known Issues==
 
 As of March 2008, the !RiceVideoLinux plugin causes artifacts when fog is enabled in most games with the open source drivers for ATI Radeon graphics adapters. If you are using the open source Radeon driver, you should set the "!EnableFog" value in !RiceVideo.cfg to 0.
+
+When using !RiceVideoLinux, there are quite a few games which show an artifact whereby some or all of the polygons on the screen will disappear every few games, revealing a background color.  This problem is usually caused by the wrong screen update setting.  If you edit the ini file at: ~/.mupen64plus/RiceVideoLinux.ini, search for the section with the game's name, and add "ScreenUpdateSetting=1" to the bottom.  This usually fixes the flashing artifacts.  Please file an issue report here with the game's name and MD5 hash value if you find a game which exhibits this problem and works correctly after the .ini file update.
