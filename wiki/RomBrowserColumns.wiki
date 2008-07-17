@@ -24,12 +24,12 @@ Additionally, each name has at least one of the following codes:
 
  * `[!]` - Verified Good Dump - If these ROMs don't work, it is an emulation bug.
  * `[a#]` - Alternative - An alternate working version of a ROM. 
- * `(M#)` - Multilanguage - Official support for # of languages.
+ * `[M#]` - Multilanguage - Official support for # of languages.
  * `[o#]` - Overdumped - An overdumped ROM image has more data than is actually in the cart. Besides wasting space, the ROM should be okay.
 
 The following codes indicate that the ROM was modified or hacked in some manner. !Mupen64Plus will issue a warning when trying to load one of these ROMs, although many should work fine.
 
- * `[T?]` - Translation - Unlike multilanguage support from (M#) ROMs, these translations were made by hackers to allow access of games to a broader audience. As performing such a translation involves manipulating large amounts of ROM data, it is possible unintended bugs were introduced. [T+? indicates a newer translation, while [T-? indicates an older release. If a translation doesn't work, you might want to obtain a newer version.
+ * `[T?]` - Translation - Unlike multilanguage support from (M#) ROMs, these translations were made by hackers to allow access of games to a broader audience. As performing such a translation involves manipulating large amounts of ROM data, it is possible unintended bugs were introduced. `[T+?` indicates a newer translation, while `[T-?` indicates an older release. If a translation doesn't work, you might want to obtain a newer version.
  * `[t#]` - Trained - A trainer is special code which executes before the game is begun. It allows you to access cheats from a menu.
  * `[h#]` - Hacked - A general hacked ROM. Hacks range from changed headers to allow running in different regions, release group intros, or just some kind of cheating or funny hack.
  * `[b#]` - Bad Dump - A released bad dump, either due to a faulty dumping or corruption on upload.
