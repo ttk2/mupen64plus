@@ -3,7 +3,7 @@
 
 = What is this? =
 
-This guide is for people who want to play with the latest SVN version but are not sure how to use SVN to download and make the latest version of Mupen64Plus.
+This guide is for people who want to play with the latest SVN version but are not sure how to use SVN to download and make the latest version of !Mupen64Plus.
 
 == Requirements ==
 
@@ -21,7 +21,7 @@ If you do not have sub-version installed launch your favorite application manage
 
 == Creating Directories ==
 
-For this example we will build Mupen64Plus in your */home/username/emulators/* directory, you can change this path if you know how to, and you should being a proactive Linux user.
+For this example we will build !Mupen64Plus in your */home/username/emulators/* directory, you can change this path if you know how to, and you should being a proactive Linux user.
 
 First we want to get to your user directory. In your terminal type the following command:
 
