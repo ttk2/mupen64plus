@@ -49,7 +49,7 @@ Hopefully if everything is working, you will see a bunch of files start to downl
 
 If you want to update the source code to latest SVN code, enter the 'mupen64plus' directory ('cd mupen64plus') then type the following commands in the Terminal:
 
-{{{$ svn up --username mupen64 --password Dyson5632-kart}}}
+{{{$ svn update}}}
 
 == Building the source ==
 
