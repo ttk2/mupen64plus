@@ -1,5 +1,7 @@
 #summary How to build, install, and use Mupen64Plus
 
+This README document reflects the instructions for using the latest !Mupen64Plus code, which may be unreleased, so if you are using a released version of !Mupen64Plus, the most accurate instructions are in the README file included with your release package.
+
 !Mupen64Plus is based off of mupen64, originally created by Hacktarux. The !Mupen64Plus package contains the mupen64 emulator program (renamed mupen64plus) plus graphics, sound, input, and RSP plugins.
 
 *README Sections*
