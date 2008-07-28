@@ -68,7 +68,12 @@ Type 'make' by itself to view all available build options:
      GUI=NONE      == build without GUI support
      GUI=GTK2      == build with GTK2 GUI support (default)
      GUI=KDE4      == build with KDE4 GUI support
-     PREFIX=path   == specify install/uninstall prefix (default: /usr/local)
+   Install Options:
+     PREFIX=path   == install/uninstall prefix (default: /usr/local/)
+     SHAREDIR=path == path to install shared data (default: PREFIX/share/mupen64plus/)
+     BINDIR=path   == path to install mupen64plus binary (default: PREFIX/bin/)
+     LIBDIR=path   == path to install plugin libs (default: SHAREDIR/plugins/)
+     MANDIR=path   == path to install manual files (default: PREFIX/man/man1/)
    Debugging Options:
      PROFILE=1     == build gprof instrumentation into binaries for profiling
      DBGSYM=1      == add debugging symbols to binaries
@@ -78,8 +83,6 @@ Type 'make' by itself to view all available build options:
      DBG_COMPARE=1 == enable core-synchronized r4300 debugging
      DBG_PROFILE=1 == dump profiling data for r4300 dynarec to data file
 }}}
-
-Previous to version 1.3, building mupen64 built two programs: mupen64 and mupen64_nogui. mupen64 had a gtk graphical frontend including a rom browser. mupen64_nogui contained no graphical frontend and all options were specified via the commandline. As of version 1.3, the mupen64 and mupen64_nogui codebases have been combined. Now, building mupen64plus results in one executable called mupen64plus that can either be run with a gui (default) or without a gui, by specifying --nogui at the commandline. For backwards compatability, if a symbolic link to the mupen64plus executable called mupen64plus_nogui (or mupen64_nogui) is created, running the mupen64plus_nogui symlink is equivalent to running mupen64plus with the --nogui flag.
 
 NOTE: If you want to build a nogui-only version of mupen64plus (without gtk+ dependencies), pass the GUI=NONE option to make, like this:
 {{{
@@ -99,18 +102,44 @@ To install the binary distribution of !Mupen64Plus, su to root and run the provi
 }}}
 The install script will copy the executable to /usr/local/bin and a directory called /usr/local/share/mupen64plus will be created to hold plugins and other files used by mupen64plus.
 
-NOTE: By default, install.sh uses /usr/local for the install prefix. Although the user can specify an alternate prefix to install.sh at the command line, the mupen64plus binary was compiled to look for the install directory in /usr/local, so specifying an alternate prefix to install.sh will cause problems (mupen64plus will not find the install directory). If you want to use a prefix other than /usr/local, you will have to download the source package and build with the PREFIX option (see below).
-
 *Source Distribution*
 
-After building mupen64plus and all plugins, su to root and type 'make install' to install !Mupen64Plus. The install process will copy the executable to $PREFIX/bin and a directory called $PREFIX/share/mupen64plus will be created to hold plugins and other files used by mupen64plus. By default, PREFIX is set to /usr/local. This can be changed by passing the PREFIX option to make. NOTE: you must pass the prefix, when building AND installing. For example, to install mupen64plus to /usr, do this:
+After building mupen64plus and all plugins, su to root and type 'make install' to install !Mupen64Plus. The install process will copy the executable to $PREFIX/bin and a directory called $PREFIX/share/mupen64plus will be created to hold plugins and other files used by mupen64plus. By default, PREFIX is set to /usr/local. This can be changed by passing the PREFIX option to 'make' during the installation.  For example, to install mupen64plus to /usr, do this:
 {{{
- $ make PREFIX=/usr all
+ $ make all
  $ su
  # make PREFIX=/usr install
  # exit
  $
 }}}
+
+*Custom Installation Paths*
+
+You may customize the installation of the !Mupen64Plus program by using the options for the install.sh script:
+
+{{{
+usage: install.sh [PREFIX] [SHAREDIR] [BINDIR] [LIBDIR] [MANDIR]
+	PREFIX   - installation directories prefix (default: /usr/local)
+	SHAREDIR - path to Mupen64Plus shared data files (default: $PREFIX/share/mupen64plus)
+	BINDIR   - path to Mupen64Plus binary program files (default: $PREFIX/bin)
+	LIBDIR   - path to Mupen64Plus plugin files (default: $SHAREDIR/plugins)
+	MANDIR   - path to manual files (default: $PREFIX/man/man1)
+To install KDE4 version, use: GUI=KDE4 install.sh
+}}}
+
+You must pass the same options to the uninstall.sh script when uninstalling in order to remove all of the !Mupen64Plus files.
+
+You should install the !Mupen64Plus plugins (libraries) in their own folder.  If you install them in a common directory such as /usr/lib and then later uninstall them with "sudo uninstall.sh LIBDIR=/usr/lib", it will delete all system libraries.
+
+If you install with SHAREDIR in a place other than /usr/local/share/mupen64plus or /usr/share/mupen64plus, and BINDIR is not the same as SHAREDIR, then users will have to run !Mupen64Plus with the --installdir= option, otherwise they will get an error.  The mupen64plus executable looks in up to 5 different directories in order to find the Shared Data Directory.  The order in which the directories are searched is:
+
+ # directory specified on command line with --installdir
+ # same directory as the mupen64plus binary
+ # /usr/local/share/mupen64plus
+ # /usr/share/mupen64plus
+ # current working directory
+
+If you choose to install the plugins in a non-standard location (someplace other than $SHAREDIR/plugins), then you must set the !PluginDirectory parameter in the mupen64plus.conf config file to the directory path in which the plugins have been installed.
 
 ==4. Multi-user Support==
 
