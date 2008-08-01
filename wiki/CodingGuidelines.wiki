@@ -4,6 +4,10 @@
 
 In order to maintain a high level of software quality in the !Mupen64Plus project, to reduce bugs and debugging time, and to make our jobs easier and take pride in our creation, please read and consider the following guidelines for software development in the !Mupen64Plus project.
 
+== GPL Guidelines ==
+  # Include a copyright statement if you change or add any kind of source file
+  # You must include a GPL header if you add a new file
+
 == SVN Guidelines ==
   # Always give a good descriptive log message when making a commit.  The SVN server will reject your commit with an error if you do not provide a log message.
   # Make sure that the project builds cleanly before committing code.  Do not commit code which does not compile.
