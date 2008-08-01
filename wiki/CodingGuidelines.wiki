@@ -6,7 +6,7 @@ In order to maintain a high level of software quality in the !Mupen64Plus projec
 
 == GPL Guidelines ==
   # Include a copyright statement if you change or add any kind of source file
-  # You must include a GPL header if you add a new file
+  # You must include a GPL header at the start of any new source file that you add
 
 == SVN Guidelines ==
   # Always give a good descriptive log message when making a commit.  The SVN server will reject your commit with an error if you do not provide a log message.
