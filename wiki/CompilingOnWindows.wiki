@@ -18,7 +18,7 @@ Hi there. We now have a Qt4 interface in trunk that seems to work on windows. If
 
 = Details =
 
-Install the deps mentioned above. Make sure the Qt and MinGW tools are in your path. Run the following in the trunk folder:
+Install the deps mentioned above. Make sure the Qt and MinGW tools are in your path. Adjust the paths at the top of Makefile.mingw. Run the following in the trunk folder:
 
  * mingw32-make -f Makefile.mingw GUI=QT4 all
 
