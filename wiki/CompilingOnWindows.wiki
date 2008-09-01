@@ -5,16 +5,16 @@
 
 Hi there. We now have a Qt4 interface in trunk that seems to work on windows. If you'd like to compile it you will need the following:
 
-* SDL
-* Qt4
-* pthreads-win32
-* dlfcn-win32
-* MinGW
-* The following from GnuWin32:
- * libfreetype
- * libiconv
- * libpng
- * zlib
+ * SDL
+ * Qt4
+ * pthreads-win32
+ * dlfcn-win32
+ * MinGW
+ * The following from GnuWin32:
+  * libfreetype
+  * libiconv
+  * libpng
+  * zlib
 
 = Details =
 
