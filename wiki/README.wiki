@@ -15,10 +15,9 @@ This README document reflects the instructions for using the latest !Mupen64Plus
 ==1. Requirements and Pre-requisites==
 
 *Binary Package Requirements*
- * GTK2 libraries (unless built from source with GUI=NONE)
+ * GTK2 libraries (currently hard plugin dependence even with GUI=NONE)
  * SDL 1.2
  * SDL_ttf
- * Mesa / OpenGL libraries
  * libpng
  * freetype 2
  * zlib
@@ -30,13 +29,17 @@ In addition to the binary libraries, the following packages are required if you 
  * GNU C and C++ compiler, libraries, and headers
  * GNU make
  * Development packages for all the libraries above
- * libsamplerate (aka Secret Rabbit Code)
- * yasm v0.6.2 or newer
 
-Most of these pre-requisites are installed by default, but some are more uncommon.  Here is an example for adding the 'yasm' and 'SDL_ttf' development packages on Fedora systems:
+Most of these pre-requisites are installed by default, but some are more uncommon. Here is an example for adding the 'yasm' and 'SDL_ttf' development packages on Fedora systems:
 {{{
-  # yum install yasm SDL_ttf SDL_ttf-devel
+  # yum install SDL_ttf SDL_ttf-devel
 }}}
+
+There are also a number of packages required for specific options:
+
+ * libsamplerate (aka Secret Rabbit Code for higher quality audio)
+ * binutils-dev (dis-asm.h for debugger)
+ * Qt4 libraries and headers (for Qt4 GUI)
 
 ==2. Building From Source==
 
