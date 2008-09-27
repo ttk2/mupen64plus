@@ -131,7 +131,6 @@ usage: install.sh [PREFIX] [SHAREDIR] [BINDIR] [LIBDIR] [MANDIR]
 	BINDIR   - path to Mupen64Plus binary program files (default: $PREFIX/bin)
 	LIBDIR   - path to Mupen64Plus plugin files (default: $SHAREDIR/plugins)
 	MANDIR   - path to manual files (default: $PREFIX/man/man1)
-To install KDE4 version, use: GUI=KDE4 install.sh
 }}}
 
 You must pass the same options to the uninstall.sh script when uninstalling in order to remove all of the !Mupen64Plus files.
