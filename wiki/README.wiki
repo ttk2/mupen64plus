@@ -74,7 +74,7 @@ Type 'make' by itself to view all available build options:
      NO_ASM=1      == build without assembly (no dynamic recompiler or MMX/SSE code)
      GUI=NONE      == build without GUI support
      GUI=GTK2      == build with GTK2 GUI support (default)
-     GUI=KDE4      == build with KDE4 GUI support
+     GUI=QT4       == build with QT4 GUI support
    Install Options:
      PREFIX=path   == install/uninstall prefix (default: /usr/local/)
      SHAREDIR=path == path to install shared data (default: PREFIX/share/mupen64plus/)
@@ -91,7 +91,7 @@ Type 'make' by itself to view all available build options:
      DBG_PROFILE=1 == dump profiling data for r4300 dynarec to data file
 }}}
 
-NOTE: If you want to build a nogui-only version of mupen64plus (without gtk+ dependencies), pass the GUI=NONE option to make, like this:
+NOTE: If you want to build a nogui-only version of the !Mupen64Plus core (without gtk+ dependencies), pass the GUI=NONE option to make, like this:
 {{{
  $ make GUI=NONE all
 }}}
