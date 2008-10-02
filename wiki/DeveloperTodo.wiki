@@ -8,3 +8,14 @@
    * Make defining rom folders for the rom browser easier
     * First start wizard?
    * Check that all icons are appropriate
+
+= Tillin9 =
+ * Rice
+   * Finish new Gtk GUI. 
+   * Update make file and NO GUI option.
+ * Glide
+   * Use messagebox system from Rice to resolve icon issues.
+ * Blight
+   * New Gtk GUI, check into PIF error on raw input with certain devices. (Issue 133)
+ * Core
+   * Fix file headers and license info.
