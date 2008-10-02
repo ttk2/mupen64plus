@@ -1,0 +1,10 @@
+= slougi =
+ * core
+  * pj64 cheat file support
+ * Qt4 UI
+  * win32 plugin support
+  * get os x port running
+  * Do a usability overhaul
+   * Make defining rom folders for the rom browser easier
+    * First start wizard?
+   * Check that all icons are appropriate
