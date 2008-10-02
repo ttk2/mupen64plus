@@ -1,4 +1,4 @@
-#summary How to install and run !Mupen64Plus on Intel Macintosh computers with OSX
+#summary How to install and run Mupen64Plus on Intel Macintosh computers with OSX
 
 Here are some basic usage instructions for !Mupen64Plus on Intel Macintosh computers with OSX, courtesy of roger6106.  As of October, 2008, all of the !Mupen64Plus software will compile and run, however there are some known problems with input and audio.
 
