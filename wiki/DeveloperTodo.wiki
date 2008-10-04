@@ -1,4 +1,4 @@
-r= slougi =
+= slougi =
  * core
   * pj64 cheat file support
  * Qt4 UI
@@ -22,6 +22,6 @@ r= slougi =
 
 = DarkJezter =
  * Netplay-branch (milestones for trunk inclusion)
-  * Lost packet retransmission - Not Started
-  * Start state checking (rom hashes, eeprom data, etc) - Not Started
-  * Clean-up and document command line arguments - Near Complete
+   * Lost packet retransmission - Not Started
+   * Start state checking (rom hashes, eeprom data, etc) - Not Started
+   * Clean-up and document command line arguments - Near Complete
