@@ -1,4 +1,4 @@
-= slougi =
+r= slougi =
  * core
   * pj64 cheat file support
  * Qt4 UI
@@ -19,3 +19,9 @@
    * New Gtk GUI, check into PIF error on raw input with certain devices. (Issue 133)
  * Core
    * Fix file headers and license info.
+
+= DarkJezter =
+ * Netplay-branch (milestones for trunk inclusion)
+  * Lost packet retransmission - Not Started
+  * Start state checking (rom hashes, eeprom data, etc) - Not Started
+  * Clean-up and document command line arguments - Near Complete
