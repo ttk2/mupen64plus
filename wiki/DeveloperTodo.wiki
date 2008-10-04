@@ -20,7 +20,7 @@
  * Core
    * Fix file headers and license info.
 
-= DarkJezter =
+= Darkjezter =
  * Netplay-branch (milestones for trunk inclusion)
    * Lost packet retransmission - Not Started
    * Start state checking (rom hashes, eeprom data, etc) - Not Started
