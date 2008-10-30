@@ -19,8 +19,8 @@
    * New Gtk GUI, check into PIF error on raw input with certain devices. (Issue 133)
    * New config file functions.
  * Core
-   ~~* Fix file headers and license info.~~
-   ~~* Include new demo rom.~~
+   ~~ * Fix file headers and license info. ~~
+   ~~ * Include new demo rom. ~~
 
 = Darkjezter =
  * Netplay-branch (milestones for trunk inclusion)
