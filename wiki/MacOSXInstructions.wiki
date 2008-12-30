@@ -137,8 +137,7 @@ You will first need an *Info.plist* file, sample here :
 }}}
 (note that the executable name in this Info.plist file is _launcher_ - I'll explain why below)
 
-You will also need icons for mupen and ROMs : mupen64plus.icns, mupen64plus.icns
-cp mupen64cart.icns
+You will also need icons for mupen and ROMs : mupen64plus.icns, mupen64cart.icns
 
 Then you can build the application bundle by using a simple shell script :
 {{{
@@ -301,5 +300,9 @@ This code can be built with something like
 {{{
 g++ launcher.cpp `wx-config --cxxflags --libs` -o launcher
 }}}
+
+With this launcher as main executable, plus a HTML file containing instructions as the launcher expects to find, you should finally have a distributable executable!
+
+To be continued...
 
 To be continued...
