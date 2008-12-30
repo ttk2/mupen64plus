@@ -49,12 +49,19 @@ LDFLAGS += -L/opt/local/lib -liconv -lpng
 
 
 ==BUILDING MUPEN64PLUS==
+We'll first set some environment variables to help mupen find GTK+. Also make sure sdl-config is in your PATH.
+{{{
+export PKG_CONFIG_PATH=/Library/Frameworks/Gtk.framework/Resources/dev/lib/pkgconfig
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/Library/Frameworks/GLib.framework/Resources/dev/lib/pkgconfig
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/Library/Frameworks/Cairo.framework/Resources/dev/lib/pkgconfig 
+}}}
+Then cross your fingers, it's time to build!
 {{{
 cd /path/to/mupen/trunk
 make all
 }}}
 
-Debug build:
+Or, for a debug build:
 {{{
 make DBGSYM=1 all
 }}}
