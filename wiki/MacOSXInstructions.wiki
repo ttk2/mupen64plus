@@ -1,35 +1,80 @@
 #summary How to install and run Mupen64Plus on Intel Macintosh computers with OSX
 
-Here are some basic usage instructions for !Mupen64Plus on Intel Macintosh computers with OSX, courtesy of roger6106.  As of October, 2008, all of the !Mupen64Plus software will compile and run, however there are some known problems with input and audio.  Please be aware that !Mupen64Plus does not currently run on older PowerPC based Macintosh computers.
+Here are some basic usage instructions for !Mupen64Plus on Intel Macintosh computers with OSX.  As of October, 2008, all of the !Mupen64Plus software will compile and run, however there are some known problems with input and audio.  Please be aware that !Mupen64Plus does not currently run on older PowerPC based Macintosh computers.
 
-==INSTALLING==
- * Install Xcode from the developer DVD that came with your Mac.
+Please note that these instructions are meant as guidelines for people who know what they're doing. If you don't have much experience building stuff from source, I would recommend that you wait for binary packages instead.
+
+==ENVIRONMENT==
+ * Install developer tools (Xcode) from the DVD that came with your Mac.
+
+
+==GETTING MUPEN64PLUS==
+You can simply download a source archive from the mupen64plus website; you can also use SVN. SVN example :
+{{{
+mkdir mupen64plus
+cd mupen64plus
+svn co svn://fascination.homelinux.net:7684/mupen64plus/trunk --username mupen64 --password Dyson5632-kart
+}}}
+
+==DEPENDENCIES==
+ * Mupen can be built with either GTK+ or Qt. It is expected that in the future the Qt version will work better, but until then the GTK+ version is easier to get to run. Install GTK+ from http://www.gtk-osx.org/. (If you like using macports, beware : GTK as installed from macports _will_ work on your computer, but you won't be able to package a distributable dmg. The installer from the website mentionned is much more handy for this)
+ 
+ * Other dependencies can be installed either from source or from macports.
+
+===(A) THE SOURCE CODE WAY===
+You will need SDL, SDL_ttf and its subdependencies (Freetype, fontconfig), and libpng.
+Find them with [http://www.google.com Google] and install them with the usual
+{{{
+./configure
+make
+sudo make install
+}}}
+
+===(B) THE MACPORTS WAY===
  * Install macports from [http://www.macports.org/install.php macports.org]
- * Open terminal (under Hard Drive, Applications, Utilities, Terminal). Type in the following commands. This may take an hour or two to complete.
-  * sudo port install pango +no_x11 cairo +quartz+pdf+no_x11 gtk2 +quartz libsdl_ttf
-  * mkdir mupen64plus ; cd mupen64plus
-  * svn co svn://fascination.homelinux.net:7684/mupen64plus/trunk --username mupen64 --password Dyson5632-kart
-  * cd trunk
-  * make clean ; make all
+ * Open terminal (under Hard Drive, Applications, Utilities, Terminal). Type in the following commands.
+{{{
+sudo port install libsdl_ttf libpng
+}}}
 
-==RUNNING==
- * cd mupen64plus/trunk/
- * ./mupen64plus
+Since macports installs librairies in a non-standard prefix, you will need to help the makefiles find librairies installed from macports. You can simply export LDFLAGS=-L/opt/local/lib or, more conveniently, change it on a more permanent basis by editing *pre.mk* in the mupen source - then locate the lines that read
+{{{
+OS = OSX
+LDFLAGS += -liconv -lpng
+}}}
+and make the second one
+{{{
+LDFLAGS += -L/opt/local/lib -liconv -lpng
+}}}
 
-To run no gui mode:
- * ./mupen64plus --nogui --gfx plugins/glN64.so --audio plugins/jttl_audio.so --input plugins/blight_input.so --rsp plugins/mupen64_hle_rsp_azimer.so --emumode 1 <rom-path>
 
-==CHECK FOR UPDATES==
- * svn log svn://fascination.homelinux.net:7684/mupen64plus/trunk --limit 5
-
-==UPDATING==
- * cd mupen64plus
- * svn co svn://fascination.homelinux.net:7684/mupen64plus/trunk --username mupen64 --password Dyson5632-kart
- * cd trunk
- * make clean ; make all
+==BUILDING MUPEN64PLUS==
+{{{
+cd /path/to/mupen/trunk
+make all
+}}}
 
 Debug build:
- * make DBGSYM=1 all
+{{{
+make DBGSYM=1 all
+}}}
 
-Also do this occasionally:
- * sudo port -v selfupdate
+==RUNNING==
+{{{
+cd mupen64plus/trunk/
+./mupen64plus
+}}}
+
+To run no gui mode :
+{{{
+# simplest :
+./mupen64plus --nogui <rom-path>
+
+# pass some settings
+./mupen64plus --nogui --gfx plugins/glN64.so --audio plugins/jttl_audio.so --input plugins/blight_input.so --rsp plugins/mupen64_hle_rsp_azimer.so --emumode 1 <rom-path>
+}}}
+
+
+Credits :
+initial instructions by by roger6106
+updates by Marianne Gagnon (Auria)
