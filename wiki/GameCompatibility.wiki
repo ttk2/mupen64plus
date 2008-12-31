@@ -17,8 +17,9 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || Batman Beyond               || glN64 ||
 || Bomberman 64                || various graphical glitches ||
 || Charlie Blast's Territory   || glN64 ||
+|| GoldenEye      || - ||
 || Iggy's Reckin' Balls        || !RiceVideo, Expansion Pack Disabled (Hangs at certain part of game) ||
-|| Kirby 64                    || - ||
+|| Kirby 64                    || Glide64 ||
 || Mario Kart 64               || - ||
 || Mortal Kombat 4             || Glide64) - Enable Sound Sync, Enable Compiled Jump, Disable Expansion Pack ||
 || Puyo Puyo 4: Puyo Puyo Party|| !RiceVideo (minor artifacts), Glide64 (disable compiled jump) requires lots of CPU power || 
@@ -41,7 +42,6 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || Battle Tanx    || hangs with any video plugin || 1.3-RC1-bin-64 ||
 || Blast Corps    || loads then crashes very fast || 1.3.-RC1-bin-32 ||
 || Donkey Kong 64 || can't get past into || 1.4, svn ||
-|| GoldenEye      || sky problems || - ||
 || Mystical Ninja || very laggy || - ||
 || Perfect Dark   || the game seems to have problems with being able to enter the next stage once the current one is complete || ? ||
 || Yoshi's Story || hangs with glide64 before entering gameplay || plug-svn-__r93__ ||
