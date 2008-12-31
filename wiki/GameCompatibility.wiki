@@ -36,7 +36,7 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || Paper Mario                 || Flickering ||
 || Rayman 2 - The great escape   || Glide64. Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle ||
 || Zelda - Majora's Mask       || problems with cutscene ||
-|| Yoshi's Story || hangs with glide64, display artefacts with Rice and glN64 || - ||
+|| Yoshi's Story || hangs with glide64, display artefacts with Rice and glN64 ||
 
 == Known stability problems in games ==
 
