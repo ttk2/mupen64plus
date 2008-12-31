@@ -5,6 +5,7 @@
 This list is a work in progress, and is not complete nor up-to-date -- feel free to contact a developer about adding to this list.
 
 || *Game name*                 || *Tips (best plug-in, suggested settings)* ||
+|| 40 Winks                    || Glide64 ||
 || 1080 Snowboarding           || Glide64 ||
 || Aerogauge                   || - ||
 || Aerofighter's Assault       || !RiceVideo or glN64 ||
@@ -14,30 +15,36 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || Automobili Lamborghini      || glN64 ||
 || Banjo-Kazooie               || !RiceVideo or Glide64 ||
 || Batman Beyond               || glN64 ||
+|| Bomberman 64                || various graphical glitches ||
+|| Charlie Blast's Territory   || glN64 ||
+|| Iggy's Reckin' Balls        || !RiceVideo, Expansion Pack Disabled (Hangs at certain part of game) ||
 || Kirby 64                    || - ||
 || Mario Kart 64               || - ||
-|| Super Mario 64              || - ||
-|| Iggy's Reckin' Balls        || !RiceVideo, Expansion Pack Disabled (Hangs at certain part of game) ||
-|| Charlie Blast's Territory   || glN64 ||
-|| Super Bowling 64            || !RiceVideo ||
-|| 40 Winks                    || Glide64 ||
-|| Star Fox 64                 || !RiceVideo or Glide64 ||
 || Mortal Kombat 4             || Glide64) - Enable Sound Sync, Enable Compiled Jump, Disable Expansion Pack ||
+|| Puyo Puyo 4: Puyo Puyo Party|| !RiceVideo (minor artifacts), requires lots of CPU power || 
+|| Super Mario 64              || - ||
+|| Super Bowling 64            || !RiceVideo ||
+|| Star Fox 64                 || !RiceVideo or Glide64 ||
 
 == Games that run with some problems ==
-|| *Game name*                 || *Tips (best plug-in, suggested settings)* ||
+|| *Game name*                 || *Explaination* ||
 || Banjo-Tooie                 ||!RiceVideo. Dynarec off. Impossible to go beyond level 2 for now because a button can't be pressed. ||
-|| Rayman - The great escape   || Glide64. Some collision problems, can be worked around by saving and trying repeatedly and/or changing view angle ||
+|| Jet Force Gemini            || GlN64; The bug doors don't turn green when the enemies die, the crosshair for the tri rocket and guided missile launcher don't show, Vela's boss has problems, the screen is all black unless settings are fiddled with ||
+|| Paper Mario                 || Flickering ||
+|| Rayman 2 - The great escape   || Glide64. Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle ||
+|| Zelda - Majora's Mask       || problems with cutscene ||
 
 == Known stability problems in games ==
 
 || *Game name*                 || *What happens* || *Tested with version* ||
 || Armorines - Project SWARM   || hangs with any video plugin || 1.3-RC1-bin-64 || 
-|| Battle Tanx || hangs with any video plugin || 1.3-RC1-bin-64 ||
-|| Blast Corps || loads then crashes very fast || 1.3.-RC1-bin-32 ||
+|| Battle Tanx    || hangs with any video plugin || 1.3-RC1-bin-64 ||
+|| Blast Corps    || loads then crashes very fast || 1.3.-RC1-bin-32 ||
+|| Donkey Kong 64 || can't get past into || 1.4, svn ||
+|| GoldenEye      || sky problems || - ||
+|| Mystical Ninja || very laggy || - ||
+|| Perfect Dark   || the game seems to have problems with being able to enter the next stage once the current one is complete || ? ||
 || Yoshi's Story || hangs with glide64 before entering gameplay || plug-svn-__r93__ ||
-|| Puyo Puyo 4: Puyo Puyo Party || hangs with glide64 before entering main screen, hangs with glN64 after ucode unknown screen (even if the proper ucode is selected) || plug-svn-__r93__ ||
-
 
 == Known visual artifacts in games ==
 
@@ -129,7 +136,12 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 
  || _ver:_ mupen64plus-1.3-RC1-bin-64 || _plugins:_ rice-1.2-dev AND glN64-0.4.1 ||
  * In Level 4-1 Astair's Lair you have to run away from a rolling stone. The sad thing is that's invisible. There are most likely more objects in the game which are invisible because of this bug but I only noticed this one so far.
+ * The questions in the mathfun event in 3-10 are black and not possible to see.
+ * In world 4, the screen is supposed to be dark, with only the center having a circle of light visible. This was done to simulate a dark cave with a flashlight shining on Marina. So far no plugin renders this correctly. Either the dark and light are swapped, or the screen is all light and no dark, but the correct "flashlight affect" is not present.
  * The message "two events of type 8 in queue" appears countless times in the console
+ * Game lags (on stages 2-3, 2-8, the dash events in 3-10, and the hurdle event in 3-10, during some on screen explosions in worlds 3 and 5)
+ * There are some outline issues, like in the intro, and in world 4 some plugins render a blue outline in the background.
+ * in world 2, many of the textures of the grayish brown walls are completely off. gln64 1.1.1 renders these textures 100% accurate.
 
 *Puyo Puyo 4: Puyo Puyo Party*
  CRC: 1798805084 12582912
