@@ -32,9 +32,11 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || *Game name*                 || *Explaination* ||
 || Banjo-Tooie                 ||!RiceVideo. Dynarec off. Impossible to go beyond level 2 for now because a button can't be pressed. ||
 || Jet Force Gemini            || GlN64; The bug doors don't turn green when the enemies die, the crosshair for the tri rocket and guided missile launcher don't show, Vela's boss has problems, the screen is all black unless settings are fiddled with ||
+|| Mystical Ninja || very laggy ||
 || Paper Mario                 || Flickering ||
 || Rayman 2 - The great escape   || Glide64. Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle ||
 || Zelda - Majora's Mask       || problems with cutscene ||
+|| Yoshi's Story || hangs with glide64, display artefacts with Rice and glN64 || - ||
 
 == Known stability problems in games ==
 
@@ -43,9 +45,7 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || Battle Tanx    || hangs with any video plugin || 1.3-RC1-bin-64 ||
 || Blast Corps    || loads then crashes very fast || 1.3.-RC1-bin-32 ||
 || Donkey Kong 64 || can't get past into || 1.4, svn ||
-|| Mystical Ninja || very laggy || - ||
 || Perfect Dark   || the game seems to have problems with being able to enter the next stage once the current one is complete || ? ||
-|| Yoshi's Story || hangs with glide64, display artefacts with Rice and glN64 || - ||
 
 == Known visual artifacts in games ==
 
