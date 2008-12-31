@@ -26,6 +26,7 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || Super Mario 64              || - ||
 || Super Bowling 64            || !RiceVideo ||
 || Star Fox 64                 || !RiceVideo or Glide64 ||
+|| Top Gear Rally              || - ||
 
 == Games that run with some problems ==
 || *Game name*                 || *Explaination* ||
