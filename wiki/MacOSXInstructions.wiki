@@ -81,6 +81,8 @@ To run no gui mode :
 ./mupen64plus --nogui --gfx plugins/glN64.so --audio plugins/jttl_audio.so --input plugins/blight_input.so --rsp plugins/mupen64_hle_rsp_azimer.so --emumode 1 <rom-path>
 }}}
 
+Be aware that input may not work if you launch ROMs in GUI mode.
+
 ==PACKAGING MUPEN64PLUS==
 If all you wanted is to play with !Mupen64Plus, this section won't apply to you; but we want to share the fun with others, don't we? From now on, I'll concentrate on how to build a package you can send to others.
 
