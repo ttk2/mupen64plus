@@ -45,7 +45,7 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || Donkey Kong 64 || can't get past into || 1.4, svn ||
 || Mystical Ninja || very laggy || - ||
 || Perfect Dark   || the game seems to have problems with being able to enter the next stage once the current one is complete || ? ||
-|| Yoshi's Story || hangs with glide64 before entering gameplay || plug-svn-__r93__ ||
+|| Yoshi's Story || hangs with glide64, display artefacts with Rice and glN64 || - ||
 
 == Known visual artifacts in games ==
 
