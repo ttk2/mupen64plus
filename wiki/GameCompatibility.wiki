@@ -21,7 +21,7 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || Kirby 64                    || - ||
 || Mario Kart 64               || - ||
 || Mortal Kombat 4             || Glide64) - Enable Sound Sync, Enable Compiled Jump, Disable Expansion Pack ||
-|| Puyo Puyo 4: Puyo Puyo Party|| !RiceVideo (minor artifacts), requires lots of CPU power || 
+|| Puyo Puyo 4: Puyo Puyo Party|| !RiceVideo (minor artifacts), Glide64 (disable compiled jump) requires lots of CPU power || 
 || Super Mario 64              || - ||
 || Super Bowling 64            || !RiceVideo ||
 || Star Fox 64                 || !RiceVideo or Glide64 ||
