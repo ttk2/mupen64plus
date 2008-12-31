@@ -2,50 +2,42 @@
 
 == Games known to work well with the latest SVN of !Mupen64Plus (best video plugin) ==
 
-(this list is a work in progress, and is not complete -- feel free to contact a developer about adding to this list.)
+This list is a work in progress, and is not complete nor up-to-date -- feel free to contact a developer about adding to this list.
 
- * 1080 Snowboarding (Glide64)
- * Aerogauge
- * Aerofighter's Assault (!RiceVideo or glN64)
- * Airboarders 64
- * Army Men - Sarge's Heroes 2 (glN64)
- * Asteroids Hyper 64
- * Automobili Lamborghini (glN64)
- * Banjo-Kazooie (!RiceVideo or Glide64)
- * Banjo-Tooie (!RiceVideo)
- * Batman Beyond (glN64)
- * Kirby 64
- * Mario Kart 64
- * Super Mario 64
- * Iggy's Reckin' Balls (!RiceVideo) - Expansion Pack Disabled (Hangs at certain part of game)
- * Charlie Blast's Territory (glN64)
- * Super Bowling 64 (!RiceVideo)
- * 40 Winks (Glide64)
- * Star Fox 64 (!RiceVideo or Glide64)
- * Mortal Kombat 4 (Glide64) - Enable Sound Sync, Enable Compiled Jump, Disable Expansion Pack
+|| *Game name*                 || *Tips (best plug-in, suggested settings)* ||
+|| 1080 Snowboarding           || Glide64 ||
+|| Aerogauge                   || - ||
+|| Aerofighter's Assault       || !RiceVideo or glN64 ||
+|| Airboarders 64              || - ||
+|| Army Men - Sarge's Heroes 2 || glN64 ||
+|| Asteroids Hyper 64          || - ||
+|| Automobili Lamborghini      || glN64 ||
+|| Banjo-Kazooie               || !RiceVideo or Glide64 ||
+|| Batman Beyond               || glN64 ||
+|| Kirby 64                    || - ||
+|| Mario Kart 64               || - ||
+|| Super Mario 64              || - ||
+|| Iggy's Reckin' Balls        || !RiceVideo, Expansion Pack Disabled (Hangs at certain part of game) ||
+|| Charlie Blast's Territory   || glN64 ||
+|| Super Bowling 64            || !RiceVideo ||
+|| 40 Winks                    || Glide64 ||
+|| Star Fox 64                 || !RiceVideo or Glide64 ||
+|| Mortal Kombat 4             || Glide64) - Enable Sound Sync, Enable Compiled Jump, Disable Expansion Pack ||
+
+== Games that run with some problems ==
+|| *Game name*                 || *Tips (best plug-in, suggested settings)* ||
+|| Banjo-Tooie                 ||!RiceVideo. Dynarec off. Impossible to go beyond level 2 for now because a button can't be pressed. ||
+|| Rayman - The great escape   || Glide64. Some collision problems, can be worked around by saving and trying repeatedly and/or changing view angle ||
 
 == Known stability problems in games ==
 
-* Armorines - Project SWARM *
- * _version:_ mupen64plus-1.3-RC1-bin-64
- * hangs with any video plugin
+|| *Game name*                 || *What happens* || *Tested with version* ||
+|| Armorines - Project SWARM   || hangs with any video plugin || 1.3-RC1-bin-64 || 
+|| Battle Tanx || hangs with any video plugin || 1.3-RC1-bin-64 ||
+|| Blast Corps || loads then crashes very fast || 1.3.-RC1-bin-32 ||
+|| Yoshi's Story || hangs with glide64 before entering gameplay || plug-svn-__r93__ ||
+|| Puyo Puyo 4: Puyo Puyo Party || hangs with glide64 before entering main screen, hangs with glN64 after ucode unknown screen (even if the proper ucode is selected) || plug-svn-__r93__ ||
 
-* Battle Tanx *
- * _version:_ mupen64plus-1.3-RC1-bin-64
- * hangs with any video plugin
-
-* Blast Corps *
- * _version:_ mupen64plus-1.3.-RC1-bin-32
- * loads then crashes very fast *
-
-* Yoshi's Story *
- * _version:_ mupen64plug-svn-__r93__
- * hangs with glide64 before entering gameplay
-
-* Puyo Puyo 4: Puyo Puyo Party *
- * _version:_ mupen64plug-svn-__r93__
- * hangs with glide64 before entering main screen
- * hangs with glN64 after ucode unknown screen (even if the proper ucode is selected)
 
 == Known visual artifacts in games ==
 
