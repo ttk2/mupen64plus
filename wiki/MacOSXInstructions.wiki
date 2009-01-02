@@ -185,9 +185,7 @@ dylibbundler -od -b $FIX_LIST -d $APP_CONTENTS/libs/
 
 Voila it's ready! Well actually, it should be in theory... In practice there is a bug on mac : when using both SDL and GTK+ at the same time, both grab the event loop and conflict with each other. The result of this is that ROMs cannot be launched from the GTK GUI, they can only be run in _nogui_ mode. The GTK interface however still remains necessary to configure mupen. Until this issue gets fixed properly, I work around it by placing a second executable in the bundle called _launcher_ (see the bundling script above, there is a commented out line that does this). This executable can then act as a bridge to either open the GTK GUI and configure mupen, either launch a ROM in nogui mode.
 
-To make the launcher, I used this wxWidgets code (I can hear people asking "why not Cocoa?". Well, simply because I don't know Cocoa `^`o`^`)
-
-MacLauncher
+--> MacLauncher
 
 With this launcher as main executable, plus a HTML file containing instructions as the launcher expects to find, you should finally have a distributable executable!
 
