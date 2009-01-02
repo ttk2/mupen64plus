@@ -187,7 +187,6 @@ Voila it's ready! Well actually, it should be in theory... In practice there is 
 
 --> MacLauncher
 
-With this launcher as main executable, plus a HTML file containing instructions as the launcher expects to find, you should finally have a distributable executable!
-
+With this launcher as main executable, you should finally have a distributable executable!
 
 To be continued...
