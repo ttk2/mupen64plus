@@ -125,7 +125,7 @@ g++ launcher.cpp `wx-config --cxxflags --libs` -o launcher
 }}}
 
 This launcher displays a simple HTML file to the user containing instructions.
-Put it in *Mupen64Plus.app/Contents/Resources/beta_msg.htm*
+Put it in *!Mupen64Plus.app/Contents/Resources/beta_msg.htm*
 {{{
 <html>
 <body>
