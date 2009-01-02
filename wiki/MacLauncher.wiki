@@ -124,7 +124,8 @@ This code can be built with something like
 g++ launcher.cpp `wx-config --cxxflags --libs` -o launcher
 }}}
 
-HTML File : Put in /Contents/Resources/beta_msg.htm
+This launcher displays a simple HTML file to the user containing instructions.
+Put it in *Mupen64Plus.app/Contents/Resources/beta_msg.htm*
 {{{
 <html>
 <body>
