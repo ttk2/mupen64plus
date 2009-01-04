@@ -54,7 +54,7 @@
  * r669: string function causing crash on 64-bit linux
  * r667: issue #88 - added basic view menu in GTK GUI
  * r628,633: Small patch to get glide64.so to compile with O3 optimizations
- * r622: Fixed segfault in Glide64 as per issue 133
+ * r622: Fixed segfault in Glide64 as per issue 113
  * r619: fix LIRC build to integrate w/ new screenshot mechanism
  * r608: another couple of memory leak fixes from Tub, in main/config.c
  * r605: fix from Tub for free() bug in main/util.c/list_delete()
