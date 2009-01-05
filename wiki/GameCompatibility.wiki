@@ -28,24 +28,24 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || Top Gear Rally              || - ||
 
 == Known issues in games ==
-|| *Game name*                 || *Explaination* || *Tested with Version* ||
-|| Aidyn Chronicles || _!RiceVideo:_ blue flashes, _glN64:_  missing all polygons, _Glide64:_ crash, distorted letters || 1.3RC1 bin-64 ||
-|| Army Men - Air Combat || _!RiceVideo:_ triangles flash black, _glN64:_  gaps in-between quads, _Glide64:_ distorted letters || 1.3RC1 bin64 ||
-|| Army Men - Sarge's Heroes || _!RiceVideo:_ triangles flash blue, _glN64:_  missing all polygons, _Glide64:_ distorted letters || 1.3RC1 bin64 ||
-||  Army Men - Sarge's Heroes 2 || _!RiceVideo:_ Model polygons flashing black; _Glide64:_ distorted letters || 1.3 RC1 bin64 ||
-|| Automobili Lamborghini || _!RiceVideo:_ Model polygons flashing blue; _Glide64:_ vertical gaps in flag (minor) || 1.3RC1 bin64 ||
-|| Banjo-Kazooie || _glN64:_  Screen size wrong; washed-out textures || 1.3RC1 bin64 ||
-|| Banjo-Tooie                 || Works Best : !RiceVideo with Dynarec off. Issues : Impossible to go beyond level 2 for now because a button can't be pressed. World is white/yellow in Glide/glN. Letters' texture distorted in Rice || 1.5 ||
-|| Batman Beyond || _!RiceVideo:_ Model polygons flashing black, _Glide64:_ distorted letters || 1.3RC1 bin64 ||
-|| Bomberman 64                || various graphical glitches ||
-|| Conker's Bad Fur Day || Best: Rice. Some minor visual artifacts. Some collision detection issues : do not use collision issues to go to places where you're not supposed to go yet, it'll bite you! || 1.5 ||
-|| Jet Force Gemini            || GlN64; The bug doors don't turn green when the enemies die, the crosshair for the tri rocket and guided missile launcher don't show, Vela's boss has problems, the screen is all black unless settings are fiddled with || ||
-|| Mystical Ninja || very laggy || ||
-|| Paper Mario                 || Flickering || ||
-|| Rayman 2 - The great escape   || Glide64. Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle || ||
-|| San Francisco Rush || textures are not aligned correctly || ||
-|| Zelda - Majora's Mask       || problems with cutscene || ||
-|| Yoshi's Story || hangs with glide64, display artefacts with Rice and glN64 || ||
+|| *Game name*                 || *Works best with * || *Explaination* || *Tested with Version* ||
+|| Aidyn Chronicles            ||                    || _!RiceVideo:_ blue flashes, _glN64:_  missing all polygons, _Glide64:_ crash, distorted letters || 1.3RC1 bin-64 ||
+|| Army Men - Air Combat       ||                    || _!RiceVideo:_ triangles flash black, _glN64:_  gaps in-between quads, _Glide64:_ distorted letters || 1.3RC1 bin64 ||
+|| Army Men - Sarge's Heroes   ||                    || _!RiceVideo:_ triangles flash blue, _glN64:_  missing all polygons, _Glide64:_ distorted letters || 1.3RC1 bin64 ||
+||  Army Men - Sarge's Heroes 2||                    || _!RiceVideo:_ Model polygons flashing black; _Glide64:_ distorted letters || 1.3 RC1 bin64 ||
+|| Automobili Lamborghini      ||                    ||_!RiceVideo:_ Model polygons flashing blue; _Glide64:_ vertical gaps in flag (minor) || 1.3RC1 bin64 ||
+|| Banjo-Kazooie               || glide or !RiceVideo || _glN64:_  Screen size wrong; washed-out textures || 1.3RC1 bin64 ||
+|| Banjo-Tooie                 || !RiceVideo with Dynarec off. || Impossible to go beyond level 2 for now because a button can't be pressed. World is white/yellow in Glide64/glN64. Letters' texture distorted in Rice || 1.5 ||
+|| Batman Beyond               ||                    || _!RiceVideo:_ Model polygons flashing black, _Glide64:_ distorted letters || 1.3RC1 bin64 ||
+|| Bomberman 64                ||                    ||various graphical glitches ||
+|| Conker's Bad Fur Day        || Rice               || Some minor visual artifacts. Some collision detection issues : do not use collision issues to go to places where you're not supposed to go yet, it'll bite you! || 1.5 ||
+|| Jet Force Gemini            || !GlN64             || The bug doors don't turn green when the enemies die, the crosshair for the tri rocket and guided missile launcher don't show, Vela's boss has problems, the screen is all black unless settings are fiddled with || ||
+|| Mystical Ninja              ||                    || very laggy || ||
+|| Paper Mario                 ||                    || Flickering || ||
+|| Rayman 2 - The great escape || Glide64            || Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle || 1.5 ||
+|| San Francisco Rush          ||                    || textures are not aligned correctly || ||
+|| Zelda - Majora's Mask       ||                    || problems with cutscene || ||
+|| Yoshi's Story               ||                    || hangs with glide64, display artefacts with Rice and glN64 || ||
 
 
 == Known stability problems in games ==
