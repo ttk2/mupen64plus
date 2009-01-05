@@ -54,7 +54,7 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || Armorines - Project SWARM   || hangs with any video plugin || 1.3-RC1-bin-64 || 
 || Battle Tanx    || hangs with any video plugin || 1.3-RC1-bin-64 ||
 || Blast Corps    || loads then crashes very fast || 1.3.-RC1-bin-32 ||
-|| Donkey Kong 64 || can't get past into || 1.4, svn ||
+|| Donkey Kong 64 || can't get past into || 1.4, 1.5 ||
 || Perfect Dark   || the game seems to have problems with being able to enter the next stage once the current one is complete || ? ||
 
 == Detailed info about issues in some games ==
