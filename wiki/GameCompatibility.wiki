@@ -7,7 +7,7 @@
 Legend :
 ||<font color="green"> =) </font> || Works great with minor issues or none ||
 ||<font color="orange"> =| </font>|| Some issues, might remain playable ||
-||<font color="red"> =( </font>   || Important issues ||
+||<font color="red"> =( </font>   || Important issues hinder playability ||
 
 ||                                || *Game name*                 || *Works best with* || *Known issues * ||
 ||<font color="green"> =) </font> || 40 Winks                    || Glide64           || ||
