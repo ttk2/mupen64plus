@@ -43,6 +43,7 @@ Legend :
 ||<font color="orange"> =| </font>|| Perfect Dark                ||                   ||  the game seems to have problems with being able to enter the next stage once the current one is complete ||
 ||<font color="green"> =) </font> || Puyo Puyo 4: Party          || !RiceVideo (minor artifacts), Glide64 (disable compiled jump) || requires lots of CPU power. glN64: UCode is not detected, selecting the proper UCode results in a freeze. Glide64: Crashes after intro video (before entry into menu) ||
 ||<font color="orange"> =| </font>|| Rayman 2 - The great escape || Glide64           || Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle (mupen 1.5) ||
+||<font color="green"> =) </font> || Rush 2 || Glide64 || Artifacts with !RiceVideo and glN64 ||
 ||<font color="orange"> =| </font>|| San Francisco Rush          ||                   || textures are not aligned correctly ||
 ||<font color="green"> =) </font> || Super Mario 64              ||                   || ||
 ||<font color="green"> =) </font> || Super Bowling 64            || !RiceVideo        || ||
