@@ -2,7 +2,7 @@
 
 == Games known to work well with !Mupen64Plus ==
 
-*This list is a work in progress, and is not complete nor up-to-date* -- feel free to contact a developer about adding to this list.
+*This list is a work in progress, and is not complete nor up-to-date*. furthermore, the rating is subjective, people who report game compatibility may rate it higher or lower depending on how much glitches annoy them -- feel free to contact a developer about adding to this list.
 
 Legend :
 ||<font color="green"> =) </font> || Works great with minor issues or none ||
