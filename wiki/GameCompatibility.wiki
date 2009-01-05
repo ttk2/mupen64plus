@@ -1,10 +1,10 @@
 #summary List of games and status with Mupen64Plus
 
-== Games known to work well with the latest SVN of !Mupen64Plus (best video plugin) ==
+== Games known to work well with !Mupen64Plus ==
 
 This list is a work in progress, and is not complete nor up-to-date -- feel free to contact a developer about adding to this list.
 
-|| *Game name*                 || *Tips (best plug-in, suggested settings)* ||
+|| *Game name*                 || *Works best with* ||
 || 40 Winks                    || Glide64 ||
 || 1080 Snowboarding           || Glide64 ||
 || Aerogauge                   || - ||
@@ -15,7 +15,6 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || Automobili Lamborghini      || glN64 ||
 || Banjo-Kazooie               || !RiceVideo or Glide64 ||
 || Batman Beyond               || glN64 ||
-|| Bomberman 64                || various graphical glitches ||
 || Charlie Blast's Territory   || glN64 ||
 || GoldenEye      || - ||
 || Iggy's Reckin' Balls        || !RiceVideo, Expansion Pack Disabled (Hangs at certain part of game) ||
@@ -28,15 +27,26 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || Star Fox 64                 || !RiceVideo or Glide64 ||
 || Top Gear Rally              || - ||
 
-== Games that run with some problems ==
-|| *Game name*                 || *Explaination* ||
-|| Banjo-Tooie                 ||!RiceVideo. Dynarec off. Impossible to go beyond level 2 for now because a button can't be pressed. ||
-|| Jet Force Gemini            || GlN64; The bug doors don't turn green when the enemies die, the crosshair for the tri rocket and guided missile launcher don't show, Vela's boss has problems, the screen is all black unless settings are fiddled with ||
-|| Mystical Ninja || very laggy ||
-|| Paper Mario                 || Flickering ||
-|| Rayman 2 - The great escape   || Glide64. Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle ||
-|| Zelda - Majora's Mask       || problems with cutscene ||
-|| Yoshi's Story || hangs with glide64, display artefacts with Rice and glN64 ||
+== Known issues in games ==
+|| *Game name*                 || *Explaination* || *Tested with Version* ||
+|| Aidyn Chronicles || _!RiceVideo:_ blue flashes, _glN64:_  missing all polygons, _Glide64:_ crash, distorted letters || 1.3RC1 bin-64 ||
+|| Army Men - Air Combat || _!RiceVideo:_ triangles flash black, _glN64:_  gaps in-between quads, _Glide64:_ distorted letters || 1.3RC1 bin64 ||
+|| Army Men - Sarge's Heroes || _!RiceVideo:_ triangles flash blue, _glN64:_  missing all polygons, _Glide64:_ distorted letters || 1.3RC1 bin64 ||
+||  Army Men - Sarge's Heroes 2 || _!RiceVideo:_ Model polygons flashing black; _Glide64:_ distorted letters || 1.3 RC1 bin64 ||
+|| Automobili Lamborghini || _!RiceVideo:_ Model polygons flashing blue; _Glide64:_ vertical gaps in flag (minor) || 1.3RC1 bin64 ||
+|| Banjo-Kazooie || _glN64:_  Screen size wrong; washed-out textures || 1.3RC1 bin64 ||
+|| Banjo-Tooie                 || Works Best : !RiceVideo with Dynarec off. Issues : Impossible to go beyond level 2 for now because a button can't be pressed. World is white/yellow in Glide/glN. Letters' texture distorted in Rice || 1.5 ||
+|| Batman Beyond || _!RiceVideo:_ Model polygons flashing black, _Glide64:_ distorted letters || 1.3RC1 bin64 ||
+|| Bomberman 64                || various graphical glitches ||
+|| Conker's Bad Fur Day || Best: Rice. Some minor visual artifacts. Some collision detection issues : do not use collision issues to go to places where you're not supposed to go yet, it'll bite you! || 1.5 ||
+|| Jet Force Gemini            || GlN64; The bug doors don't turn green when the enemies die, the crosshair for the tri rocket and guided missile launcher don't show, Vela's boss has problems, the screen is all black unless settings are fiddled with || ||
+|| Mystical Ninja || very laggy || ||
+|| Paper Mario                 || Flickering || ||
+|| Rayman 2 - The great escape   || Glide64. Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle || ||
+|| San Francisco Rush || textures are not aligned correctly || ||
+|| Zelda - Majora's Mask       || problems with cutscene || ||
+|| Yoshi's Story || hangs with glide64, display artefacts with Rice and glN64 || ||
+
 
 == Known stability problems in games ==
 
@@ -47,49 +57,8 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 || Donkey Kong 64 || can't get past into || 1.4, svn ||
 || Perfect Dark   || the game seems to have problems with being able to enter the next stage once the current one is complete || ? ||
 
-== Known visual artifacts in games ==
+== Detailed info about issues in some games ==
 
-*Aidyn Chronicles*
- * _version:_ mupen64plus-1.3-RC1-bin-64
- * _!RiceVideo:_ blue flashes
- * _glN64:_  missing all polygons
- * _Glide64:_ crash, distorted letters
-
-*Army Men - Air Combat*
- * _version:_ mupen64plus-1.3-RC1-bin-64
- * _!RiceVideo:_ triangles flash black
- * _glN64:_  gaps in-between quads
- * _Glide64:_ distorted letters
-
-*Army Men - Sarge's Heroes*
- * _version:_ mupen64plus-1.3-RC1-bin-64
- * _!RiceVideo:_ triangles flash blue
- * _glN64:_  missing all polygons
- * _Glide64:_ distorted letters
-
-*Army Men - Sarge's Heroes 2*
- * _version:_ mupen64plus-1.3-RC1-bin-64
- * _!RiceVideo:_ Model polygons flashing black
- * _Glide64:_ distorted letters
-
-*Automobili Lamborghini*
- * _version:_ mupen64plus-1.3-RC1-bin-64
- * _!RiceVideo:_ Model polygons flashing blue
- * _Glide64:_ vertical gaps in flag (minor)
-
-*Banjo-Kazooie*
- * _version:_ mupen64plus-1.3-RC1-bin-64
- * _glN64:_  Screen size wrong; washed-out textures
-
-*Banjo-Tooie*
- * _version:_ mupen64plus-1.3-RC1-bin-64
- * _glN64:_  texture color incorrect
- * _Glide64:_ distorted letters.  world is white.
-
-*Batman Beyond*
- * _version:_ mupen64plus-1.3-RC1-bin-64
- * _!RiceVideo:_ Model polygons flashing black
- * _Glide64:_ distorted letters
 
 *Mario Kart 64*
  CRC: 3e5055b6 2e92da52
@@ -152,9 +121,6 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
  * glN64: UCode is not detected. Selecting the proper UCode results in a freeze.
  * Glide64: Crashes after intro video (before entry into menu)
  * Rice's Video: Runs mostly bug free with very minor artifacts on occasion. Requires a lot of CPU power.
-
-*San Francisco Rush*
- * textures are not aligned correctly
 
 *Yoshi's Story*
  CRC: 3612688085 16777216
