@@ -41,7 +41,7 @@ Legend :
 ||<font color="orange"> =| </font>|| Mystical Ninja              ||                   || very laggy ||
 ||<font color="orange"> =| </font>|| Paper Mario                 ||                   || Flickering ||
 ||<font color="orange"> =| </font>|| Perfect Dark                ||                   ||  the game seems to have problems with being able to enter the next stage once the current one is complete ||
-||<font color="green"> =) </font> || Puyo Puyo 4: Puyo Puyo Party|| !RiceVideo (minor artifacts), Glide64 (disable compiled jump) requires lots of CPU power ||  ||
+||<font color="green"> =) </font> || Puyo Puyo 4: Party          || !RiceVideo (minor artifacts), Glide64 (disable compiled jump) || requires lots of CPU power. glN64: UCode is not detected, selecting the proper UCode results in a freeze. Glide64: Crashes after intro video (before entry into menu) ||
 ||<font color="orange"> =| </font>|| Rayman 2 - The great escape || Glide64           || Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle (mupen 1.5) ||
 ||<font color="orange"> =| </font>|| San Francisco Rush          ||                   || textures are not aligned correctly ||
 ||<font color="green"> =) </font> || Super Mario 64              ||                   || ||
@@ -110,15 +110,6 @@ Legend :
  * Game lags (on stages 2-3, 2-8, the dash events in 3-10, and the hurdle event in 3-10, during some on screen explosions in worlds 3 and 5)
  * There are some outline issues, like in the intro, and in world 4 some plugins render a blue outline in the background.
  * in world 2, many of the textures of the grayish brown walls are completely off. gln64 1.1.1 renders these textures 100% accurate.
-
-*Puyo Puyo 4: Puyo Puyo Party*
- CRC: 1798805084 12582912
- MD5: 22B86AB3F320A607899A0516C90A24D0
-
- || _ver:_ mupen64plug-svn-__r93__ || _plugins:_ rice-1.3-dev AND glN64-0.4.1 AND glide64 ||
- * glN64: UCode is not detected. Selecting the proper UCode results in a freeze.
- * Glide64: Crashes after intro video (before entry into menu)
- * Rice's Video: Runs mostly bug free with very minor artifacts on occasion. Requires a lot of CPU power.
 
 *Yoshi's Story*
  CRC: 3612688085 16777216
