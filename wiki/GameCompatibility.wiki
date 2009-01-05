@@ -2,60 +2,54 @@
 
 == Games known to work well with !Mupen64Plus ==
 
-This list is a work in progress, and is not complete nor up-to-date -- feel free to contact a developer about adding to this list.
+*This list is a work in progress, and is not complete nor up-to-date* -- feel free to contact a developer about adding to this list.
 
-|| *Game name*                 || *Works best with* ||
-|| 40 Winks                    || Glide64 ||
-|| 1080 Snowboarding           || Glide64 ||
-|| Aerogauge                   || - ||
-|| Aerofighter's Assault       || !RiceVideo or glN64 ||
-|| Airboarders 64              || - ||
-|| Army Men - Sarge's Heroes 2 || glN64 ||
-|| Asteroids Hyper 64          || - ||
-|| Automobili Lamborghini      || glN64 ||
-|| Banjo-Kazooie               || !RiceVideo or Glide64 ||
-|| Batman Beyond               || glN64 ||
-|| Charlie Blast's Territory   || glN64 ||
-|| GoldenEye      || - ||
-|| Iggy's Reckin' Balls        || !RiceVideo, Expansion Pack Disabled (Hangs at certain part of game) ||
-|| Kirby 64                    || Glide64 ||
-|| Mario Kart 64               || - ||
-|| Mortal Kombat 4             || Glide64) - Enable Sound Sync, Enable Compiled Jump, Disable Expansion Pack ||
-|| Puyo Puyo 4: Puyo Puyo Party|| !RiceVideo (minor artifacts), Glide64 (disable compiled jump) requires lots of CPU power || 
-|| Super Mario 64              || - ||
-|| Super Bowling 64            || !RiceVideo ||
-|| Star Fox 64                 || !RiceVideo or Glide64 ||
-|| Top Gear Rally              || - ||
+Legend :
+||<font color="green"> =) </font> || Works great with minor issues or none ||
+||<font color="orange"> =| </font>|| Some issues, might remains playable ||
+||<font color="red"> =( </font>   || Important issues ||
 
-== Known issues in games ==
-|| *Game name*                 || *Works best with * || *Explaination* || *Tested with Version* ||
-|| Aidyn Chronicles            ||                    || _!RiceVideo:_ blue flashes, _glN64:_  missing all polygons, _Glide64:_ crash, distorted letters || 1.3RC1 bin-64 ||
-|| Army Men - Air Combat       ||                    || _!RiceVideo:_ triangles flash black, _glN64:_  gaps in-between quads, _Glide64:_ distorted letters || 1.3RC1 bin64 ||
-|| Army Men - Sarge's Heroes   ||                    || _!RiceVideo:_ triangles flash blue, _glN64:_  missing all polygons, _Glide64:_ distorted letters || 1.3RC1 bin64 ||
-||  Army Men - Sarge's Heroes 2||                    || _!RiceVideo:_ Model polygons flashing black; _Glide64:_ distorted letters || 1.3 RC1 bin64 ||
-|| Automobili Lamborghini      ||                    ||_!RiceVideo:_ Model polygons flashing blue; _Glide64:_ vertical gaps in flag (minor) || 1.3RC1 bin64 ||
-|| Banjo-Kazooie               || glide or !RiceVideo || _glN64:_  Screen size wrong; washed-out textures || 1.3RC1 bin64 ||
-|| Banjo-Tooie                 || !RiceVideo with Dynarec off. || Impossible to go beyond level 2 for now because a button can't be pressed. World is white/yellow in Glide64/glN64. Letters' texture distorted in Rice || 1.5 ||
-|| Batman Beyond               ||                    || _!RiceVideo:_ Model polygons flashing black, _Glide64:_ distorted letters || 1.3RC1 bin64 ||
-|| Bomberman 64                ||                    ||various graphical glitches ||
-|| Conker's Bad Fur Day        || Rice               || Some minor visual artifacts. Some collision detection issues : do not use collision issues to go to places where you're not supposed to go yet, it'll bite you! || 1.5 ||
-|| Jet Force Gemini            || !GlN64             || The bug doors don't turn green when the enemies die, the crosshair for the tri rocket and guided missile launcher don't show, Vela's boss has problems, the screen is all black unless settings are fiddled with || ||
-|| Mystical Ninja              ||                    || very laggy || ||
-|| Paper Mario                 ||                    || Flickering || ||
-|| Rayman 2 - The great escape || Glide64            || Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle || 1.5 ||
-|| San Francisco Rush          ||                    || textures are not aligned correctly || ||
-|| Zelda - Majora's Mask       ||                    || problems with cutscene || ||
-|| Yoshi's Story               ||                    || hangs with glide64, display artefacts with Rice and glN64 || ||
+||                                || *Game name*                 || *Works best with* || *Known issues * ||
+||<font color="green"> =) </font> || 40 Winks                    || Glide64           || ||
+||<font color="green"> =) </font> || 1080 Snowboarding           || Glide64           || ||
+||<font color="green"> =) </font> || Aerogauge                   ||                   || ||
+||<font color="green"> =) </font> || Aerofighter's Assault       || !RiceVideo or glN64 || ||
+||<font color="orange"> =| </font>|| Aidyn Chronicles            ||                   || _!RiceVideo:_ blue flashes, _glN64:_  missing all polygons, _Glide64:_ crash, distorted letters  (1.3RC1 bin64) ||
+||<font color="green"> =) </font> || Airboarders 64              ||                   || ||
+||<font color="red"> =( </font>   || Armorines - Project SWARM   ||                   || hangs with any video plugin (1.3-RC1-bin-64) || 
+||<font color="orange"> =| </font>|| Army Men - Air Combat       ||                   || _!RiceVideo:_ triangles flash black, _glN64:_  gaps in-between quads, _Glide64:_ distorted letters  (1.3RC1 bin64) ||
+||<font color="orange"> =| </font>|| Army Men - Sarge's Heroes   ||                   || _!RiceVideo:_ triangles flash blue, _glN64:_  missing all polygons, _Glide64:_ distorted letters  (1.3RC1 bin64) ||
+||<font color="green"> =) </font> || Army Men - Sarge's Heroes 2 || glN64             ||  _!RiceVideo:_ Model polygons flashing black; _Glide64:_ distorted letters  (1.3RC1 bin64) ||
+||<font color="green"> =) </font> || Asteroids Hyper 64          ||                   || ||
+||<font color="green"> =) </font> || Automobili Lamborghini      || glN64             || _!RiceVideo:_ Model polygons flashing blue; _Glide64:_ vertical gaps in flag (minor)  (1.3RC1 bin64) ||
+||<font color="green"> =) </font> || Banjo-Kazooie               || !RiceVideo or Glide64 || _glN64:_  Screen size wrong; washed-out textures (1.3RC1 bin64) ||
+||<font color="orange"> =| </font>|| Banjo-Tooie                 || !RiceVideo with Dynarec off. || Impossible to go beyond level 2 without cheating for now because a button can't be pressed. World is white/yellow in Glide64/glN64. Letters' texture distorted in Rice (mupen 1.5) ||
+||<font color="green"> =) </font> || Batman Beyond               || glN64             || _!RiceVideo:_ Model polygons flashing black, _Glide64:_ distorted letters  (1.3RC1 bin64) ||
+||<font color="red"> =( </font>   || Battle Tanx                 ||                   ||  hangs with any video plugin (1.3-RC1-bin-64) ||
+||<font color="orange"> =| </font>|| Bomberman 64                ||                   || various graphical glitches ||
+||<font color="red"> =( </font>   || Blast Corps                 ||                   ||  loads then crashes very fast (1.3.-RC1-bin-32) ||
+||<font color="green"> =) </font> || Charlie Blast's Territory   || glN64             || ||
+||<font color="orange"> =| </font>|| Conker's Bad Fur Day        || Rice              || Some minor visual artifacts. Some collision detection issues : do not use collision issues to go to places where you're not supposed to go yet, it'll bite you! Major artefacts with glN64 or Glide (mupen 1.5) ||
+||<font color="red"> =( </font>   || Donkey Kong 64              ||                   ||  can't get past into (1.4, 1.5) ||
+||<font color="green"> =) </font> || GoldenEye                                        || - ||
+||<font color="green"> =) </font> || Iggy's Reckin' Balls        || !RiceVideo, Expansion Pack Disabled (Hangs at certain part of game) || ||
+||<font color="orange"> =| </font>|| Jet Force Gemini            || !GlN64            || The bug doors don't turn green when the enemies die, the crosshair for the tri rocket and guided missile launcher don't show, Vela's boss has problems, the screen is all black unless settings are fiddled with ||
+||<font color="green"> =) </font> || Kirby 64                    || Glide64           || ||
+||<font color="green"> =) </font> || Mario Kart 64               ||                   || ||
+||<font color="green"> =) </font> || Mortal Kombat 4             || Glide64) - Enable Sound Sync, Enable Compiled Jump, Disable Expansion Pack || ||
+||<font color="orange"> =| </font>|| Mystical Ninja              ||                   || very laggy ||
+||<font color="orange"> =| </font>|| Paper Mario                 ||                   || Flickering ||
+||<font color="orange"> =| </font>|| Perfect Dark                ||                   ||  the game seems to have problems with being able to enter the next stage once the current one is complete ||
+||<font color="green"> =) </font> || Puyo Puyo 4: Puyo Puyo Party|| !RiceVideo (minor artifacts), Glide64 (disable compiled jump) requires lots of CPU power ||  ||
+||<font color="orange"> =| </font>|| Rayman 2 - The great escape || Glide64           || Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle (mupen 1.5) ||
+||<font color="orange"> =| </font>|| San Francisco Rush          ||                   || textures are not aligned correctly ||
+||<font color="green"> =) </font> || Super Mario 64              ||                   || ||
+||<font color="green"> =) </font> || Super Bowling 64            || !RiceVideo        || ||
+||<font color="green"> =) </font> || Star Fox 64                 || !RiceVideo or Glide64 || ||
+||<font color="green"> =) </font> || Top Gear Rally              ||                   || ||
+||<font color="orange"> =| </font>|| Yoshi's Story               ||                   || hangs with glide64, display artefacts with Rice and glN64 ||
+||<font color="orange"> =| </font>|| Zelda - Majora's Mask       ||                   || problems with cutscene ||
 
-
-== Known stability problems in games ==
-
-|| *Game name*                 || *What happens* || *Tested with version* ||
-|| Armorines - Project SWARM   || hangs with any video plugin || 1.3-RC1-bin-64 || 
-|| Battle Tanx    || hangs with any video plugin || 1.3-RC1-bin-64 ||
-|| Blast Corps    || loads then crashes very fast || 1.3.-RC1-bin-32 ||
-|| Donkey Kong 64 || can't get past into || 1.4, 1.5 ||
-|| Perfect Dark   || the game seems to have problems with being able to enter the next stage once the current one is complete || ? ||
 
 == Detailed info about issues in some games ==
 
@@ -89,6 +83,9 @@ This list is a work in progress, and is not complete nor up-to-date -- feel free
 *Mario Tennis*
  CRC: 839f3ad5 406d15fa
  MD5: FFF9B3E22ABB9B60215DAFB13AD5A4DE
+
+
+
 
  || _ver:_ mupen64plus-1.3-RC1-bin-64 || _plugins:_ rice-1.2-dev ||
  * The emulator crashes...
