@@ -12,7 +12,9 @@
 = Tillin9 =
  * Rice
    * Finish new Gtk GUI. 
-   * Update make file and NO GUI option.
+   * ~~ Update make file and NO GUI option. ~~ (in r1142 branch)
+   * ~~ Fix some textures not loading (Issue 190) ~~ (in r1142 branch)
+   * Fix alpha clipping in Rice for certain textures.
  * Glide
    * Use messagebox system from Rice to resolve icon issues.
  * Blight
