@@ -29,7 +29,7 @@ Legend :
 ||<font color="orange"> =| </font>|| Bomberman 64                ||                   || various graphical glitches ||
 ||<font color="red"> =( </font>   || Blast Corps                 ||                   ||  loads then crashes very fast (1.3.-RC1-bin-32) ||
 ||<font color="green"> =) </font> || Charlie Blast's Territory   || glN64             || ||
-||<font color="orange"> =| </font>|| Conker's Bad Fur Day        || Rice              || Some minor visual artifacts. Some collision detection issues : do not use collision issues to go to places where you're not supposed to go yet, it'll bite you! Major artefacts with glN64 or Glide (mupen 1.5) ||
+||<font color="orange"> =| </font>|| Conker's Bad Fur Day        || Rice              || Some minor visual artifacts. Collision detection issues. A collision detection issue near the end prevents the game from being finished. Major artefacts with glN64 or Glide (mupen 1.5) ||
 ||<font color="red"> =( </font>   || Donkey Kong 64              ||                   ||  can't get past intro (1.4, 1.5) ||
 ||<font color="green"> =) </font> || !GoldenEye                                        ||  || ||
 ||<font color="green"> =) </font> || Iggy's Reckin' Balls        || !RiceVideo, Expansion Pack Disabled  || Expansion Pack hangs at certain part of game ||
