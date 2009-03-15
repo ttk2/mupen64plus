@@ -20,6 +20,6 @@ Hi there. We now have a Qt4 interface in trunk that seems to work on windows. If
 
 Install the deps mentioned above. Make sure the Qt and MinGW tools are in your path. Adjust the paths at the top of Makefile.mingw. Run the following in the trunk folder:
 
- * mingw32-make -f Makefile.mingw GUI=QT4 all
+ * mingw32-make WIN32=1 GUI=QT4 mupen64plus
 
-You should now have a mupen64plus.exe file. Place the needed DLL files in the right places and have fun!
+You should now have a mupen64plus.exe file. Place the needed DLL files in the right places (the easiest way is to place them in the same directory with the exe) and you should be able to start up the emulator.
