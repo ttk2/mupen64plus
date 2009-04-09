@@ -29,7 +29,7 @@ Legend :
 ||<font color="orange"> =| </font>|| Bomberman 64                ||                   || various graphical glitches ||
 ||<font color="red"> =( </font>   || Blast Corps                 ||                   ||  loads then crashes very fast (1.3.-RC1-bin-32) ||
 ||<font color="green"> =) </font> || Charlie Blast's Territory   || glN64             || ||
-||<font color="green"> =) </font>|| Conker's Bad Fur Day        || Glide with _get frame buffer info_ off              || Collision detection issues (and more, including some blockers, with Rice). Major artefacts with glN64; Minor artifacts and missing lights with Rice. Glide's _get frame buffer info_ option makes the shadow buffer visible on top of the game.(mupen 1.5) ||
+||<font color="green"> =) </font>|| Conker's Bad Fur Day        || Glide with _get frame buffer info_ off              || Collision detection issues (and more, including some blockers, with Rice). Major artefacts with glN64; Minor artifacts and missing lights with Rice. Glide doesn't seem to handle the game's dynamic shadows so better turn that option off.(mupen 1.5) ||
 ||<font color="red"> =( </font>   || Donkey Kong 64              ||                   ||  can't get past intro (1.4, 1.5) ||
 ||<font color="green"> =) </font> || !GoldenEye                                        ||  || Major rendering issues with glN64 ||
 ||<font color="green"> =) </font> || Iggy's Reckin' Balls        || !RiceVideo, Expansion Pack Disabled  || Expansion Pack hangs at certain part of game ||
