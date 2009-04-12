@@ -1,9 +1,9 @@
 = slougi =
  * core
-  * pj64 cheat file support
+  * ~~ pj64 cheat file support ~~ Taken care of by olejl
  * Qt4 UI
   * win32 plugin support
-  * get os x port running
+  * ~~ get os x port running ~~ on hold
   * Do a usability overhaul
    * Make defining rom folders for the rom browser easier
     * First start wizard?
