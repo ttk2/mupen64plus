@@ -54,6 +54,7 @@ Legend :
 ||<font color="green"> =) </font> || Super Smash Bros            || !RiceVideo        || ||
 ||<font color="green"> =) </font> || Top Gear Rally              ||                   || ||
 ||<font color="orange"> =| </font>|| Yoshi's Story               ||                   || hangs with glide64, display artefacts with Rice and glN64 ||
+||<font color="green"> =)  </font>|| Zelda - Ocarina of Time     || !RiceVideo        || problems with cutscene ||
 ||<font color="orange"> =| </font>|| Zelda - Majora's Mask       ||                   || problems with cutscene ||
 
 
