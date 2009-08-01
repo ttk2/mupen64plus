@@ -47,7 +47,6 @@ Legend :
 ||<font color="green"> =) </font> || Rush 2 || Glide64 || Artifacts with !RiceVideo and glN64 ||
 ||<font color="orange"> =| </font>|| San Francisco Rush          ||                   || textures are not aligned correctly ||
 ||<font color="green"> =) </font> || Sin and Punishment (Tsumi no Batsu: Hoshi no Keishousha)|| Glide64 || ||
-
 ||<font color="green"> =) </font> || Super Bowling 64            || !RiceVideo        || ||
 ||<font color="green"> =) </font> || Star Fox 64                 || !RiceVideo or Glide64 || ||
 ||<font color="green"> =) </font> || Super Mario 64              ||                   || ||
