@@ -28,9 +28,11 @@ Legend :
 ||<font color="red"> =( </font>   || Battle Tanx                 ||                   ||  hangs with any video plugin (1.3-RC1-bin-64) ||
 ||<font color="orange"> =| </font>|| Bomberman 64                ||                   || various graphical glitches ||
 ||<font color="red"> =( </font>   || Blast Corps                 ||                   ||  loads then crashes very fast (1.3.-RC1-bin-32) ||
+||<font color="green"> =) </font>   || California Speed                 || Glide    ||   ||
 ||<font color="green"> =) </font> || Charlie Blast's Territory   || glN64             || ||
 ||<font color="green"> =) </font>|| Conker's Bad Fur Day        || Glide with _get frame buffer info_ off              || Collision detection issues (and more, including some blockers, with Rice). Major artefacts with glN64; Minor artifacts and missing lights with Rice. Glide doesn't seem to handle the game's dynamic shadows so better turn that option off.(mupen 1.5) ||
-||<font color="red"> =( </font>   || Donkey Kong 64              ||                   ||  can't get past intro (1.4, 1.5) ||
+||<font color="red"> =( </font>   || Donkey Kong 64              ||                   ||  can't get past intro (1.4, 1.5)   ||
+||<font color="red"> =( </font>   || Excitebike 64               ||                   ||   Huge graphical problems with all graphics plugins   ||
 ||<font color="green"> =) </font> || F-Zero X                    ||                   || ||
 ||<font color="green"> =) </font> || !GoldenEye                  || !RiceVideo   || Major rendering issues with glN64 ||
 ||<font color="green"> =) </font> || Iggy's Reckin' Balls        || !RiceVideo, Expansion Pack Disabled  || Expansion Pack hangs at certain part of game ||
@@ -46,6 +48,7 @@ Legend :
 ||<font color="orange"> =| </font>|| Rayman 2 - The great escape || Glide64           || Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle (mupen 1.5) ||
 ||<font color="green"> =) </font> || Rush 2 || Glide64 || Artifacts with !RiceVideo and glN64 ||
 ||<font color="orange"> =| </font>|| San Francisco Rush          ||                   || textures are not aligned correctly ||
+||<font color="red"> =( </font>   || San Francisco Rush 2049     ||                   || freezes almost immediately ||
 ||<font color="green"> =) </font> || Sin and Punishment (Tsumi no Batsu: Hoshi no Keishousha)|| Glide64 || ||
 ||<font color="green"> =) </font> || Super Bowling 64            || !RiceVideo        || ||
 ||<font color="green"> =) </font> || Star Fox 64                 || !RiceVideo or Glide64 || ||
