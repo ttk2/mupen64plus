@@ -54,6 +54,7 @@ Legend :
 ||<font color="green"> =) </font> || Star Fox 64                 || !RiceVideo or Glide64 || ||
 ||<font color="green"> =) </font> || Super Mario 64              ||                   || ||
 ||<font color="green"> =) </font> || Super Smash Bros            || !RiceVideo        || ||
+||<font color="green"> =) </font> || Tony hawk pro skater 1, 2, 3|| !RiceVideo        || Broken textures with glN64 ||
 ||<font color="green"> =) </font> || Top Gear Rally              ||                   || ||
 ||<font color="orange"> =| </font>|| Yoshi's Story               ||                   || hangs with glide64, display artefacts with Rice and glN64 ||
 ||<font color="green"> =)  </font>|| Zelda - Ocarina of Time     || !RiceVideo        || ||
