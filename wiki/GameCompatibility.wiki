@@ -32,6 +32,7 @@ Legend :
 ||<font color="green"> =) </font> || Charlie Blast's Territory   || glN64             || ||
 ||<font color="green"> =) </font>|| Conker's Bad Fur Day        || Glide with _get frame buffer info_ off              || Collision detection issues (and more, including some blockers, with Rice). Major artefacts with glN64; Minor artifacts and missing lights with Rice. Glide doesn't seem to handle the game's dynamic shadows so better turn that option off.(mupen 1.5) ||
 ||<font color="red"> =( </font>   || Donkey Kong 64              ||                   ||  can't get past intro (1.4, 1.5)   ||
+||<font color="green"> =) </font>   || Dr.Mario 64                 || Glide    || When you lose and try to restart, screen is messed up (mupen64+ 1.5)  ||
 ||<font color="red"> =( </font>   || Excitebike 64               ||                   ||   Huge graphical problems with all graphics plugins   ||
 ||<font color="green"> =) </font> || F-Zero X                    ||                   || ||
 ||<font color="green"> =) </font> || !GoldenEye                  || !RiceVideo   || Major rendering issues with glN64 ||
