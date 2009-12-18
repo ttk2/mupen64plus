@@ -7,8 +7,6 @@ Please note that these instructions are meant as guidelines for people who know 
 Choose your mupen version :
 <wiki:toc max_depth="1" />
 
-==ENVIRONMENT==
-
 = Mupen64plus 1.99.x and 2.x =
 
 * Install developer tools (Xcode) from the DVD that came with your Mac.
