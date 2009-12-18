@@ -4,13 +4,16 @@ Here are some basic usage instructions for !Mupen64Plus on Intel Macintosh compu
 
 Please note that these instructions are meant as guidelines for people who know what they're doing. If you don't have much experience building stuff from source, I would recommend that you wait for binary packages instead.
 
-==ENVIRONMENT==
- * Install developer tools (Xcode) from the DVD that came with your Mac.
+Choose your mupen version :
+<wiki:toc max_depth="1" />
 
+==ENVIRONMENT==
 
 = Mupen64plus 1.99.x and 2.x =
 
-Get the code from the various modules using mercurial as on any other platform (or just download a source code archive)
+* Install developer tools (Xcode) from the DVD that came with your Mac.
+
+* Get the code from the various modules using mercurial as on any other platform (or just download a source code archive)
 Get the dependencies just like you'd do for mupen64plus 1.x (except maybe GTK/Qt since there is no GUI frontend yet for mupen 2)
 
 A script to build looks like :
@@ -94,6 +97,9 @@ cp ./mupen64plus-core/data/* $APP_CONTENTS/Resources
 Currently this only runs from the terminal.
 
 = Mupen64plus 1.x =
+
+==Developer tools==
+Install developer tools (Xcode) from the DVD that came with your Mac.
 
 ==GETTING MUPEN64PLUS==
 You can simply download a source archive from the mupen64plus website; you can also use SVN. SVN example :
