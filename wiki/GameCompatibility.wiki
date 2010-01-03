@@ -5,9 +5,10 @@
 *This list is a work in progress, and is not complete nor up-to-date*. furthermore, the rating is subjective, people who report game compatibility may rate it higher or lower depending on how much glitches annoy them -- feel free to contact a developer about adding to this list.
 
 Legend :
-||<font color="green"> =) </font> || Works great with minor issues or none ||
-||<font color="orange"> =| </font>|| Some issues, might remain playable ||
-||<font color="red"> =( </font>   || Important issues hinder playability ||
+||<font color="green"> =) </font>  || Works great with minor issues or none ||
+||<font color="orange"> =) </font> || Was _almost_ green, but a few areas have non-minor bugs/glitches  ||
+||<font color="orange"> =| </font> || Some issues, might remain playable ||
+||<font color="red"> =( </font>    || Important issues hinder playability ||
 
 ||                                || *Game name*                 || *Works best with* || *Known issues * ||
 ||<font color="green"> =) </font> || 40 Winks                    || Glide64           || ||
@@ -23,7 +24,7 @@ Legend :
 ||<font color="green"> =) </font> || Asteroids Hyper 64          ||                   || ||
 ||<font color="green"> =) </font> || Automobili Lamborghini      || glN64             || _!RiceVideo:_ Model polygons flashing blue; _Glide64:_ vertical gaps in flag (minor)  (1.3RC1 bin64) ||
 ||<font color="green"> =) </font> || Banjo-Kazooie               || !RiceVideo or Glide64 || _glN64:_  Screen size wrong; washed-out textures (1.3RC1 bin64) ||
-||<font color="green"> =) </font>|| Banjo-Tooie                 || !RiceVideo with Dynarec off. || World is white/yellow in Glide64/glN64. Letters' texture distorted in Rice. Dynarec has random crashes. (SVN rev 1416 only; version 1.5 doesn't run it as good) ||
+||<font color="orange"> =) </font>|| Banjo-Tooie                 || !RiceVideo or Glide64, with Dynamic Recompiler off. || World is white/yellow in Glide64/glN64. Letters' texture distorted in Rice. Dynarec has random crashes. (SVN rev 1416 only; version 1.5 doesn't run it as good) ||
 ||<font color="green"> =) </font> || Batman Beyond               || glN64             || _!RiceVideo:_ Model polygons flashing black, _Glide64:_ distorted letters  (1.3RC1 bin64) ||
 ||<font color="red"> =( </font>   || Battle Tanx                 ||                   ||  hangs with any video plugin (1.3-RC1-bin-64) ||
 ||<font color="orange"> =| </font>|| Bomberman 64                ||                   || various graphical glitches ||
@@ -37,7 +38,7 @@ Legend :
 ||<font color="green"> =) </font> || F-Zero X                    ||                   || ||
 ||<font color="green"> =) </font> || !GoldenEye                  || !RiceVideo   || set "Frame update" to "At the 1st CI change" in "current game options" and uncheck "Normal combiner". Major rendering issues with glN64. ||
 ||<font color="green"> =) </font> || Iggy's Reckin' Balls        || !RiceVideo, Expansion Pack Disabled  || Expansion Pack hangs at certain part of game ||
-||<font color="orange"> =| </font>|| Jet Force Gemini            || !Glide            || The bug doors don't turn green when the enemies die; the crosshair for the tri rocket and guided missile launcher don't show; Vela's boss has problems (unplayably laggish with Glide, blurry screen with Rice); annoying lag when losing lives  ||
+||<font color="orange"> =) </font>|| Jet Force Gemini            || Glide            || The bug doors don't turn green when the enemies die; the crosshair for the tri rocket and guided missile launcher don't show; Vela's boss has problems (unplayably laggish with Glide, blurry screen with Rice); annoying lag when losing lives  ||
 ||<font color="green"> =) </font> || Kirby 64                    || Glide64           || The borders of the screen have random flashing garbage, and there are some distorted characters (for example, King De-De-De face). ||
 ||<font color="green"> =) </font> || Mario Kart 64               ||                   || ||
 ||<font color="orange"> =| </font>|| Mischief Makers             ||                   || Major display issues (see below in detailed notes) ||
@@ -46,7 +47,7 @@ Legend :
 ||<font color="orange"> =| </font>|| Paper Mario                 ||                   || Flickering ||
 ||<font color="orange"> =| </font>|| Perfect Dark                ||                   ||  the game seems to have problems with being able to enter the next stage once the current one is complete ||
 ||<font color="green"> =) </font> || Puyo Puyo 4: Party          || !RiceVideo (minor artifacts), Glide64 (disable compiled jump) || requires lots of CPU power. glN64: UCode is not detected, selecting the proper UCode results in a freeze. Glide64: Crashes after intro video (before entry into menu) ||
-||<font color="orange"> =| </font>|| Rayman 2 - The great escape || Glide64           || Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle (mupen 1.5) ||
+||<font color="orange"> =) </font>|| Rayman 2 - The great escape || Glide64           || Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle (mupen 1.5) ||
 ||<font color="green"> =) </font> || Rush 2 || Glide64 || Artifacts with !RiceVideo and glN64 ||
 ||<font color="orange"> =| </font>|| San Francisco Rush          ||                   || textures are not aligned correctly ||
 ||<font color="red"> =( </font>   || San Francisco Rush 2049     ||                   || freezes almost immediately ||
