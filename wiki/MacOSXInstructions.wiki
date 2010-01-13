@@ -115,7 +115,7 @@ cp -f mupen64plus-video-rice/projects/unix/*.dylib .
 echo ""
 echo "== Console =="
 cd mupen64plus-ui-console/projects/unix
-make APIDIR=$APIDIR ARCH_DETECTED=64BITS
+make all APIDIR=$APIDIR ARCH_DETECTED=64BITS
 cd ../../..
 cp -f mupen64plus-ui-console/projects/unix/mupen64plus .
 
