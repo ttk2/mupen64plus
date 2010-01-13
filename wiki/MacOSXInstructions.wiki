@@ -71,28 +71,6 @@ cp -f mupen64plus $APP_BUNDLE/MacOS/mupen64plus
 cp -f *.dylib $APP_BUNDLE/MacOS/.
 }}}
 
-And a script to bundle may look like :
-
-{{{
-APP_CONTENTS="./mupen64plus.app/Contents"
-
-FIX_LIST="-x $APP_CONTENTS/MacOS/mupen64plus \
--x $APP_CONTENTS/MacOS/libmupen64plus.dylib \
--x $APP_CONTENTS/MacOS/mupen64plus-audio-sdl.dylib \
--x $APP_CONTENTS/MacOS/mupen64plus-input-sdl.dylib \
--x $APP_CONTENTS/MacOS/mupen64plus-rsp-hle.dylib \
--x $APP_CONTENTS/MacOS/mupen64plus-video-rice.dylib"
-
-
-dylibbundler -od -b $FIX_LIST -d $APP_CONTENTS/libs/
-
-rm -rf $APP_CONTENTS/Resources
-mkdir -p $APP_CONTENTS/Resources
-cp ./mupen64plus-video-rice/data/* $APP_CONTENTS/Resources
-cp ./mupen64plus-core/data/* $APP_CONTENTS/Resources
-}}}
-
-
 To build 64-bits, use something like that instead (tested on 1.6) :
 {{{
 PWD = `pwd`
@@ -145,6 +123,31 @@ mkdir -p $APP-BUNDLE/MacOS/
 cp -f mupen64plus-cli $APP-BUNDLE/MacOS/mupen64plus-cli
 cp -f *.dylib $APP-BUNDLE/MacOS/.
 }}}
+
+
+And a script to bundle may look like :
+
+{{{
+APP_CONTENTS="./mupen64plus.app/Contents"
+
+FIX_LIST="-x $APP_CONTENTS/MacOS/mupen64plus \
+-x $APP_CONTENTS/MacOS/libmupen64plus.dylib \
+-x $APP_CONTENTS/MacOS/mupen64plus-audio-sdl.dylib \
+-x $APP_CONTENTS/MacOS/mupen64plus-input-sdl.dylib \
+-x $APP_CONTENTS/MacOS/mupen64plus-rsp-hle.dylib \
+-x $APP_CONTENTS/MacOS/mupen64plus-video-rice.dylib"
+
+
+dylibbundler -od -b $FIX_LIST -d $APP_CONTENTS/libs/
+
+rm -rf $APP_CONTENTS/Resources
+mkdir -p $APP_CONTENTS/Resources
+cp ./mupen64plus-video-rice/data/* $APP_CONTENTS/Resources
+cp ./mupen64plus-core/data/* $APP_CONTENTS/Resources
+}}}
+
+
+
 Currently this only runs from the terminal.
 
 
