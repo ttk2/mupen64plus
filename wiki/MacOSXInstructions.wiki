@@ -14,7 +14,7 @@ Choose your mupen version :
   * Get the code from the various modules using mercurial as on any other platform (or just download a source code archive)
 Get the dependencies just like you'd do for mupen64plus 1.x (except maybe GTK/Qt since there is no GUI frontend yet for mupen 2)
 
-A script to build looks like :
+A script to build (32 bits, compatible with 10.5 and maybe 10.4) looks like :
 {{{
 PWD = `pwd`
 export CC="gcc-4.0"
@@ -92,7 +92,61 @@ cp ./mupen64plus-video-rice/data/* $APP_CONTENTS/Resources
 cp ./mupen64plus-core/data/* $APP_CONTENTS/Resources
 }}}
 
+
+To build 64-bits, use something like that instead (tested on 1.6) :
+{{{
+PWD = `pwd`
+APIDIR=$PWD/mupen64plus-core/src/api
+
+APP-BUNDLE=./mupen64plus-cli.app/Contents
+
+
+echo "== Core =="
+cd mupen64plus-core/projects/unix
+make all APIDIR=$APIDIR ARCH_DETECTED=64BITS
+cd ../../..
+cp -f mupen64plus-core/projects/unix/*.dylib .
+
+echo "== RSP-HLE =="
+cd mupen64plus-rsp-hle/projects/unix
+make all APIDIR=$APIDIR ARCH_DETECTED=64BITS
+cd ../../..
+cp -f mupen64plus-rsp-hle/projects/unix/*.dylib .
+
+echo ""
+echo "== SDL Audio =="
+cd mupen64plus-audio-sdl/projects/unix
+make APIDIR=$APIDIR ARCH_DETECTED=64BITS
+cd ../../..
+cp -f mupen64plus-audio-sdl/projects/unix/*.dylib .
+
+echo ""
+echo "== SDL Input =="
+cd mupen64plus-input-sdl/projects/unix
+make APIDIR=$APIDIR ARCH_DETECTED=64BITS
+cd ../../..
+cp -f mupen64plus-input-sdl/projects/unix/*.dylib .
+
+echo ""
+echo "== Rice =="
+cd mupen64plus-video-rice/projects/unix
+make all APIDIR=$APIDIR NO-ASM=1 C_INCLUDE_PATH=/usr/local/include ARCH_DETECTED=64BITS
+cd ../../..
+cp -f mupen64plus-video-rice/projects/unix/*.dylib .
+
+echo ""
+echo "== Console =="
+cd mupen64plus-ui-console/projects/unix
+make APIDIR=$APIDIR ARCH_DETECTED=64BITS
+cd ../../..
+cp -f mupen64plus-ui-console/projects/unix/mupen64plus-cli .
+
+mkdir -p $APP-BUNDLE/MacOS/
+cp -f mupen64plus-cli $APP-BUNDLE/MacOS/mupen64plus-cli
+cp -f *.dylib $APP-BUNDLE/MacOS/.
+}}}
 Currently this only runs from the terminal.
+
 
 = Mupen64plus 1.x =
 
