@@ -87,7 +87,7 @@ cp -f mupen64plus-core/projects/unix/*.dylib .
 
 echo "== RSP-HLE =="
 cd mupen64plus-rsp-hle/projects/unix
-make all APIDIR=$APIDIR ARCH_DETECTED=64BITS
+make all APIDIR=$APIDIR ARCH_DETECTED=64BITS LD="g++"
 cd ../../..
 cp -f mupen64plus-rsp-hle/projects/unix/*.dylib .
 
