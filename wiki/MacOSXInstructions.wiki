@@ -94,14 +94,14 @@ cp -f mupen64plus-rsp-hle/projects/unix/*.dylib .
 echo ""
 echo "== SDL Audio =="
 cd mupen64plus-audio-sdl/projects/unix
-make APIDIR=$APIDIR ARCH_DETECTED=64BITS
+make all APIDIR=$APIDIR ARCH_DETECTED=64BITS
 cd ../../..
 cp -f mupen64plus-audio-sdl/projects/unix/*.dylib .
 
 echo ""
 echo "== SDL Input =="
 cd mupen64plus-input-sdl/projects/unix
-make APIDIR=$APIDIR ARCH_DETECTED=64BITS
+make all APIDIR=$APIDIR ARCH_DETECTED=64BITS
 cd ../../..
 cp -f mupen64plus-input-sdl/projects/unix/*.dylib .
 
