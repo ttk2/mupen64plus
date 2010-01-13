@@ -124,6 +124,13 @@ cp -f mupen64plus $APP_BUNDLE/MacOS/mupen64plus
 cp -f *.dylib $APP_BUNDLE/MacOS/.
 }}}
 
+* Macports users, you will need to add flags like this to the end of many of the _make_ commands above :
+{{{
+LIBRARY_PATH=/opt/local/lib
+C_INCLUDE_PATH="/opt/local/include/libpng12"
+CPLUS_INCLUDE_PATH="/opt/local/include/libpng12"
+}}}
+
 
 And a script to bundle may look like :
 
