@@ -76,7 +76,7 @@ To build 64-bits, use something like that instead (tested on 1.6) :
 PWD = `pwd`
 APIDIR=$PWD/mupen64plus-core/src/api
 
-APP-BUNDLE=./mupen64plus.app/Contents
+APP_BUNDLE=./mupen64plus.app/Contents
 
 
 echo "== Core =="
@@ -119,9 +119,9 @@ make APIDIR=$APIDIR ARCH_DETECTED=64BITS
 cd ../../..
 cp -f mupen64plus-ui-console/projects/unix/mupen64plus .
 
-mkdir -p $APP-BUNDLE/MacOS/
-cp -f mupen64plus $APP-BUNDLE/MacOS/mupen64plus
-cp -f *.dylib $APP-BUNDLE/MacOS/.
+mkdir -p $APP_BUNDLE/MacOS/
+cp -f mupen64plus $APP_BUNDLE/MacOS/mupen64plus
+cp -f *.dylib $APP_BUNDLE/MacOS/.
 }}}
 
 
