@@ -28,7 +28,7 @@ Legend :
 ||<font color="green"> =) </font> || Batman Beyond               || glN64             || _!RiceVideo:_ Model polygons flashing black, _Glide64:_ distorted letters  (1.3RC1 bin64) ||
 ||<font color="red"> =( </font>   || Battle Tanx                 ||                   ||  hangs with any video plugin (1.3-RC1-bin-64) ||
 ||<font color="orange"> =| </font>|| Bomberman 64                ||                   || various graphical glitches ||
-||<font color="red"> =( </font>   || Blast Corps                 ||                   ||  loads then crashes very fast (1.3.-RC1-bin-32) ||
+||<font color="red"> =( </font>   || Blast Corps                 ||                   ||  loads then crashes very fast (1.3.-RC1-bin-32 ; 1.5-osx ) ||
 ||<font color="green"> =) </font>   || California Speed                 || Glide    ||   ||
 ||<font color="green"> =) </font> || Charlie Blast's Territory   || glN64             || ||
 ||<font color="green"> =) </font>|| Conker's Bad Fur Day        || Glide with _get frame buffer info_ off              || Collision detection issues (and more, including some blockers, with Rice). Major artefacts with glN64; Minor artifacts and missing lights with Rice. Glide doesn't seem to handle the game's dynamic shadows so better turn that option off.(mupen 1.5) ||
