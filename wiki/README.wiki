@@ -10,6 +10,7 @@ This README document reflects the instructions for using the latest !Mupen64Plus
   # Installation
   # Multi-user Support
   # Key Commands In Emulator
+  # Default Key Mappings for SDL-Input Plugin
   # Known Issues
 
 ==1. Requirements and Pre-requisites==
@@ -186,18 +187,37 @@ The keys or joystick/mouse inputs which will be mapped to the N64 controller for
 || 0-9 || Select virtual 'slot' for save/load state (F5 and F7) commands ||
 || F5 || Save emulator state ||
 || F7 || Load emulator state ||
+|| F9 || Reset emulator ||
 || F10 || slow down emulator by 5% ||
 || F11 || speed up emulator by 5% ||
 || F12 || take screenshot ||
 || Alt-Enter || Toggle between windowed and fullscreen ||
-|| Pause || Pause on/off ||
+|| p or P || Pause on/off ||
 || m or M || Mute/unmute sound ||
+|| g or G || Press "Game Shark" button (only if cheats are enabled) ||
 || / or ? || single frame advance while paused ||
 || F || Fast Forward (playback at 250% normal speed while F key is pressed) ||
 || [ || Decrease volume ||
 || ] || Increase volume ||
 
-==6. Known Issues==
+==6. Default Key Mappings for SDL-Input Plugin==
+
+The keys or joystick/mouse inputs which will be mapped to the N64 controller for playing the games are determined by the input plugin.  The SDL-Input plugin contains an auto-configuration function which will provide default joystick mappings for any recognized joystick.  If there is no supported joystick connected, the input plugin will enable a default keyboard control mapping, as given below:
+
+|| *N64 Controller Action* || *Keys* ||
+|| Analog Pad || Arrow Keys (left, right, down, up) ||
+|| C Up/Left/Down/Right || "I", "J", "K", "L" ||
+|| DPad Up/Left/Down/Right || "W", "A", "S", "D" ||
+|| Z trigger || "z" ||
+|| Left trigger || "x" ||
+|| Right trigger || "c" ||
+|| Start || "Enter" ("Return") ||
+|| A button || "left shift" ||
+|| B button || "left control" ||
+|| Select Mempack || "," ||
+|| Select Rumblepack || "." ||
+
+==7. Known Issues==
 
 As of March 2008, the !RiceVideoLinux plugin causes artifacts when fog is enabled in most games with the open source drivers for ATI Radeon graphics adapters. If you are using the open source Radeon driver, you should set the "!EnableFog" value in !RiceVideo.cfg to 0.
 
