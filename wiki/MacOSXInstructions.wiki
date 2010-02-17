@@ -16,6 +16,7 @@ Get the dependencies just like you'd do for mupen64plus 1.x (except maybe GTK/Qt
 
 A script to build (32 bits, compatible with 10.5 and maybe 10.4) looks like :
 {{{
+#!/bin/sh
 PWD = `pwd`
 export CC="gcc-4.0"
 export CXX="g++-4.0"
@@ -25,7 +26,6 @@ export MACOSX_DEPLOYMENT_TARGET=10.4
 export SDK_ROOT=/Developer/SDKs/MacOSX10.5.sdk
 
 APP_BUNDLE=./mupen64plus.app/Contents
-
 
 echo "== Core =="
 cd mupen64plus-core/projects/unix
@@ -89,12 +89,12 @@ cp -f *.dylib $APP_BUNDLE/MacOS/.
 
 To build 64-bits, use something like that instead (tested on 1.6) :
 {{{
+#!/bin/sh
 PWD = `pwd`
 APIDIR=$PWD/mupen64plus-core/src/api
 export LD="g++"
 
 APP_BUNDLE=./mupen64plus.app/Contents
-
 
 echo "== Core =="
 cd mupen64plus-core/projects/unix
@@ -166,6 +166,7 @@ CPLUS_INCLUDE_PATH="/opt/local/include/libpng12"
 And a script to bundle may look like :
 
 {{{
+#!/bin/sh
 APP_CONTENTS="./mupen64plus.app/Contents"
 
 FIX_LIST="-x $APP_CONTENTS/MacOS/mupen64plus \
@@ -187,6 +188,7 @@ cp ./mupen64plus-video-glide64/data/* $APP_CONTENTS/Resources
 cp ./mupen64plus-core/data/* $APP_CONTENTS/Resources
 }}}
 
+this script requires [http://macdylibbundler.sourceforge.net/ macdylibbundler] to be installed.
 
 Currently this only runs from the terminal.
 
