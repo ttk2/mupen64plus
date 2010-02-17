@@ -22,6 +22,7 @@ export CXX="g++-4.0"
 export LD="g++-4.0"
 APIDIR=$PWD/mupen64plus-core/src/api
 export MACOSX_DEPLOYMENT_TARGET=10.4
+export SDK_ROOT=/Developer/SDKs/MacOSX10.5.sdk
 
 APP_BUNDLE=./mupen64plus.app/Contents
 
@@ -55,9 +56,23 @@ cp -f mupen64plus-input-sdl/projects/unix/*.dylib .
 echo ""
 echo "== Rice =="
 cd mupen64plus-video-rice/projects/unix
-make all CC="g++" C_INCLUDE_PATH="/usr/local/include" CPLUS_INCLUDE_PATH="/usr/local/include"
+make all CC="g++-4.0" C_INCLUDE_PATH="/usr/local/include" CPLUS_INCLUDE_PATH="/usr/local/include"
 cd ../../..
 cp -f mupen64plus-video-rice/projects/unix/*.dylib .
+
+echo ""
+echo "== Arachnoid =="
+cd mupen64plus-video-arachnoid/projects/unix
+make all C_INCLUDE_PATH="/usr/local/include" CPLUS_INCLUDE_PATH="/usr/local/include"
+cd ../../..
+cp -f mupen64plus-video-arachnoid/projects/unix/*.dylib .
+
+echo ""
+echo "== Glide =="
+cd mupen64plus-video-glide64/projects/unix
+make all C_INCLUDE_PATH="/usr/local/include" CPLUS_INCLUDE_PATH="/usr/local/include"
+cd ../../..
+cp -f mupen64plus-video-glide64/projects/unix/*.dylib .
 
 echo ""
 echo "== Console =="
@@ -69,12 +84,14 @@ cp -f mupen64plus-ui-console/projects/unix/mupen64plus .
 mkdir -p $APP_BUNDLE/MacOS/
 cp -f mupen64plus $APP_BUNDLE/MacOS/mupen64plus
 cp -f *.dylib $APP_BUNDLE/MacOS/.
+
 }}}
 
 To build 64-bits, use something like that instead (tested on 1.6) :
 {{{
 PWD = `pwd`
 APIDIR=$PWD/mupen64plus-core/src/api
+export LD="g++"
 
 APP_BUNDLE=./mupen64plus.app/Contents
 
@@ -113,6 +130,20 @@ cd ../../..
 cp -f mupen64plus-video-rice/projects/unix/*.dylib .
 
 echo ""
+echo "== Arachnoid =="
+cd mupen64plus-video-arachnoid/projects/unix
+make all C_INCLUDE_PATH="/usr/local/include" CPLUS_INCLUDE_PATH="/usr/local/include" ARCH_DETECTED=64BITS
+cd ../../..
+cp -f mupen64plus-video-arachnoid/projects/unix/*.dylib .
+
+echo ""
+echo "== Glide =="
+cd mupen64plus-video-glide64/projects/unix
+make all C_INCLUDE_PATH="/usr/local/include" CPLUS_INCLUDE_PATH="/usr/local/include" ARCH_DETECTED=64BITS
+cd ../../..
+cp -f mupen64plus-video-glide64/projects/unix/*.dylib .
+
+echo ""
 echo "== Console =="
 cd mupen64plus-ui-console/projects/unix
 make all APIDIR=$APIDIR ARCH_DETECTED=64BITS
@@ -142,7 +173,9 @@ FIX_LIST="-x $APP_CONTENTS/MacOS/mupen64plus \
 -x $APP_CONTENTS/MacOS/mupen64plus-audio-sdl.dylib \
 -x $APP_CONTENTS/MacOS/mupen64plus-input-sdl.dylib \
 -x $APP_CONTENTS/MacOS/mupen64plus-rsp-hle.dylib \
--x $APP_CONTENTS/MacOS/mupen64plus-video-rice.dylib"
+-x $APP_CONTENTS/MacOS/mupen64plus-video-rice.dylib \
+-x $APP_CONTENTS/MacOS/mupen64plus-video-arachnoid.dylib \
+-x $APP_CONTENTS/MacOS/mupen64plus-video-glide64.dylib"
 
 
 dylibbundler -od -b $FIX_LIST -d $APP_CONTENTS/libs/
@@ -150,9 +183,9 @@ dylibbundler -od -b $FIX_LIST -d $APP_CONTENTS/libs/
 rm -rf $APP_CONTENTS/Resources
 mkdir -p $APP_CONTENTS/Resources
 cp ./mupen64plus-video-rice/data/* $APP_CONTENTS/Resources
+cp ./mupen64plus-video-glide64/data/* $APP_CONTENTS/Resources
 cp ./mupen64plus-core/data/* $APP_CONTENTS/Resources
 }}}
-
 
 
 Currently this only runs from the terminal.
