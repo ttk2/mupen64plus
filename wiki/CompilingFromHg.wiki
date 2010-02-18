@@ -27,7 +27,7 @@ If you do not have Mercurial installed, launch your favorite application manager
 
 Part of the re-design of our emulator has involved breaking it up from a single big package into 6 separate modules which must all be built separately.  In order to make this easier for developers, I have written a few simple shell scripts for checking out and building the code.  You make download an archive of the scripts here:
 
-[http://bitbucket.org/richard42/mupen64plus-core/src/tip/tools/m64p_helper_scripts.tar.gz m64p_helper_scripts.tar.gz] (updated Jan 18, 2009)
+[http://bitbucket.org/richard42/mupen64plus-core/raw/f92cdb8e288e/tools/m64p_helper_scripts.tar.gz m64p_helper_scripts.tar.gz] (updated Jan 18, 2009)
 
 To check out, build, and run the new !Mupen64Plus code, unzip these scripts into an empty directory and run:
 
