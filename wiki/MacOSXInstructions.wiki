@@ -15,7 +15,8 @@ Choose your mupen version :
 Get the dependencies just like you'd do for mupen64plus 1.x (except maybe GTK/Qt since there is no GUI frontend yet for mupen 2)
 
 A script to build (32 bits, compatible with 10.5 and maybe 10.4) looks like :
-{{{
+
+<code language="sh"> 
 #!/bin/sh
 PWD = `pwd`
 export CC="gcc-4.0"
@@ -84,11 +85,10 @@ cp -f mupen64plus-ui-console/projects/unix/mupen64plus .
 mkdir -p $APP_BUNDLE/MacOS/
 cp -f mupen64plus $APP_BUNDLE/MacOS/mupen64plus
 cp -f *.dylib $APP_BUNDLE/MacOS/.
-
-}}}
+</code>
 
 To build 64-bits, use something like that instead (tested on 1.6) :
-{{{
+<code language="sh"> 
 #!/bin/sh
 PWD = `pwd`
 APIDIR=$PWD/mupen64plus-core/src/api
@@ -153,7 +153,7 @@ cp -f mupen64plus-ui-console/projects/unix/mupen64plus .
 mkdir -p $APP_BUNDLE/MacOS/
 cp -f mupen64plus $APP_BUNDLE/MacOS/mupen64plus
 cp -f *.dylib $APP_BUNDLE/MacOS/.
-}}}
+</code>
 
 * Macports users, you will need to add flags like this to the end of many of the _make_ commands above :
 {{{
@@ -165,7 +165,7 @@ CPLUS_INCLUDE_PATH="/opt/local/include/libpng12"
 
 And a script to bundle may look like :
 
-{{{
+<code language="sh"> 
 #!/bin/sh
 APP_CONTENTS="./mupen64plus.app/Contents"
 
@@ -187,7 +187,7 @@ cp ./mupen64plus-video-rice/data/* $APP_CONTENTS/Resources
 cp ./mupen64plus-video-glide64/data/* $APP_CONTENTS/Resources
 cp ./mupen64plus-core/data/* $APP_CONTENTS/Resources
 cp ./mupen64plus-input-sdl/data/*  $APP_CONTENTS/Resources
-}}}
+</code>
 
 this script requires [http://macdylibbundler.sourceforge.net/ macdylibbundler] to be installed.
 
