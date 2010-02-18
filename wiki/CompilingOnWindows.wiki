@@ -1,25 +1,29 @@
-#summary Instructions on how to compile the current win32 port in trunk
+#summary Tutorial on how to build the Mupen64Plus source code under Windows
 #labels Phase-Implementation,Phase-Deploy
 
-= Introduction =
+= Compiling !Mupen64Plus in Windows =
 
-Hi there. We now have a Qt4 interface in trunk that seems to work on windows. If you'd like to compile it you will need the following:
+This guide is for people who want to play with the latest !Mupen64Plus code under development, by grabbing the source code from our development repository and compiling it yourself.
 
- * [http://www.libsdl.org/release/SDL-devel-1.2.13-mingw32.tar.gz SDL]
- * [http://www.trolltech.com/download?target=http://wftp.tu-chemnitz.de/pub/Qt/qt/source/qt-win-opensource-4.4.1-mingw.exe Qt4]
- * [http://code.google.com/p/dlfcn-win32/ dlfcn-win32]
- * [http://www.mingw.org/ MinGW]
-  * It is enough to let the Qt installer install MinGW
- * The following from [http://gnuwin32.sourceforge.net/packages.html GnuWin32]:
-  * libfreetype
-  * libiconv
-  * libpng
-  * zlib
+== Requirements ==
 
-= Details =
+  * Build environment (Visual Studio .NET 2005 or 2008)
+  * !TortoiseHg (http://tortoisehg.bitbucket.org/)
 
-Install the deps mentioned above. Make sure the Qt and MinGW tools are in your path. Adjust the paths at the top of pre.mk.win32. Run the following in the trunk folder:
+== Instructions ==
 
- * mingw32-make WIN32=1 GUI=QT4 mupen64plus
+1. Use your !TortoiseHg client to clone the following repositories (put them all in the same parent directory):
 
-You should now have a mupen64plus.exe file. Place the needed DLL files in the right places (the easiest way is to place them in the same directory with the exe) and you should be able to start up the emulator.
+ * http://bitbucket.org/richard42/mupen64plus-audio-sdl/
+ * http://bitbucket.org/richard42/mupen64plus-core/
+ * http://bitbucket.org/richard42/mupen64plus-input-sdl/
+ * http://bitbucket.org/richard42/mupen64plus-rsp-hle/
+ * http://bitbucket.org/richard42/mupen64plus-ui-console/
+ * http://bitbucket.org/richard42/mupen64plus-video-rice/
+ * http://bitbucket.org/richard42/mupen64plus-win32-deps/
+
+2. Open up the Visual Studio solution file at: mupen64plus-ui-console\projects\msvc8\mupen64plus-ui-console.sln
+
+3. Build it in Debug or Release mode
+
+4. Run it.  You can use 'winrar' or similar to unzip the mupen64plus.v64.gz test ROM file in mupen64plus-core\roms\ and drop it into the build directory, then click the "Run" button in visual studio.  Or, you can open a DOS shell and 'cd' to the build dir and run your own roms with "mupen64plus-ui-console.exe \path\to\my\rom.z64".
