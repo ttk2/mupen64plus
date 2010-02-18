@@ -1,5 +1,144 @@
 #summary Mupen64Plus Release Notes
 
+==!Mupen64Plus v1.99.3 - February 13, 2010==
+===Console-UI Front End Application===
+ * New feature: command-line option --set for setting arbitrary configuration variables
+ * updated MAN page for all the changes made in the 2.0 re-architecture
+===Core Emulator Library===
+ * New feature: configuration function !ConfigGetParameterType()
+ * New feature: up to 1000 screenshots per ROM are allowed
+ * New feature: support for Gameshark 3.3 patch codes
+ * Bugfix: Use Dynarec by default when core supports it.  If dynarec is selected but unavailable, fall back to cached interpreter
+ * Bugfix: screenshot directory handling code used unix-specific path separators; now is platform-independent
+ * Bugfix: #313 - 64-bit inline assembly code in r4300/x86_64/rjump.c needs to have underscores before the symbols names in OSX
+ * Bugfix: old bug in the core - hang if a ROM *without* a 16kb EEPROM type is loaded after a ROM *with* a 16kb EEPROM type
+ * Bugfix: rumble feature caused memory corruption
+ * Bugfix: Problem with zilmar API: the plugin !RomOpen() functions had no way of returning errors to the core, causing crashes
+ * Replaced api documentation .tar.gz file with the mediawiki text
+ * Build script improvements:
+  * new feature: m64p_update.sh script can take an input argument to update to a tag or revision
+  * new feature: added bash script for building source packages of individual modules
+===Audio-SDL Plugin===
+ * sync with core/plugin API change for !RomOpen()
+ * bugfix: logical error in previous audio refactoring causing slowdown/lockup on loading savestate or re-initializing audio
+===Input-SDL Plugin===
+ * New feature: auto-configuration uses an .ini file instead of hard-coding the controllers in the source code
+ * New controller auto-configurations:
+  * Original X-Box (and compatible clones)
+  * !HuiJia USB !GamePad
+  * USB Human(2p) Interface Device
+ * sync with core/plugin API change for !RomOpen()
+ * Bugfix: controller pak was fixed at startup, switching b/w mempak and rumblepak did not work
+ * Bugfix: Xbox 360 and PS3 controllers need slightly different names under OSX
+===Rice Video Plugin===
+ * sync with core/plugin API change for !RomOpen()
+ * Changed default !ScreenUpdateSetting to 1 for Linux, and 4 for Windows
+ * use custom opengl extension function pointer typedefs, to avoid compilation errors with some drivers including hosed gl.h headers
+ * merged some changes from Tillin9 commits in r1142-rice-video-gtk-refactor branch, to be more lenient in hi-res texture loading
+ * bugfix: hi-res textures did not work in Windows
+ * bugfix: #329: remove some deprecated types and a function call to prevent build errors with libpng 1.4
+ * bugfix: fixed mirroring bugs in Rice Video hi-resolution texture loading, based on Tillin9 rev 1337 in r1142-rice-video-gtk-refactor branch
+ * bugfix: in !ConvertImage.cpp none of the 4-bit conversion functions could handle 1-pixel wide textures
+
+==!Mupen64Plus v1.99.2 - January 6, 2010==
+===Console-UI Front End Application===
+ * new feature: added MSVC8 project/solution files, minor refactoring for VC compatibility
+===Core Emulator Library===
+ * doc: added tarball of emuwiki api documentation from 2010-01-06 for backup purposes
+ * clean-up: removed almost all of the ifdef WIN32 statements
+ * bugfix: stop spamming console with "Core: couldn't open memory pack file '...' for reading" messages
+ * bugfix: stop spamming console with "Core: couldn't open eeprom file '...' for reading" messages
+ * new feature: MSVC8 project file for mupen64plus-core, refactored code for VC8 compatibility
+===Audio-SDL Plugin===
+ * new feature: Completely re-wrote buffering/synchronization code:
+  * Buffer parameters now work as advertised and all use the same units
+  * Bugfix: previous defaults and algorithm behavior caused audio choppiness on slower PCs
+  * Bugfix: maximum speed was previously limited to low value by constraints from primary buffer size
+ * bugfix: SDL volume control will always be used on systems without OSS support
+ * new feature: added MSVC8 project file, minor code refactoring to build in Windows
+===Input-SDL Plugin===
+ * new feature: added MSVC8 project file, minor code refactoring for VC compatibility
+ * added auto-configuration for:
+  * Xbox 360 Wireless Receiver
+  * PS3 controller
+  * Jess Tech Dual Analog Pad
+===RSP-HLE Plugin===
+ * New feature: added MSVC8 project file for RSP-HLE plugin, fixed a few minor incompatibilities
+===Rice Video Plugin===
+ * bugfix: fix fragment program combiner for Intel drivers in Win32, by ensuring that program does not allocate unused temp vars or call TEX commands for texture units that are not enabled
+ * new feature: compile-time option for opengl debugging by calling glGetError after each opengl command (except inside of glBegin/glEnd)
+ * portability: use ALIGN() for aligned data member declarations in header files as well as the definitions in CPP files
+ * portability: refactor opengl code to use `VidExt_GL_GetProc()` for all opengl functions newer than v1.1, so that this will work in Windows
+ * portability: Abstracted directory-handling code with new `osal_files` source code
+ * portability: replaced unix `gettimeofday()` function calls with `SDL_GetTicks()`
+ * new feature: added MSVC8 project file, fixed minor incompatibilities with VC compiler
+
+==!Mupen64Plus v1.99.1 - December 14, 2009==
+===Console-UI Front End Application===
+ * Brand new Console-based front-end for !Mupen64Plus 2.0
+ * New feature: R4300 Core Comparison for debugging
+ * New feature: Cheat code support from command-line
+===Core Emulator Library===
+New 2.0 architecture advantages:
+ * Simplified emulator Core, making it much more portable
+ * Removed all GUI code from plugins, making them simpler and more portable
+ * User interface development is not tied to Core emulator releases
+ * All messages from core/plugins can be filtered and shown in GUI instead of only on console
+ * Video Extension allows Front-end to override some video functions, ie to support embedded render window
+ * Startup in Fullscreen mode, instead of always starting in windowed mode and switching to FS after few seconds
+ * video resolution can be given via command-line parameter
+ * all configuration options for core and plugins are in a single config file, can be configured with a single GUI
+ * dummy plugins are automatically used if plugin loading fails for any reason
+ * core and plugins all use the same conventions for where to put data/config files
+!Mupen64Plus core:
+ * New feature: cheat code support
+ * New feature: Keyboard shortcuts for Core commands are now user-configurable
+ * New feature: can load/save PJ64 state files
+ * Major code cleanup, refactored build system to separate source and object files
+ * Removed many dependencies to simplify porting to other platforms
+ * Moved all of the SDL event-related stuff into a new source file eventloop.c
+ * Use XDG directory convention for file locations on Unix
+ * bugfix: frame advance feature should advance every frame, instead of every vertical interrupt (every field)
+ * bugfix: allow diagonal hat movements for core joystick commands
+ * bugfix: modified SDL event loop joystick code so that gameshark button press is captured, and joystick commands that are level-triggered instead of edge-triggered (such as fast foward) can be accommodated
+ * bugfix: fixed the outstanding SDL event issues by re-writing the code which handles the joystick-event-driven core commands.  Now the axis-based commands use hysteresis and there is a single global event function for determining if the gameshark button is pressed
+ * bugfix: OSD crash after pause-stop-start-pause of emulator
+ * bugfix: Set video width and status, aiDacrate during savestate load
+ * bugfix: in pure interpreter, Dont allow to override r0 register
+ * bugfix #52: PJ64 load state patch from olejl77
+ * bugfix #268: use aligned malloc and mprotect to set executable status for dynarec emitted code
+ * bugfix #51: Floating Point Register data was not correctly converted when switching between 32-bit (MIPS-I) mode and 64-bit (MIPS III). New code more closely emulates behavior of r4300 hardware.  Fixes collision problems in Banjo-Tooie
+ * bugfix #272: rounding mode for x86 FPU not being set correctly in interpreter and pure interpreter cores
+ * bugfix: many games need different !ScreenUpdateSetting to work properly with Rice Video
+===Audio-SDL Plugin===
+ * Converted to new !Mupen64Plus 2.0 API
+ * Code cleanup to remove non-standard data types
+ * Refactored build system to separate source and object files
+ * bugfix #269: jttl_audio segfaults on exit due to incorrectly ordered shutdown code
+===Input-SDL Plugin===
+ * New feature: Joystick/Keyboard auto-configuration
+ * New feature: deadzone and peak analog joystick values are now configurable
+ * Converted to new !Mupen64Plus 2.0 API
+ * Refactored build system to separate source and object files
+ * Major code cleanup: mouse movement and analog axis code was terrible, removed non-standard data types
+ * Improved debug messages
+ * bugfix: mapping the X/Y analog sticks to keypresses didnt work
+ * bugfix: !LeftCtrl-!LeftAlt key command when mouse is enabled to now toggles between grabbing and releasing the mouse pointer
+===RSP-HLE Plugin===
+ * Converted to new !Mupen64Plus 2.0 API
+ * Refactored build system to separate source and object files
+ * Refactored all code to remove win32-specific things, unnecessary functions, and clean up
+===Rice Video Plugin===
+ * Converted to new !Mupen64Plus 2.0 API
+ * Major code cleanup, removed all non-standard data types
+ * Refactored build system to separate source and object files
+ * added NO_ASM build option
+ * removed some unused configuration parameters
+ * bugfix: handle fullscreen video mode properly: start up in this mode instead of always starting in windowed and needing the core to switch to fullscreen
+ * bugfix #209: setjmp/longjmp fixes in the BMP writer and PNG reader
+ * bugfix: eliminated duplicate 'Found ROM ...' messages
+
+
 ==!Mupen64Plus v1.5 - January 4th, 2009==
 ===Major New Features===
  * Support for Macintosh OSX platform with Intel CPUs
