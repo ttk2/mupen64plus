@@ -1,21 +1,19 @@
 #summary Tutorial on how to check out source code with Hg and compile under Linux
 #labels Phase-Deploy
 
-= What is this? =
+= Compiling !Mupen64Plus from source code under Linux =
 
 This guide is for people who want to play with the latest !Mupen64Plus code under development, by grabbing the source code from our development repository and compiling it yourself.
 
 == Requirements ==
 
-  * Build environment (GCC, G++, GNU Make, etc)
-  * Development packages for dependencies
-  *# SDL 1.2
-  *# libpng
-  *# freetype 2
-  *# zlib
-  *# OpenGL
-
-= Tutorials =
+ * Build environment (GCC, G++, GNU Make, etc)
+ * Development packages for dependencies
+  # SDL 1.2
+  # libpng
+  # freetype 2
+  # zlib
+  # OpenGL
 
 == Installing Mercurial ==
 
