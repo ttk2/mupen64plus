@@ -1,0 +1,45 @@
+#summary Instructions for using the Mupen64Plus-UI-Console front-end application.
+
+At startup, the mupen64plus program will look for a user configuration file called 'mupen64plus.cfg'. On Linux or OSX, this file is located at `~/.config/mupen64plus/`, and on Windows it is in the "Application Data" sub-folder of your user folder. On Windows XP and prior, this is `C:\Documents and Settings\username\Application Data\Mupen64Plus\`, while on Windows Visa and newer this is `C:\Users\username\AppData\Mupen64Plus`.
+If this file does not exist, it will be created and default settings will be written. If desired, an alternate config directory can be specified using the --configdir commandline option.
+
+Run 'mupen64plus --help' for a complete list of commandline options:
+{{{
+ $ mupen64plus --help
+ Usage: mupen64plus [parameter(s)] rom
+
+Parameters:
+    --noosd               : disable onscreen display
+    --osd                 : enable onscreen display
+    --fullscreen          : use fullscreen display mode
+    --windowed            : use windowed display mode
+    --resolution (res)    : display resolution (640x480, 800x600, 1024x768, etc)
+    --cheats (cheat-spec) : enable or list cheat codes for the given rom file
+    --corelib (filepath)  : use core library (filepath) (can be only filename or full path)
+    --configdir (dir)     : force configation directory to (dir); should contain mupen64plus.conf
+    --datadir (dir)       : search for shared data files (.ini files, languages, etc) in (dir)
+    --plugindir (dir)     : search for plugins in (dir)
+    --sshotdir (dir)      : set screenshot directory to (dir)
+    --gfx (plugin-spec)   : use gfx plugin given by (plugin-spec)
+    --audio (plugin-spec) : use audio plugin given by (plugin-spec)
+    --input (plugin-spec) : use input plugin given by (plugin-spec)
+    --rsp (plugin-spec)   : use rsp plugin given by (plugin-spec)
+    --emumode (mode)      : set emu mode to: 0=Pure Interpreter 1=Interpreter 2=DynaRec
+    --testshots (list)    : take screenshots at frames given in comma-separated (list), then quit
+    --set (param-spec)    : set a configuration variable, format: ParamSection[ParamName]=Value
+    --core-compare-send   : use the Core Comparison debugging feature, in data sending mode
+    --core-compare-recv   : use the Core Comparison debugging feature, in data receiving mode
+    --saveoptions         : save the given command-line options in configuration file for future
+    --verbose             : print lots of information
+    --help                : see this help message
+
+(plugin-spec):
+    (pluginname)          : filename (without path) of plugin to find in plugin directory
+    (pluginpath)          : full path and filename of plugin
+    'dummy'               : use dummy plugin
+
+(cheat-spec):
+    'list'                : show all of the available cheat codes
+    'all'                 : enable all of the available cheat codes
+    (codelist)            : a comma-separated list of cheat code numbers to enable
+}}}
