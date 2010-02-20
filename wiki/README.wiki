@@ -1,4 +1,5 @@
 #summary How to build, install, and use Mupen64Plus
+#labels Deprecated
 
 This README document reflects the instructions for using the latest !Mupen64Plus code, which may be unreleased, so if you are using a released version of !Mupen64Plus, the most accurate instructions are in the README file included with your release package.
 
