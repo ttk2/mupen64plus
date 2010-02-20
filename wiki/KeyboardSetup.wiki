@@ -1,6 +1,4 @@
-#summary Default key bindings and
-
-<wiki:toc max_depth="2" />
+#summary Default key bindings for Mupen64Plus emulator
 
 ==1. Default Key Commands In Emulator Core==
 
