@@ -39,6 +39,8 @@ The keys or joystick/mouse inputs which will be mapped to the N64 controller for
 || Select Mempack || "," ||
 || Select Rumblepack || "." ||
 
+http://mupen64plus.googlecode.com/svn/wiki/keyboardMupen64Plus.png
+
 ==3. Configuration for Key Commands==
 
 You may set your own key bindings for the emulator core and input plugins, by editing the !Mupen64Plus config file.  On Linux or OSX, this is located at `~/.config/mupen64plus/`, and on Windows it is in the "Application Data" sub-folder of your user folder.  On Windows XP and prior, this is `C:\Documents and Settings\username\Application Data\Mupen64Plus\`, while on Windows Visa and newer this is `C:\Users\username\AppData\Mupen64Plus`.
