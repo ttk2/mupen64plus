@@ -2,109 +2,26 @@
 
 = Introduction =
 
-In Windows it is quite easy to install high resolution texture packs and use them with Rice Video provided you know where the plug in is looking to get these textures. Similarly, !Mupen64Plus's Rice Video plug in is that simple. Normally it's about as easy as copying a folder to `~/.mupen64plus/hires_texture/`, but upon first configuration of using High Resolution Texture packs there is just a little more configuration.
+!Mupen64Plus's Rice Video plugin supports a very nice feature which allows the user to replace all of the original textures used for 3D rendering in a game with high-resolution replacement textures drawn by graphic artists.
 
+= Setup =
 
-= Details =
+== Enable Hi-Res Texture Loading in Rice Video ==
 
-*Note:* The first part may be done on either the GUI or the terminal, but should not be done on both. Be sure to skip past "Using the Terminal:" if you go the GUI route.
+In order to begin using the hi-resolution texture feature, you must enable it by editing the !Mupen64Plus config file.  One option is to find the file and edit it directly with a text editor.  On Linux or OSX, this is located at `~/.config/mupen64plus/`, and on Windows it is in the "Application Data" sub-folder of your user folder. On Windows XP and prior, this is `C:\Documents and Settings\<username>\Application Data\Mupen64Plus\`, while on Windows Vista and newer this is `C:\Users\<username>\AppData\Mupen64Plus`.  You should find a section in this file labeled `[Video-Rice]`, and within this section is a parameter called `LoadHiResTextures`.  Set this to True to enable searching for and loading high-resolution textures.
 
-Notice that whence you must type out a path with spaces in the terminal you should either escape them (put slashes before them) or surround the path with double quotation marks. 
+Another option to enable this feature is to use the `--set` option with the !Mupen64Plus command-line user interface.  To do this, run a game with a command similar to this: `./mupen64plus --set Video-Rice[LoadHiResTextures]=True --saveoptions m64p_test_rom.v64`
 
-*Using the GUI:*
+== Installing Hi-Res Texture Files ==
 
-  * Enter your file browser, and type in the directory `~/.mupen64plus`.
-  * Create the sub-folder `hires_texture` and enter it.
-  * Extract the hires texture archive and copy the texture folder into the `hires_texture` window. The texture folder will obviously have images inside and no sub-folders.
-  * Exit your file browser window(s).
+To install a high-resolution texture pack for a game, all that you need to do is unzip the archive and put the extracted directory full of images into the right place.  On Linux and OSX, this is usually `/home/<username>/.local/share/mupen64plus/hires_texture`.  On Windows it is in the "Application Data" sub-folder of your user folder. On Windows XP and prior, this is `C:\Documents and Settings\<username>\Application Data\Mupen64Plus\hires_texture`, while on Windows Vista and newer this is `C:\Users\<username>\AppData\Mupen64Plus\hires_texture`.  If this directory doesn't exist, create it and copy the hi-res texture directory inside.
 
-*Using the Terminal:*
+The folder containing hi-res textures must be named exactly the same as the ROM's name in the header of the ROM file.  Usually this name is short with all capital letters, like "MARIOKART64" or "SMASH BROTHERS".  The command-line UI prints out this ROM name when running a game, right after the Goodname and before the MD5.
 
-  * Log into your terminal as the user you wish to play with high resolution textures as.
-  * Use `mkdir` to ensure that `~/.mupen64plus/` and `~/.mupen64plus/hires_texture` exist.
-    `This will create the folders if they do not exist.`
-{{{
-$ mkdir ~/.mupen64plus/
-$ mkdir ~/.mupen64plus/hires_texture
-}}}
-  * Use the `cd` command to find the directory your texture pack archive is stored. You can use the `ls` command to see all files in a directory.
-    `Traverse into the directory which stores your texture pack`
-{{{
-$ cd ~/Downloads/
-}}}
-    `Look to see if the archive is there`
-{{{
-$ ls
-}}}
-  * If the texture pack is not alone in the directory, create a new directory 
-    `mkdir creates a new directory. mkdir <path>`
-{{{
-$ mkdir texture_pack
-}}}
-  * Move the archive into the new directory
-    `The mv command will do this - mv <source(s)> <destination>`
-{{{
-$ mv archive.tar.gz texture_pack/
-}}}
-  * Use `cd` to enter the new directory.
-    `Again, if you have spaces in the path, escape it or surround it in double quotation marks.`
-{{{
-$ cd texture_pack/
-}}}
-  * Use the appropriate archiver command to extract the texture pack. 
-    `For *.tar.bz, *.tar.gz, *.tgz files`
-{{{
-$ tar -xzvf archive.tar.gz
-}}}
-    `For *.zip`
-{{{
-$ unzip archive.zip
-}}}
-    `For *.rar`
-{{{
-$ unrar e archive.rar
-}}}
-  * Use "cd" and "ls" to locate the folder with the textures
-    `Enter the new extracted folder`
-{{{
-$ cd folder/
-}}}
-    `Look and see if there are many image files. If not, cd into other directories.`
-{{{
-$ ls
-}}}
-    `We can traverse back up the directory tree if we do not find the right folder.`
-{{{
-$ cd ..
-}}}
-  * Once you have located the folder with all of the textures, `cd ..` so that you can see the folder name with `ls`.
-  * Use `mv` to move the textures into `~/.mupen64plus/hires_texture` 
-    `Move the folder. Remember, you need to tell your shell that our spaces are part of the path.`
-{{{
-$ mv MY\ GAME\ NAME ~/.mupen64plus/hires_texture
-}}}
-    `Instead of using escape before spaces part of the path, you can surround the path in double quotation marks.`
-{{{
-$ mv "MY GAME NAME" ~/.mupen64plus/hires_texture
-}}}
-    `Because Linux is case sensitive, you probably need to make the folder name all capitals if it is not already. Your mv command will allow you to specify the output name by  specifying a nonexistent sub folder in the destination.`
-{{{
-$ mv "My game name" ~/.mupen64plus/hires_texture/MY\ GAME\ NAME
-}}}
+== Running ==
 
+After setup, just run the game as usual.  If using the command-line UI, you should see a line printed out which says:
 
-*The following must be done using the !Mupen64Plus GUI at this time.*
-
-  * Start *!Mupen64Plus*.
-  * Enter Options->Configure.
-  * If you are not already in it, enter the *!Mupen64Plus Configuration* tab.
-  * If your Video Plug-In drop down list does not have *Rice Video* selected, Click the drop down box and select it.
-  * Click on the configure button. You should now see another dialog.
-  * Find the check box, *Use Hires Textures*. Check this box.
-  * Press *OK* on the *Rice Video Configuration Window*
-  * Press *OK* on the *!Mupen64Plus Configuration Window*
-  * Test your new high resolution texture pack by running the game in question. Often times you will notice immediate changes.
-  * If it does not work, make sure that all of the directories are named properly and that you placed `hires_texture` inside of `~/.mupen64plus`. Also be sure that the texture pack was properly extracted and is properly installed into `~/.mupen64plus/hires_texture`.
-
-
-At this time, The only supported plug-in which supports High Resolution Textures is Rice Video, so you are limited to using only Rice Video.
+{{{
+Video: Texture loading option is enabled. Finding all hires textures
+}}}
