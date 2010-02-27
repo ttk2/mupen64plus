@@ -14,11 +14,11 @@ mupen64plus has his own official plugins. If you have a problem with one of them
 
 Third party plugins are plugins which are not part of the main bundle you can find here. The only way to use it is to download (sometime compile) it yourself.
 
-They are supported *by there authors*. If you have a problem with one of them, the best thing to do is to contact directly the author who is the best placed person to answer you.
+They are supported *by their authors*. If you have a problem with one of them, the best thing to do is to contact directly the author who is the best placed person to answer you.
 
 || *Plugin Name* || *Description* || *Web Site* ||
-|| mupen64plus-video-arachnoid || Video plugin for Mupen64Plus v2.0, based on the Arachnoid plugin for Project64. || http://bitbucket.org/wahrhaft/mupen64plus-video-arachnoid/ ||
-|| mupen64plus-rsp-z64 || Low-level RSP processor plugin for the Mupen64Plus v2.0 project. This is based on Ziggy's Z64 plugin. || http://bitbucket.org/wahrhaft/mupen64plus-rsp-z64/ ||
-|| mupen64plus-video-z64 || Low-level RDP plugin for the Mupen64Plus v2.0 project. This is based on Ziggy's Z64 plugin. || http://bitbucket.org/wahrhaft/mupen64plus-video-z64/ ||
-|| mupen64plus-video-glide64 || Video plugin for Mupen64Plus v2.0, based on the Glide64 plugin from Mupen64Plus 1.5. || http://bitbucket.org/wahrhaft/mupen64plus-video-glide64/ ||
-|| mupen64plus-ui-qt || Experimental concept GUI for Mupen64Plus 2.0 || http://bitbucket.org/beholdmyglory/mupen64plus-ui-qt/ ||
+|| mupen64plus-video-arachnoid || Video plugin for !Mupen64Plus v2.0, based on the Arachnoid plugin for Project64. || http://bitbucket.org/wahrhaft/mupen64plus-video-arachnoid/ ||
+|| mupen64plus-rsp-z64 || Low-level RSP processor plugin for the !Mupen64Plus v2.0 project. This is based on Ziggy's Z64 plugin. || http://bitbucket.org/wahrhaft/mupen64plus-rsp-z64/ ||
+|| mupen64plus-video-z64 || Low-level RDP plugin for the !Mupen64Plus v2.0 project. This is based on Ziggy's Z64 plugin. || http://bitbucket.org/wahrhaft/mupen64plus-video-z64/ ||
+|| mupen64plus-video-glide64 || Video plugin for !Mupen64Plus v2.0, based on the Glide64 plugin from !Mupen64Plus 1.5. || http://bitbucket.org/wahrhaft/mupen64plus-video-glide64/ ||
+|| mupen64plus-ui-qt || Experimental concept GUI for !Mupen64Plus 2.0 || http://bitbucket.org/beholdmyglory/mupen64plus-ui-qt/ ||
