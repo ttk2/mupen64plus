@@ -1,20 +1,18 @@
 #summary List of third party plugins for mupen64plus
 
-This page has been created to list all plugins for mupen64plus in order to facilitate research.
+This page has been created to list all of the third-party plugins and front-end applications for mupen64plus, in order to facilitate research. It's aim is to be a central place to find the different available plugins.
 
-It aim is to centralized more as possible the differents available plugins.
-
-If you made a plugin for mupen64plus which is not in this section. Contact dorian.fevrier with a link of the web site for he adds in.
+If you have made a plugin for mupen64plus which is not in this section, please contact dorian.fevrier with a link of the web site, so that it may be added to this list.
 
 = Official Plugins =
 
-mupen64plus has his own official plugins. If you have a problem with one of them, you should report it via [http://code.google.com/p/mupen64plus/issues/list the issues list]. 
+!Mupen64Plus has 4 of its own official plugins: mupen64plus-input-sdl, mupen64plus-audio-sdl, mupen64plus-rsp-hle, and mupen64plus-video-rice. If you have a problem with one of them, you should report it via [http://code.google.com/p/mupen64plus/issues/list the issues list]. 
 
 = Third-Party Plugins =
 
-Third party plugins are plugins which are not part of the main bundle you can find here. The only way to use it is to download (sometime compile) it yourself.
+Third party plugins are plugins which are not part of the main bundle you can find here. The only way to use these are to download (and sometimes compile) them yourself.
 
-They are supported *by their authors*. If you have a problem with one of them, the best thing to do is to contact directly the author who is the best placed person to answer you.
+They are supported *by their authors*. If you have a problem with one of them, the best thing to do is to contact directly the author, who is the best placed person to answer you.
 
 || *Plugin Name* || *Description* || *Web Site* ||
 || mupen64plus-video-arachnoid || Video plugin for !Mupen64Plus v2.0, based on the Arachnoid plugin for Project64. || http://bitbucket.org/wahrhaft/mupen64plus-video-arachnoid/ ||
