@@ -13,7 +13,7 @@ If you have made a plugin for mupen64plus which is not in this section, please c
 Front-ends are applications which use the !Mupen64Plus core emulator and compatible plugins, and present a user-interface.  The only front-end included with the core !Mupen64Plus bundle is a command-line only program.  Third-party front-ends are developed and maintained outside of the main !Mupen64Plus project but are compatible with !Mupen64Plus 2.0.  They are supported *by their authors*. If you have a problem with one of them, the best thing to do is to contact directly the author, who is the best placed person to answer you.
 
 || *Application Name* || *Description* ||
-|| [http://groups.google.com/group/mupen64plus/web/cutemupen-0.0.3.tar.bz2 CuteMupen 0.0.3] || Brand new Qt-based GUI with high aspirations ||
+|| [http://sourceforge.net/userapps/mediawiki/vknecht/index.php?title=CuteMupen CuteMupen] || Brand new Qt-based GUI with high aspirations ||
 || [http://www.emutalk.net/showthread.php?t=50438 Gtk64] || Brand new GUI Front-end based on the object oriented GTKmm library ||
 || [http://forums.ngemu.com/emulation-news-submissions/131998-new-mupen64plus-v1-99-3-release-february-2010-windows-also.html#post1803213 MupenGUI C#] || Windows-only launcher/config application ||
 || [http://bitbucket.org/beholdmyglory/mupen64plus-ui-qt/ mupen64plus-ui-qt ]|| Experimental concept GUI for !Mupen64Plus 2.0 ||
