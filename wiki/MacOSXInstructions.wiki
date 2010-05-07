@@ -18,7 +18,8 @@ A script to build (32 bits, compatible with 10.5 and maybe 10.4) looks like :
 
 <code language="sh"> 
 #!/bin/sh
-PWD = `pwd`
+PWD = ```pwd```
+
 export CC="gcc-4.0"
 export CXX="g++-4.0"
 export LD="g++-4.0"
@@ -90,7 +91,8 @@ cp -f `*`.dylib $APP_BUNDLE/MacOS/.
 To build 64-bits, use something like that instead (tested on 1.6) :
 <code language="sh"> 
 #!/bin/sh
-PWD = `pwd`
+PWD = ```pwd```
+
 APIDIR=$PWD/mupen64plus-core/src/api
 export LD="g++"
 
