@@ -1,0 +1,97 @@
+#summary Places where Mupen64Plus installs and/or searches for various files
+
+= Where the heck are the files? =
+
+Due to the flexibility of !Mupen64Plus and its cross-platform design, they could be just about anywhere!  The quick-reference tables below gives the most likely locations for some common files. The remainder this wiki page gives the full details of where they could be.
+
+=== Linux/OSX ===
+|| *File Type* || *Path* ||
+|| Config file || `~/.config/mupen64plus/` ||
+|| Screenshots || `~/.local/share/mupen64plus/screenshot/` ||
+|| Save states || `~/.local/share/mupen64plus/save/` ||
+
+=== Windows XP and Earlier ===
+|| *File Type* || *Path* ||
+|| Config file || `C:\Documents and Settings\your_user_name\Application Data\Mupen64Plus\` ||
+|| Screenshots || `C:\Documents and Settings\your_user_name\Application Data\Mupen64Plus\screenshot\` ||
+|| Save states || `C:\Documents and Settings\your_user_name\Application Data\Mupen64Plus\save\` ||
+
+=== Windows Vista and Newer ===
+
+|| *File Type* || *Path* ||
+|| Config file || `C:\Users\your_user_name\AppData\Roaming\Mupen64Plus\` ||
+|| Screenshots || `C:\Users\your_user_name\AppData\Roaming\Mupen64Plus\screenshot\` ||
+|| Save states || `C:\Users\your_user_name\AppData\Roaming\Mupen64Plus\save\` ||
+
+== Front-End Specific Files ==
+
+The front-end User Interface is responsible for finding the core libraries and plugins for startup.  Each front-end may have its own method for finding these libraries.  The !Mupen64Plus-UI-Console front-end looks for these libraries in the following places, in order:
+
+=== Core Library ===
+  # Path given by `--corelib` option
+  # Path given at compile time with `COREDIR` macro
+  # No path at all (allows the Operating System to search for the shared library)
+  # Current directory
+
+=== Plugin Libraries===
+The !Mupen64Plus-UI-Console front-end looks through several directories in search of valid !Mupen64Plus plugins.  When it finds a directory containing plugins, it populates a list with all of the plugins found.  Then, when loading plugins it only uses plugins from this list (found in one directory), unless the user specifies full plugin paths on the command line with the `--gfx`, `--audio`, `--rsp`, or `--input` options.  The order in which directories are searched is:
+
+  # Path given by `--plugindir` option
+  # Path given by *!PluginDir* parameter in !Mupen64Plus config file
+  # (Unix-only) Path given at compile-time with `PLUGINDIR` macro
+  # (Unix-only) `/usr/local/lib/mupen64plus`
+  # (Unix-only) `/usr/lib/mupen64plus`
+  # Current Directory
+
+== Core-specific Files ==
+
+These are files which are read and written by the core emulator.
+
+=== Screenshots ===
+  # Path given by `--sshotdir` option (if using !Mupen64Plus-UI-Console)
+  # Path given by *!ScreenshotPath* parameter in !Mupen64Plus config file
+  # _!User_Data_/screenshot/ (see OS-specific sections below)
+
+=== Save states ===
+  # _!User_Data_/save/ (see OS-specific sections below)
+
+== Unix-specific Search Paths ==
+
+The _!Shared_Data_ search paths work in the following way: each time a shared data file needs is requested (such as an .ini file, or font file), the emulator core looks through all of the _!Shared_Data_ paths in order to find the file.
+
+_!Shared_Data_:
+  # Path given by `--datadir` option (if using !Mupen64Plus-UI-Console)
+  # Path given by *!SharedDataPath* parameter in !Mupen64Plus config file
+  # Path given at compile-time with `SHAREDIR` macro
+  # `/usr/local/share/mupen64plus`
+  # `/usr/share/mupen64plus`
+  # `./`
+
+The _!User_Data_ and _!User_Config_ search paths work in the following way: at startup time, the emulator core looks through the list of directories to find one that exists.  The first one found is used to read/write all _!User_Data_ or _!User_Config_ files, or if none exists, then the last one in the list is created.
+
+_!User_Data_:
+  # `$XDG_DATA_HOME/mupen64plus/`
+  # `$HOME/.local/share/mupen64plus/`
+
+_!User_Config_:
+  # Path given by `--configdir` option (if using !Mupen64Plus-UI-Console)
+  # `$XDG_CONFIG_HOME/mupen64plus/`
+  # `$HOME/.config/mupen64plus/`
+
+== Windows-specific Search Paths ==
+
+The _!Shared_Data_ search paths work in the following way: each time a shared data file needs is requested (such as an .ini file, or font file), the emulator core looks through all of the _!Shared_Data_ paths in order to find the file.
+
+On Windows versions prior to Vista, the `$CSIDL_APPDATA` path is usually: `C:\Documents and Settings\your_user_name\Application Data`.  On later versions of Windows, this path is usually: `C:\Users\your_user_name\AppData\Roaming`.
+
+_!Shared_Data_:
+  # Path given by `--datadir` option (if using !Mupen64Plus-UI-Console)
+  # Path given by *!SharedDataPath* parameter in !Mupen64Plus config file
+  # `$CSIDL_APPDATA\Mupen64Plus\`
+
+On Windows, the _!User_Data_ and _!User_Config_ directories are the same.  These search paths work in the following way: at startup time, the emulator core looks through the list of directories to find one that exists.  The first one found is used to read/write all _!User_Data_ or _!User_Config_ files, or if none exists, then the last one in the list is created.
+
+_!User_Data_:<br>
+_!User_Config_:
+  # Path given by `--configdir` option (if using !Mupen64Plus-UI-Console)
+  # `$CSIDL_APPDATA\Mupen64Plus\`
