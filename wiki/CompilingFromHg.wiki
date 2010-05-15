@@ -29,11 +29,11 @@ Part of the re-design of our emulator has involved breaking it up from a single 
 
 To check out, build, and run the new !Mupen64Plus code, unzip these scripts into an empty directory and run:
 
-{{{./m64p_get.sh && ./m64_build.sh && ./m64p_test.sh}}}
+{{{./m64p_get.sh && ./m64p_build.sh && ./m64p_test.sh}}}
 
 If, at a later time, you want to pull the latest changes and rebuild all of the code, you may do the following:
 
-{{{./m64p_update.sh && ./m64_build.sh}}}
+{{{./m64p_update.sh && ./m64p_build.sh}}}
 
 The build script will create a `test` directory and place all of the necessary files there.  You can go into this directory and run the console front-end (named `mupen64plus`) to run ROMs.
 
