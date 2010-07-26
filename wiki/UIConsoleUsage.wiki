@@ -1,6 +1,6 @@
 #summary Instructions for using the Mupen64Plus-UI-Console front-end application.
 
-At startup, the mupen64plus program will look for a user configuration file called 'mupen64plus.cfg' (see [FileLocations#Where_the_heck_are_the_files?] for more informations).
+At startup, the mupen64plus program will look for a user configuration file called 'mupen64plus.cfg' (see [FileLocations] for more informations).
 
 If this file does not exist, it will be created and default settings will be written. If desired, an alternate config directory can be specified using the --configdir commandline option.
 
