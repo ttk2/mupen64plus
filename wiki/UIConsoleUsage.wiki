@@ -1,5 +1,7 @@
 #summary Instructions for using the Mupen64Plus-UI-Console front-end application.
 
+=Console Options=
+
 At startup, the mupen64plus program will look for a user configuration file called 'mupen64plus.cfg' (see [FileLocations] for more informations).
 
 If this file does not exist, it will be created and default settings will be written. If desired, an alternate config directory can be specified using the --configdir commandline option.
@@ -43,4 +45,22 @@ Parameters:
     'list'                : show all of the available cheat codes
     'all'                 : enable all of the available cheat codes
     (codelist)            : a comma-separated list of cheat code numbers to enable
+}}}
+
+=Exemples=
+==Cheats==
+To list the available cheat in the rom:
+{{{
+mupen64plus --cheats list "/path/to/my/rom.v64"
+}}}
+If there is cheats in the rom, you will get (in the output console):
+{{{
+UI-Console: 3 cheat code(s) found for ROM 'MY ROM'
+   0: [Enable All Levels] (This is needed to be able to Play all Levels of the Game)
+   1: [Enable All Weapons] (This is needed to be able to Play with all Weapons of the Game)
+   2: etc...
+}}}
+All you have to do to use this cheats is:
+{{{
+mupen64plus --cheats 0,1,2 "/path/to/my/rom.v64"
 }}}
