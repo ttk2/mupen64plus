@@ -49,11 +49,11 @@ Parameters:
 
 =Exemples=
 ==Cheats==
-To list the available cheat in the rom:
+To list the available cheats in the rom:
 {{{
 mupen64plus --cheats list "/path/to/my/rom.v64"
 }}}
-If there is cheats in the rom, you will get (in the output console):
+If there are cheats in the rom, you will get (in the output console):
 {{{
 UI-Console: 3 cheat code(s) found for ROM 'MY ROM'
    0: [Enable All Levels] (This is needed to be able to Play all Levels of the Game)
