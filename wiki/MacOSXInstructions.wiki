@@ -185,10 +185,10 @@ dylibbundler -od -b $FIX_LIST -d $APP_CONTENTS/libs/
 
 rm -rf $APP_CONTENTS/Resources
 mkdir -p $APP_CONTENTS/Resources
-cp ./mupen64plus-video-rice/data/* $APP_CONTENTS/Resources
-cp ./mupen64plus-video-glide64/data/* $APP_CONTENTS/Resources
-cp ./mupen64plus-core/data/* $APP_CONTENTS/Resources
-cp ./mupen64plus-input-sdl/data/*  $APP_CONTENTS/Resources
+cp ./mupen64plus-video-rice/data/`*` $APP_CONTENTS/Resources
+cp ./mupen64plus-video-glide64/data/`*` $APP_CONTENTS/Resources
+cp ./mupen64plus-core/data/`*` $APP_CONTENTS/Resources
+cp ./mupen64plus-input-sdl/data/`*`  $APP_CONTENTS/Resources
 </code>
 
 this script requires [http://macdylibbundler.sourceforge.net/ macdylibbundler] to be installed.
