@@ -23,7 +23,6 @@ Front-ends are applications which use the !Mupen64Plus core emulator and compati
 || [http://www.emutalk.net/showthread.php?t=50438 Gtk64] || Brand new GUI Front-end based on the object oriented GTKmm library ||
 || [http://speedofmac.com/speedofmac_mp64+_launcher.html SpeedofMac MP64+ GUI] || Launcher application for Mac OSX written with !AppleScript and Perl ||
 || [http://forums.ngemu.com/emulation-news-submissions/131998-new-mupen64plus-v1-99-3-release-february-2010-windows-also.html#post1803213 MupenGUI C#] || Windows-only launcher/config application ||
-|| [http://bitbucket.org/beholdmyglory/mupen64plus-ui-pyqt mupen64plus-ui-pyqt ]|| Experimental Python/Qt GUI for !Mupen64Plus 2.0 ||
 
 = Third-Party Plugins =
 
