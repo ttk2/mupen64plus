@@ -1,5 +1,42 @@
 #summary Mupen64Plus Release Notes
 
+==!Mupen64Plus v1.99.4 - November 22, 2010==
+===Console-UI Front End Application===
+ * add some parameter checking for --emumode option
+ * new cheat file format from spinout182
+ * makefile fixes and improvements
+===Core Emulator Library===
+ * Added some type checking to !ConfigGetParameter() function, and a new error type
+ * Bugfix: avoid segfault in the video extension code if SDL initialization fails (because video plugin fails)
+ * Added new !CoreGetRomSettings() function for front-ends
+ * Allow to run dynarec in hardware DEP protected windows
+ * Allow core .cfg parser to accept strings without quotes around them
+ * API change: use new !ReadScreen2() video plugin function
+ * New re-entrant R4300 disassembler, from tty68k/zzt32, a man who loves MIPS processors
+ * makefile fixes and improvements, code cleanups
+===Audio-SDL Plugin===
+ * Bugfix: Plugin should write default config values at startup time
+ * Bugfix: fixed fast-forward for banjo-kazooie and other games which was broken due to limitation in basic resampling algorithm
+ * makefile fixes and improvements
+===Input-SDL Plugin===
+ * Bugfix: Do configuration during !PluginStart(), so GUI will see defaults (auto-configured) the first time it is run
+ * Move axis value reducers to right shift and right ctrl, to avoid conflict with A/B buttons
+ * New feature: extra deadzone parameter in axis() config parameter clause when mapping an analog joystick axis to an N64 button
+ * many new joystick auto-configurations
+ * makefile fixes and improvements
+===Rice Video Plugin===
+ * new feature: anisotropic filtering
+ * new feature: trilinear filtering
+ * new feature: mipmaps
+ * cleaned up !FindScaleFactor function based upon r45 of the 1964 repo
+ * bugfix: buffer overrun (and crash) when reading vendor string info on some opengl implementations
+ * API change for reading the video buffer: new interface is more flexible and avoids some potential problems
+ * support for anti-aliasing (GL_MULTISAMPLE)
+ * makefile fixes, improvements, and code cleanups
+===RSP-HLE Plugin===
+ * merged all big-endian fixes from mupen64gc project
+ * makefile fixes and improvements
+
 ==!Mupen64Plus v1.99.3 - February 13, 2010==
 ===Console-UI Front End Application===
  * New feature: command-line option --set for setting arbitrary configuration variables
