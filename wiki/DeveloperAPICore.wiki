@@ -37,7 +37,7 @@ These two functions (<tt>CoreGetVersion</tt> and <tt>CoreErrorMessage</tt>) are 
 
 There are several types of functions here, which are exported from the Core library to be used by the front-end.  There are 'housekeeping' functions, for startup and shutdown, and attaching and detaching plugins.  There is also a Command API which is used for many simple functions such as loading, executing, or stopping a ROM.  Finally the Cheat API is here, for adding and removing cheat functions.
 
-=== Video Extension API ===
+=== [DeveloperAPICoreVideoExtension Video Extension API] ===
 
 These functions are exported from the Core library for use by the video plugin.  These functions are used for high-level video setup tasks such as enumerating available screen resolutions, setting the video mode, window caption, OpenGL attributes, and fullscreen mode.  The video extension API allows for the abstraction of these functions away from the hard-coded SDL function calls currently in the video plugins, so that a front-end may override these functions and provide its own video API.
 
