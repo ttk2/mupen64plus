@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Standard parameters which are used by the Mupen64Plus plugins.
 
 These are standard parameters which are used by the Mupen64Plus plugins.  The behavior of the plugin library when these parameters are changed while the emulator is running is not defined here.  Some plugins will load the parameters when starting and store internal copies of the parameters for use during emulation.  Other plugins may read the value of the parameters while running.
 
