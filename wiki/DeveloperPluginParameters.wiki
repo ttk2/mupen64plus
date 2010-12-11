@@ -1,8 +1,10 @@
 #summary Standard parameters which are used by the Mupen64Plus plugins.
 
+= Plugin Parameters =
+
 These are standard parameters which are used by the Mupen64Plus plugins.  The behavior of the plugin library when these parameters are changed while the emulator is running is not defined here.  Some plugins will load the parameters when starting and store internal copies of the parameters for use during emulation.  Other plugins may read the value of the parameters while running.
 
-= Audio-SDL =
+== Audio-SDL ==
 
 || Parameter Name || Type || Usage ||
 || DEFAULT_FREQUENCY || M64TYPE_INT || Frequency which is used if rom doesn't want to change it ||
@@ -15,14 +17,14 @@ These are standard parameters which are used by the Mupen64Plus plugins.  The be
 || VOLUME_ADJUST || M64TYPE_INT || Percentage change each time the volume is increased or decreased ||
 || VOLUME_DEFAULT || M64TYPE_INT || Default volume when a game is started.  Only used if VOLUME_CONTROL_TYPE is 1 ||
 
-= Video-General =
+== Video-General ==
 
 || Parameter Name || Type || Usage ||
 || Fullscreen || M64TYPE_BOOL || Use fullscreen mode if True, or windowed mode if False ||
 || ScreenWidth || M64TYPE_INT || Width of output window or fullscreen width ||
 || ScreenHeight || M64TYPE_INT || Height of output window or fullscreen height ||
 
-= Video-Rice =
+== Video-Rice ==
 
 || Parameter Name || Type || Usage ||
 || FrameBufferSetting || M64TYPE_INT || Frame Buffer Emulation (0=ROM default, 1=disable) ||
@@ -62,7 +64,7 @@ These are standard parameters which are used by the Mupen64Plus plugins.  The be
 || OpenGLRenderSetting || M64TYPE_INT || OpenGL rendering level to support (0=auto, 1=OGL_1.1, 2=OGL_1.2, 3=OGL_1.3, 4=OGL_1.4, 5=OGL_1.4_V2, 6=OGL_TNT2, 7=NVIDIA_OGL, 8=OGL_FRAGMENT_PROGRAM) ||
 || AnisotropicFiltering || M64TYPE_INT || Enable/Disable Anisotropic Filtering for Mipmaping (0=no filtering, 2-16=quality). This is uneffective if EnableMipmaping is false. If the given value is to high to be supported by your graphic card, the value will be the highest value your graphic card can support. Better result with Trilinear filtering ||
 
-= Input-SDL =
+== Input-SDL ==
 
 The Mupen64Plus-Input-SDL plugin uses a separate config section for each simulated N64 controller.  The sections are named: <tt>Input-SDL-Control1</tt>, <tt>Input-SDL-Control2</tt>, <tt>Input-SDL-Control3</tt>, and <tt>Input-SDL-Control4</tt>.  The 4 sections all contain the same parameters.
 
@@ -88,7 +90,6 @@ These parameters are used to bind input events with N64 Controller button presse
 || <tt>hat(`<num>` `<dir>`)</tt> || `<num>` = SDL Joystick Hat Number, `<dir>` = hat direction (Up, Down, Left, or Right) ||
 || <tt>mouse(`<num>`)</tt> || `<num>` = mouse button number (1 = left button, 2 = middle, 3 = right, etc) ||
 
-<br>
 || Parameter Name || Type || Usage ||
 || DPad R || M64TYPE_STRING || Input event string for mapping the Right button on the D-pad ||
 || DPad L || M64TYPE_STRING || Input event string for mapping the Left button on the D-pad ||
@@ -116,8 +117,6 @@ These parameters are used to bind input events with N64 Controller analog stick 
 || <tt>button(`<num_a>`,`<num_b>`)</tt> || `<num_a>` = SDL Joystick Button Number for up/left movement. `<num_b>` = SDL Joystick Button Number for down/right movement. ||
 || <tt>axis(`<num_a>``<dir_a>`,`<num_b>``<dir_b>`)</tt> || `<num_a>` = SDL Joystick Axis Number for up/left movement, `<dir_a>` = axis direction for up/left movement (+ = positive, - = negative). `<num_b>` = SDL Joystick Axis Number for down/right movement, `<dir_b>` = axis direction for down/right movement. ||
 || <tt>hat(`<num>` `<dir_a>` `<dir_b>`)</tt> || `<num>` = SDL Joystick Hat Number, `<dir_a>` = hat direction for up/left movement (Up, Down, Left, or Right), `<dir_b>` = hat direction for right/down movement ||
-
-<br>
 
 || Parameter Name || Type || Usage ||
 || Y Axis || M64TYPE_STRING || Input event string for mapping the Y axis (up/down) of the analog stick ||
