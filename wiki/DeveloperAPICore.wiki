@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Main page for API documentation.
 
 Please note: as of October 2009, this API is a work in progress.<br />
 The first draft of this API is complete, and development work on the Mupen64Plus software is ongoing.
