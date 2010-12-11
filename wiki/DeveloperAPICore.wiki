@@ -50,7 +50,7 @@ These are the debugger functions, which are also called only from the front-end.
 These configuration functions are exported from the core library and are used by the core and the plugins to store all of their persistent configuration parameters.  The front-end application may also use these functions to store its configuration options, or it may use a different mechanism.  This section also contains two Operating System Abstraction functions.  These functions are used by the core, plugins, and the front-end to find full filepaths to shared data files and user-specific data files.
 
 == Plugin API ==
-=== Plugin API ===
+=== [DeveloperAPIPlugin Plugin API] ===
 
 This section lists all of the functions which are exported by the plugins.  The front-end application should only use the <tt>PluginStartup</tt>, <tt>PluginShutdown</tt>, and <tt>PluginGetVersion</tt> functions.  All other functions will only be called from the core.
 
