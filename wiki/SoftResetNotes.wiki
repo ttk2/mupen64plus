@@ -1,0 +1,27 @@
+#summary Developer notes on soft reset feature
+
+= Details =
+
+5.2.6 Non Maskable Interrupt (NMI) Exception
+A non maskable interrupt exception occurs when the NMI signal is asserted to the processor. Unlike all other interrupts, this exception is not maskable. An NMI occurs only at instruction boundaries, so does not do any reset or other hardware initialization. The state of the cache, memory, and other processor state is consistent and all registers are preserved, with the following exceptions:
+ * The BEV, TS, SR, NMI, and ERL ﬁelds of theStatus register are initialized to a speciﬁed state.
+ * TheErrorEPC register is loaded with restart PC, as described inTable 5-5.
+ * PC is loaded with16#BFC0 0000.
+_Cause_ Register !ExcCode Value: None
+Additional State Saved: None
+Entry Vector Used: Reset 16#BFC0 0000
+
+Operation
+{{{
+   StatusBEV <-- 1
+   StatusTS <-- 0
+   StatusSR <-- 0
+   StatusNMI <-- 1
+   StatusERL <-- 1
+   if InstructionInBranchDelaySlot then
+      ErrorEPC <-- restartPC # PC of branch/jump
+   else
+      ErrorEPC <-- restartPC # PC of instruction
+   endif
+PC <-- 16#BFC0 0000 
+}}}
