@@ -35,6 +35,7 @@ Legend :
 ||<font color="red"> =( </font>   || Donkey Kong 64              ||                   ||  can't get past intro (1.4, 1.5)   ||
 ||<font color="green"> =) </font>   || Dr.Mario 64                 || Glide    || When you lose and try to restart, screen is messed up (mupen64+ 1.5)  ||
 ||<font color="red"> =( </font>   || Excitebike 64               ||                   ||   Huge graphical problems with all graphics plugins   ||
+||<font color="orange"> =) </font>|| Extreme-G 2               ||                   ||   runs just fine (with some hiccups) with Rice's video plugin. Incomplete/missing menu textures in Glide, overall main menu navigation could use improvement.   ||
 ||<font color="green"> =) </font> || F-Zero X                    ||                   || ||
 ||<font color="green"> =) </font> || !GoldenEye                  || !RiceVideo   || set "Frame update" to "At the 1st CI change" in "current game options" and uncheck "Normal combiner". Major rendering issues with glN64. ||
 ||<font color="green"> =) </font> || Iggy's Reckin' Balls        || !RiceVideo, Expansion Pack Disabled  || Expansion Pack hangs at certain part of game ||
