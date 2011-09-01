@@ -50,7 +50,7 @@ Legend :
 ||<font color="orange"> =) </font>|| Rayman 2 - The great escape || Glide64           || Some collision problems (vital characters/items going through wall/floor), can be worked around by saving and trying repeatedly and/or changing view angle (mupen 1.5) ||
 ||<font color="green"> =) </font> || Rush 2 || Glide64 || Artifacts with !RiceVideo and glN64 ||
 ||<font color="orange"> =| </font>|| San Francisco Rush          ||                   || textures are not aligned correctly ||
-||<font color="red"> =( </font>   || San Francisco Rush 2049     ||                   || freezes almost immediately ||
+||<font color="orange"> =| </font>|| San Francisco Rush 2049     ||                   || has video, runs decent, but no sound ||
 ||<font color="green"> =) </font> || Sin and Punishment (Tsumi no Batsu: Hoshi no Keishousha)|| Glide64 || ||
 ||<font color="green"> =) </font> || Super Bowling 64            || !RiceVideo        || ||
 ||<font color="green"> =) </font> || Star Fox 64                 || !RiceVideo or Glide64 || ||
