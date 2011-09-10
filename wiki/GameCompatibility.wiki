@@ -13,7 +13,7 @@ Legend :
 ||                                || *Game name*                 || *Works best with* || *Known issues * ||
 ||<font color="green"> =) </font> || 40 Winks                    || Glide64           || ||
 ||<font color="green"> =) </font> || 1080 Snowboarding           || Glide64           || ||
-||<font color="green"> =) </font> || Aerogauge                   ||                   || ||
+||<font color="green"> =) </font> || AeroGauge                   ||                   || All ships have incomplete secondary textures; Ships cannot properly change color. Other than that, completely playable and smooth. ||
 ||<font color="green"> =) </font> || Aerofighter's Assault       || !RiceVideo or glN64 || ||
 ||<font color="orange"> =| </font>|| Aidyn Chronicles            ||                   || _!RiceVideo:_ blue flashes, _glN64:_  missing all polygons, _Glide64:_ crash, distorted letters  (1.3RC1 bin64) ||
 ||<font color="green"> =) </font> || Airboarders 64              ||                   || ||
