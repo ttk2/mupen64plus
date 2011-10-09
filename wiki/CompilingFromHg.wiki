@@ -7,13 +7,17 @@ This guide is for people who want to play with the latest !Mupen64Plus code unde
 
 == Requirements ==
 
- * Build environment (GCC, G++, GNU Make, etc)
+ * Build environment (GCC, G++, GNU Make, pkg-config, etc)
+ * Mercurial distributed SCM
  * Development packages for dependencies
   # SDL 1.2
   # libpng
-  # freetype 2
+  # FreeType 2
   # zlib
-  # OpenGL
+  # OpenGL (GL, glu)
+ * Optional development packages for dependencies
+  # libsamplerate
+  # liblircclient
 
 == Installing Mercurial ==
 
@@ -46,14 +50,17 @@ The makefiles of the !Mupen64Plus modules support many different compile-time op
   General Options:
     BITS=32       == build 32-bit binaries on 64-bit machine
     APIDIR=path   == path to find Mupen64Plus Core headers
+    OPTFLAGS=flag == compiler optimization (default: -O3)
+    PIC=(1|0)     == Force enable/disable of position independent code
   Install Options:
     PREFIX=path   == install/uninstall prefix (default: /usr/local)
     SHAREDIR=path == path to install shared data files (default: PREFIX/share/mupen64plus)
-    LIBDIR=path   == path to install plugin libraries (default: PREFIX/lib/mupen64plus)
+    LIBDIR=path   == library prefix (default: PREFIX/lib)
+    PLUGINDIR=path == path to install plugin libraries (default: LIBDIR/mupen64plus)
     DESTDIR=path  == path to prepend to all installation paths (only for packagers)
-    INCDIR=path   == path to install core header files (default: PREFIX/include/mupen64plus)
   Debugging Options:
     DEBUG=1       == add debugging symbols
+    V=1           == show verbose compiler output
 }}}
 
 === !Mupen64Plus-Core Only ===
@@ -62,9 +69,11 @@ The makefiles of the !Mupen64Plus modules support many different compile-time op
     LIRC=1        == enable LIRC support
     NO_ASM=1      == build without assembly (no dynamic recompiler or MMX/SSE code)
     SHAREDIR=path == extra path to search for shared data files
+  Install Options:
+    INCDIR=path   == path to install core header files (default: PREFIX/include/mupen64plus)
   Debugging Options:
     PROFILE=1     == build gprof instrumentation into binaries for profiling
-    DEBUGGER=1    == build R4300 Debug support into core
+    DEBUGGER=1    == build graphical debugger
     DBG_CORE=1    == print debugging info in r4300 core
     DBG_COUNT=1   == print R4300 instruction count totals (64-bit dynarec only)
     DBG_COMPARE=1 == enable core-synchronized r4300 debugging
@@ -91,9 +100,11 @@ The makefiles of the !Mupen64Plus modules support many different compile-time op
   General Options:
     COREDIR=path   == default path to search for Mupen64Plus Core (must end with slash)
     PLUGINDIR=path == default path to search for plugins
+    SHAREDIR=path  == default path to search for shared data files
+    PIE=(1|0)      == Force enable/disable of position independent executables
   Install Options:
     BINDIR=path    == path to install mupen64plus binary (default: PREFIX/bin/)
-    MANDIR=path    == path to install mupen64plus manual page (default: PREFIX/man/man6/)
+    MANDIR=path    == path to install mupen64plus manual page (default: PREFIX/share/man)
 }}}
 
 === !Mupen64Plus-Video-Rice Only ===
