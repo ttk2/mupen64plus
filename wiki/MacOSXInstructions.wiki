@@ -14,7 +14,9 @@ Choose your mupen version :
   * Get the code from the various modules using mercurial as on any other platform (or just download a source code archive)
 Get the dependencies just like you'd do for mupen64plus 1.x (except maybe GTK/Qt since there is no GUI frontend yet for mupen 2)
 
-A script to build (32 bits, compatible with 10.5 and maybe 10.4) looks like :
+ * Install pkg-config if you don't already have it
+
+A script to build (32 bits, compatible with 10.6/10.5 and maybe 10.4) looks like :
 
 <code language="sh"> 
 #!/bin/sh
@@ -26,6 +28,7 @@ export LD="g++-4.0"
 APIDIR=$PWD/mupen64plus-core/src/api
 export MACOSX_DEPLOYMENT_TARGET=10.4
 export SDK_ROOT=/Developer/SDKs/MacOSX10.5.sdk
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 
 APP_BUNDLE=./mupen64plus.app/Contents
 
