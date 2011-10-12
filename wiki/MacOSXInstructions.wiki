@@ -16,6 +16,53 @@ Get the dependencies just like you'd do for mupen64plus 1.x (except maybe GTK/Qt
 
  * Install pkg-config if you don't already have it
 
+
+Create this file, called *zlib.pc*, in /usr/local/lib/pkgconfig
+<code language="sh">
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+
+Name: zlib
+Version: 1.1.3
+Description: zlib
+Requires: 
+Libs: -L${libdir} -lz
+Cflags: -I${includedir}</code>
+
+Create this file, called *gl.pc*, in /usr/local/lib/pkgconfig
+<code language="sh">
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+
+Name: gl
+Version: 2.0
+Description: OpenGL
+Requires: 
+Libs: -framework OpenGL
+Cflags: -I${includedir}</code>
+
+Create this file, called *glu.pc*, in /usr/local/lib/pkgconfig
+<code language="sh">
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+
+Name: glu
+Version: 2.0
+Description: glu
+Requires: 
+Libs: 
+Cflags: -I${includedir}</code>
+
+
 A script to build (32 bits, compatible with 10.6/10.5 and maybe 10.4) looks like :
 
 <code language="sh"> 
