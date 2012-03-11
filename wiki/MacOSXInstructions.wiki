@@ -66,9 +66,7 @@ Cflags: -I${includedir}</code>
 A script to build (32 bits, compatible with 10.6/10.5 and maybe 10.4) looks like :
 
 <code language="sh"> 
-#!/bin/sh
-PWD = ```pwd```
-
+PWD = `pwd`
 export CC="gcc-4.0"
 export CXX="g++-4.0"
 export LD="g++-4.0"
@@ -79,63 +77,76 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 
 APP_BUNDLE=./mupen64plus.app/Contents
 
+export CFLAGS="-g"
+export CXXFLAGS="-g"
+
 echo "== Core =="
 cd mupen64plus-core/projects/unix
-make all 
+make all V=1
 cd ../../..
-cp -f mupen64plus-core/projects/unix/`*`.dylib .
+cp -f mupen64plus-core/projects/unix/*.dylib .
 
 echo "== RSP-HLE =="
 cd mupen64plus-rsp-hle/projects/unix
-make all 
+make all V=1
 cd ../../..
-cp -f mupen64plus-rsp-hle/projects/unix/`*`.dylib .
+cp -f mupen64plus-rsp-hle/projects/unix/*.dylib .
 
 echo ""
 echo "== SDL Audio =="
 cd mupen64plus-audio-sdl/projects/unix
-make all
+make all V=1
 cd ../../..
-cp -f mupen64plus-audio-sdl/projects/unix/`*`.dylib .
+cp -f mupen64plus-audio-sdl/projects/unix/*.dylib .
 
 echo ""
 echo "== SDL Input =="
 cd mupen64plus-input-sdl/projects/unix
-make all
+make all V=1
 cd ../../..
-cp -f mupen64plus-input-sdl/projects/unix/`*`.dylib .
+cp -f mupen64plus-input-sdl/projects/unix/*.dylib .
 
 echo ""
 echo "== Rice =="
 cd mupen64plus-video-rice/projects/unix
-make all CC="g++-4.0" C_INCLUDE_PATH="/usr/local/include" CPLUS_INCLUDE_PATH="/usr/local/include"
+make all CC="g++-4.0" C_INCLUDE_PATH="/usr/local/include" CPLUS_INCLUDE_PATH="/usr/local/include" V=1 BITS=32 PIC=1
 cd ../../..
-cp -f mupen64plus-video-rice/projects/unix/`*`.dylib .
+cp -f mupen64plus-video-rice/projects/unix/*.dylib .
 
 echo ""
 echo "== Arachnoid =="
 cd mupen64plus-video-arachnoid/projects/unix
-make all C_INCLUDE_PATH="/usr/local/include" CPLUS_INCLUDE_PATH="/usr/local/include"
+make all C_INCLUDE_PATH="/usr/local/include" CPLUS_INCLUDE_PATH="/usr/local/include" V=1
 cd ../../..
-cp -f mupen64plus-video-arachnoid/projects/unix/`*`.dylib .
+cp -f mupen64plus-video-arachnoid/projects/unix/*.dylib .
 
 echo ""
 echo "== Glide =="
 cd mupen64plus-video-glide64/projects/unix
-make all C_INCLUDE_PATH="/usr/local/include" CPLUS_INCLUDE_PATH="/usr/local/include"
+make all C_INCLUDE_PATH="/usr/local/include" CPLUS_INCLUDE_PATH="/usr/local/include" V=1
 cd ../../..
-cp -f mupen64plus-video-glide64/projects/unix/`*`.dylib .
+cp -f mupen64plus-video-glide64/projects/unix/*.dylib .
+
+echo ""
+echo "== Glide Napalm =="
+cd mupen64plus-video-glide-napalm/Glitch64
+make -f Makefile.gcc OSX_ARCH=i386 EXT_INC="../../mupen64plus-core/src/api -I./inc"
+cd ../src
+make -f Makefile.nowx-gcc all C_INCLUDE_PATH="/usr/local/include:../../mupen64plus-core/src/api" CPLUS_INCLUDE_PATH="/usr/local/include:../../mupen64plus-core/src/api" OSX_ARCH=i386
+cd ../..
+cp -f mupen64plus-video-glide-napalm/src/lib/*.dylib .
+cp -f mupen64plus-video-glide-napalm/src/*.dylib .
 
 echo ""
 echo "== Console =="
 cd mupen64plus-ui-console/projects/unix
-make all
+make all V=1
 cd ../../..
 cp -f mupen64plus-ui-console/projects/unix/mupen64plus .
 
 mkdir -p $APP_BUNDLE/MacOS/
 cp -f mupen64plus $APP_BUNDLE/MacOS/mupen64plus
-cp -f `*`.dylib $APP_BUNDLE/MacOS/.
+cp -f *.dylib $APP_BUNDLE/MacOS/.
 </code>
 
 To build 64-bits, use something like that instead (tested on 1.6) :
