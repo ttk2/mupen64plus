@@ -51,6 +51,11 @@ Y Axis = axis(1-,1+)
 
 somewhere in !InputAutoCfg.ini. Now all you need to do is to change the values to correspond to your controller. It shouldn't be too hard to figure out how to change the values, but there is some documentation at http://mupen64plus.retrouprising.com/mediawiki/index.php?title=Mupen64Plus_Plugin_Parameters#Input-SDL if you need it. Remember that on some controllers the D-Pad is just another axis, in those cases replace hat() with axis() (make sure you use the correct syntax for axis).  You may also use the SDL joystick testing programs (available on our Downloads page) to determine the button/axis/hat numbers which correspond to the various controls on your joystick.
 
+===Using a Mouse===
+You can enable mouse control of the analog stick by setting the "mouse" parameter to True in your input config section.  There is a parameter to control the sensitivity of the mouse movement (called "!MouseSensitivity").  The default value for !MouseSensitivity is "2.00,2.00".  You can also bind mouse buttons to the N64 controller buttons by adding a clause to the button binding string.  For example: Start = "button(9) mouse(0)" will bind the N64 controller Start button to button 9 on the joystick and button 0 on the mouse.
+
+When the mouse is enabled, !Mupen64Plus will "grab" the mouse, so you will not see the pointer, even when running in windowed mode.  To toggle the mouse grab while playing a game, press the Left Control and Left Alt keys together.
+
 ===Special Macintosh Instructions===
 *mackentack* has been kind enough to write up a nice tutorial for Mac OSX users with XBox 360 controllers [http://laletfira.dip.jp/uramac/?p=39 here].  This explains how to download !Mupen64Plus 1.99.3 and the *!SpeedOfMac* launcher, and set up the configuration for the XBox 360 controller.
 
