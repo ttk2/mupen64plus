@@ -14,7 +14,7 @@ Front-ends are applications which use the !Mupen64Plus core emulator and compati
 
 === Front-end applications under active development ===
 || *Application Name* || *Description* ||
-|| [http://m64py.sourceforge.net/ m64py] || Python-based GUI Front-end using PyQt ||
+|| [http://m64py.sourceforge.net/ m64py] || Python-based GUI Front-end using !PyQt ||
 || [http://bitbucket.org/auria/wxmupen64plus/wiki/Home wxMupen64Plus] || A frontend with full support for configuration (mostly tested on OSX at this point) ||
 || [http://sourceforge.net/userapps/mediawiki/vknecht/index.php?title=CuteMupen CuteMupen] || GUI front-end using Qt ||
 
