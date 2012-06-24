@@ -8,14 +8,6 @@ If you have made a plugin for mupen64plus which is not in this section, please c
 
 !Mupen64Plus has 4 of its own official plugins: mupen64plus-input-sdl, mupen64plus-audio-sdl, mupen64plus-rsp-hle, and mupen64plus-video-rice. If you have a problem with one of them, you should report it via [http://code.google.com/p/mupen64plus/issues/list the issues list]. 
 
-= Third-Party Helper Scripts =
-This script simplifies the use of the !Mupen64Plus console UI for Windows XP users.
-
-|| *Name* || *Description* ||
-|| [http://mupen64plus.googlecode.com/svn/wiki/Mupen64Loader.bat Mupen64Loader.bat] || Windows batch file (tested on XP) from Supernatendo on 2010-05-11 ||
-|| [http://speedofmac.com/speedofmac_mp64+_launcher.html SpeedofMac MP64+ GUI] || Launcher application for Mac OSX written with !AppleScript and Perl ||
-|| [http://forums.ngemu.com/emulation-news-submissions/131998-new-mupen64plus-v1-99-3-release-february-2010-windows-also.html#post1803213 MupenGUI C#] || Windows-only launcher/config application ||
-
 = Third-Party Front-end Applications =
 
 Front-ends are applications which use the !Mupen64Plus core emulator and compatible plugins, and present a user-interface.  The only front-end included with the core !Mupen64Plus bundle is a command-line only program.  Third-party front-ends are developed and maintained outside of the main !Mupen64Plus project but are compatible with !Mupen64Plus 2.0.  They are supported *by their authors*. If you have a problem with one of them, the best thing to do is to contact directly the author, who is the best placed person to answer you.
@@ -24,11 +16,19 @@ Front-ends are applications which use the !Mupen64Plus core emulator and compati
 || *Application Name* || *Description* ||
 || [http://m64py.sourceforge.net/ m64py] || Python-based GUI Front-end using PyQt ||
 || [http://bitbucket.org/auria/wxmupen64plus/wiki/Home wxMupen64Plus] || A frontend with full support for configuration (mostly tested on OSX at this point) ||
+|| [http://sourceforge.net/userapps/mediawiki/vknecht/index.php?title=CuteMupen CuteMupen] || GUI front-end using Qt ||
 
 === Older applications (not up to date) ===
 || *Application Name* || *Description* ||
-|| [http://sourceforge.net/userapps/mediawiki/vknecht/index.php?title=CuteMupen CuteMupen] || GUI front-end using Qt ||
 || [http://www.emutalk.net/showthread.php?t=50438 Gtk64] || GUI Front-end based on the object oriented GTKmm library ||
+
+= Third-Party Helper Scripts =
+This script simplifies the use of the !Mupen64Plus console UI for Windows XP users.
+
+|| *Name* || *Description* ||
+|| [http://mupen64plus.googlecode.com/svn/wiki/Mupen64Loader.bat Mupen64Loader.bat] || Windows batch file (tested on XP) from Supernatendo on 2010-05-11 ||
+|| [http://speedofmac.com/speedofmac_mp64+_launcher.html SpeedofMac MP64+ GUI] || Launcher application for Mac OSX written with !AppleScript and Perl ||
+|| [http://forums.ngemu.com/emulation-news-submissions/131998-new-mupen64plus-v1-99-3-release-february-2010-windows-also.html#post1803213 MupenGUI C#] || Windows-only launcher/config application ||
 
 = Third-Party Plugins =
 
