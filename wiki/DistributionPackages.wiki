@@ -5,7 +5,7 @@ This is a list of official distribution packages or work which will result in an
 || *Distribution* || *Status* || *Description* ||
 || [https://www.archlinux.de/?page=Packages&search=mupen64plus Arch Linux] || community maintained || ||
 || [http://packages.qa.debian.org/m/mupen64plus.html Debian] || maintained || ||
-|| Fedora || impossible || Many types of emulators [http://fedoraproject.org/wiki/Licensing/SoftwareTypes#Emulators aren't allowed in Fedora]. ||
+|| Fedora || impossible || Many types of emulators [http://fedoraproject.org/wiki/Licensing/SoftwareTypes#Emulators aren't allowed in Fedora]. It can still be [http://code.google.com/p/mupen64plus/wiki/CompilingFromHg compiled from source]. Third party RPM may also be available ||
 || [http://www.freebsd.org/cgi/cvsweb.cgi/ports/emulators/mupen64plus/ FreeBSD] || maintained || ||
 || [http://packages.gentoo.org/package/games-emulation/mupen64plus Gentoo] || maintained || ||
 || [http://maintainers.mandriva.com/viewpkg.php?pkg=17794 Mandriva] || maintained || Part of contrib ||
