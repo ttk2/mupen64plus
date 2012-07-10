@@ -1,4 +1,4 @@
-#summary List of third party plugins for mupen64plus
+#summary List of third party plugins and front-end applications for mupen64plus
 
 This page has been created to list all of the third-party plugins and front-end applications for mupen64plus, in order to facilitate research. It's aim is to be a central place to find the different available plugins.
 
