@@ -85,7 +85,8 @@ The makefiles of the !Mupen64Plus modules support many different compile-time op
 
 {{{
   General Options:
-    NO_RESAMP=1   == build without libsamplerate; disables high-quality audio resampling
+    NO_SRC=1      == build without libsamplerate; disables src-* high-quality audio resampling
+    NO_SPEEX=1    == build without libspeexdsp; disables speex-* high-quality audio resampling
 }}}
 
 === !Mupen64Plus-Input-SDL Only ===
