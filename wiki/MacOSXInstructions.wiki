@@ -1,6 +1,6 @@
 #summary How to install and run Mupen64Plus on Intel Macintosh computers with OSX
 
-Here are some basic usage instructions for !Mupen64Plus on Intel Macintosh computers with OSX.  As of October, 2011, all of the !Mupen64Plus software will compile and run correctly. Please be aware that !Mupen64Plus does not currently run on older PowerPC based Macintosh computers.
+Here are some basic usage instructions to compile !Mupen64Plus on Intel Macintosh computers with OSX (this is for developers. If you are a user, please just download the binary from the downloads page or, if you want a front-end, look at http://bitbucket.org/auria/wxmupen64plus/wiki/Home ).  As of October, 2011, all of the !Mupen64Plus software will compile and run correctly. Please be aware that !Mupen64Plus does not currently run on older PowerPC based Macintosh computers.
 
 Please note that these instructions are meant as guidelines for people who know what they're doing. If you don't have much experience building stuff from source, I would recommend that you wait for binary packages instead.
 
