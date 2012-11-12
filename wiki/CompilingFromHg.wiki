@@ -69,6 +69,7 @@ The makefiles of the !Mupen64Plus modules support many different compile-time op
     LIRC=1        == enable LIRC support
     NO_ASM=1      == build without assembly (no dynamic recompiler or MMX/SSE code)
     SHAREDIR=path == extra path to search for shared data files
+    OSD=(1|0)     == Enable/disable build of OpenGL On-screen display
     NEW_DYNAREC=1 == Replace dynamic recompiler with Ari64's experimental dynarec
   Install Options:
     INCDIR=path   == path to install core header files (default: PREFIX/include/mupen64plus)
