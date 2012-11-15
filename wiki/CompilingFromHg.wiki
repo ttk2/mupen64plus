@@ -86,6 +86,7 @@ The makefiles of the !Mupen64Plus modules support many different compile-time op
 
 {{{
   General Options:
+    NO_OSS=1      == build without OSS; disables Open Sound System support
     NO_SRC=1      == build without libsamplerate; disables src-* high-quality audio resampling
     NO_SPEEX=1    == build without libspeexdsp; disables speex-* high-quality audio resampling
 }}}
