@@ -63,7 +63,7 @@ Legend :
 ||<font color="red"> :( </font>|| Vigilante 8: 2nd Offense       ||  || Complete garbage with Glide and Rice, even with Expansion Pack disabled. ||
 ||<font color="orange"> =| </font>|| Yoshi's Story               ||                   || hangs with glide64, display artefacts with Rice and glN64 ||
 ||<font color="green"> =)  </font>|| Zelda - Ocarina of Time     || !RiceVideo, Glide       || Rice has the nice ability to play with HD textures if you have a pack, but Glide handles the lens of truth better. Rice may also sometimes have fog issues ||
-||<font color="orange"> =| </font>|| Zelda - Majora's Mask       || Glide             || problems with cutscene ||
+||<font color="orange"> =| </font>|| Zelda - Majora's Mask       || Glide             || many cutscenes missing with Rice. Some cutscenes that don't work in Rice do work in Glide, but Glide is a little more prone to crashing. The game sometimes crashes, especially when going from day to night or vice-versa. ||
 
 
 == Detailed info about issues in some games ==
