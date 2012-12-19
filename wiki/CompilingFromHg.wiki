@@ -17,6 +17,7 @@ This guide is for people who want to play with the latest !Mupen64Plus code unde
   # OpenGL (GL, glu)
  * Optional development packages for dependencies
   # libsamplerate
+  # libspeexdsp
   # liblircclient
 
 == Installing Mercurial ==
