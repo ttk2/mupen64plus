@@ -1,0 +1,47 @@
+#summary Tutorial on how to compile mupen64plus under Linux for Windows
+
+= Compiling !Mupen64Plus from source code under Linux for Windows =
+
+This guide is for people who want to play with the latest !Mupen64Plus code under development, by grabbing the source code from our development repository and compiling it yourself for Windows.
+
+== Requirements ==
+
+ * Build environment (GCC, G++, GNU Make, pkg-config, etc)
+ * Mercurial distributed SCM
+ * GIT distributed SCM
+ * Common build dependencies
+  # scons
+  # yasm
+  # autoconf/automake
+  # wget
+  # bison
+  # cmake
+  # flex
+  # intltool
+  # libtool
+  # pkg-config
+  # unzip
+
+== Installing MXE ==
+
+MXE (M cross environment) is used here to provide the build environment to generate Windows binaries of mupen64plus. It provides build scripts to build all dependencies and therefore a simple build environment for the first compile steps must already be available.
+
+First the scripts must be retreived using Git
+
+{{{git clone -b stable http://github.com/mxe/mxe.git}}}
+
+Now it is possible to build the dependencies
+
+{{{make -C mxe gcc sdl libpng freetype speex libsamplerate pthreads freeglut glew zlib}}}
+
+It is also possible to speed up the build by  [http://mxe.cc/#usage using more Cores/CPUs].
+
+After the build finished, the path to the new build tools has to be stored in the PATH environment variable of the current shell session.
+
+{{{export PATH="$(pwd)/mxe/usr/bin/:$PATH"}}}
+
+== Checking out, building, and updating the source code ==
+
+The general principle of getting the source and checking it out is explained in [[CompilingFromHg]]. We only have to make sure that the path to the build tools is still stored in the PATH environment variable of the current shell session. Additionally an extra option for the type for the cross compiler (i686-pc-mingw32-), the CPU type (i686) and the OS type (MINGW) has to be given to the scripts.
+
+{{{./m64p_get.sh && ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW LTO=1}}}
