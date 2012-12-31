@@ -66,3 +66,20 @@ hg clone --cwd source https://bitbucket.org/wahrhaft/mupen64plus-${component}
 done
 M64P_COMPONENTS="rsp-z64 video-arachnoid video-glide64 video-z64" ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW LTO=1
 }}}
+
+== Building x86_64 testbuilds for windows ==
+
+The support for x86_64 is not yet integrated in MXE but development was started by tonytheodore. His development can be obtained and build using
+
+{{{
+git clone -b multi-target https://github.com/tonytheodore/mxe.git mxe-multi-target
+make MXE_TARGETS=x86_64-static-mingw32  -C mxe-multi-target gcc sdl libpng freetype speex libsamplerate pthreads freeglut glew zlib
+export PATH="$(pwd)/mxe-multi-target/usr/bin/:$PATH"
+}}}
+
+The parameters for m64p_build.sh also have to be changed slightly
+
+{{{
+./m64p_get.sh
+./m64p_build.sh CROSS_COMPILE=x86_64-static-mingw32- HOST_CPU=x86_64 UNAME=MINGW LTO=1
+}}}
