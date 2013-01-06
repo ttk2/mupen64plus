@@ -65,6 +65,7 @@ echo "************************************ Downloading ${component} plugin"
 hg clone --cwd source https://bitbucket.org/wahrhaft/mupen64plus-${component}
 done
 M64P_COMPONENTS="rsp-z64 video-arachnoid video-glide64 video-z64" ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW LTO=1
+M64P_COMPONENTS="rsp-z64" ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW HLEVIDEO=1 LTO=1
 }}}
 
 == Building x86_64 testbuilds for windows ==
