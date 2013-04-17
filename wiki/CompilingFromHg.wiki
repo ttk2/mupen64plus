@@ -15,6 +15,7 @@ This guide is for people who want to play with the latest !Mupen64Plus code unde
   # FreeType 2
   # zlib
   # OpenGL (GL, glu)
+  # Boost (for glide64mk2 video plugin)
  * Optional development packages for dependencies
   # libsamplerate
   # libspeexdsp
