@@ -1,4 +1,4 @@
-#summary Supported use cases for Autoconfiguration with !Mupen64Plus-Input-SDL plugin
+#summary Supported use cases for Autoconfiguration with Mupen64Plus-Input-SDL plugin
 
 == Use Cases ==
 
