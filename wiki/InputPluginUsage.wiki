@@ -1,0 +1,26 @@
+#summary Supported use cases for Autoconfiguration with !Mupen64Plus-Input-SDL plugin
+
+== Use Cases ==
+
+ * *Use case #1 scenario*: First-time user of !Mupen64Plus, has no configuration file.
+ * *Desired Behavior*:
+   * Automatically detect and configure any supported joysticks, assigning them in sequence to controllers.
+   * Skip any unsupported joysticks without leaving unconfigured controllers.
+   * If no SDL joysticks are found, configure the keyboard/mouse.
+   * Fill in settings for all 4 controllers (for GUI front-ends)
+
+ * *Use case #2 scenario*: User changes controllers often (configuration file is present)
+ * *Desired Behavior*:
+   * Automatically detect and configure any joysticks plugged in
+   * Skip any unsupported joysticks without leaving unconfigured controllers.
+   * If no SDL joysticks are found, configure the keyboard/mouse.
+   * Don't stick to old input settings in configuration file when different joysticks are present
+   * User should be able to modify the auto-configured settings (edit InputAutoConfig.ini)
+
+ * *Use case #3 scenario*: User switches between keyboard and joystick
+ * *Desired Behavior*:
+   * If joystick is plugged in, then set up according to configuration file (if it matches), or auto-config
+   * If no SDL joysticks are found, configure the keyboard/mouse.
+   * If joystick is missing but set up in configuration file, do not overwrite settings with keyboard configuration.
+
+== Changes from 1.99.5 ==
