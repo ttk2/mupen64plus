@@ -8,6 +8,7 @@
    * Skip any unsupported joysticks without leaving unconfigured controllers.
    * If no SDL joysticks are found, configure the keyboard/mouse.
    * Fill in settings for all 4 controllers (for GUI front-ends)
+ * *How to configure*: 
 
  * *Use case #2 scenario*: User changes controllers often (configuration file is present)
  * *Desired Behavior*:
@@ -16,11 +17,22 @@
    * If no SDL joysticks are found, configure the keyboard/mouse.
    * Don't stick to old input settings in configuration file when different joysticks are present
    * User should be able to modify the auto-configured settings (edit InputAutoConfig.ini)
+ * *How to configure*: 
 
  * *Use case #3 scenario*: User switches between keyboard and joystick
  * *Desired Behavior*:
    * If joystick is plugged in, then set up according to configuration file (if it matches), or auto-config
    * If no SDL joysticks are found, configure the keyboard/mouse.
    * If joystick is missing but set up in configuration file, do not overwrite settings with keyboard configuration.
+ * *How to configure*: 
 
-== Changes from 1.99.5 ==
+ * *Use case #4 scenario*: Developer wants to create a specific input configuration for testing purposes: no controllers, only a controller in port 2, etc.
+ * *How to configure*: Set all controller *`mode`* parameters to 0, set other configuration parameters as necessary.
+
+== Design Changes ==
+ * changes relative to Hg rev 173:725bc6d288ae
+ * Changes to `[Input-SDL-Control*]` sections
+   * *`version`* changes from 1 to 2
+   * Add parameter *`mode`*: 0 = Fully Manual, 1 = Automatic with named SDL device, 2 = Fully Automatic
+   * For the *`device`* parameter, remove the `-2` option (keyboard input should automatically work for any N64 controller which maps keys), and change the semantic of the `-1` option to mean "No SDL joystick" instead of "Auto-config".
+   * For the *`name`* parameter: Similar to previous usage, but mode-dependent: For mode 0, name of joystick/keyboard which was last used (set by plugin). For mode 1, name of desired joystick/keyboard to use for this controller (set by user).  For mode 2, ignored.
