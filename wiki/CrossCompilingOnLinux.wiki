@@ -35,7 +35,7 @@ git clone -b stable http://github.com/mxe/mxe.git
 Now it is possible to build the dependencies
 
 {{{
-make -C mxe gcc sdl libpng freetype speex libsamplerate pthreads freeglut glew zlib
+make -C mxe gcc sdl libpng freetype speex libsamplerate pthreads freeglut glew zlib boost
 }}}
 
 It is also possible to speed up the build by  [http://mxe.cc/#usage using more Cores/CPUs].
@@ -52,7 +52,7 @@ The general principle of getting the source and checking it out is explained in 
 
 {{{
 ./m64p_get.sh
-./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW LTO=1
+./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW
 }}}
 
 == Building extra plugins ==
@@ -64,8 +64,8 @@ for component in rsp-z64 video-arachnoid video-glide64 video-z64; do
 echo "************************************ Downloading ${component} plugin"
 hg clone --cwd source https://bitbucket.org/wahrhaft/mupen64plus-${component}
 done
-M64P_COMPONENTS="rsp-z64 video-arachnoid video-glide64 video-z64" ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW LTO=1
-M64P_COMPONENTS="rsp-z64" ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW HLEVIDEO=1 LTO=1
+M64P_COMPONENTS="rsp-z64 video-arachnoid video-glide64 video-z64" ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW
+M64P_COMPONENTS="rsp-z64" ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW HLEVIDEO=1
 }}}
 
 == Building x86_64 testbuilds for windows ==
@@ -82,5 +82,5 @@ The parameters for m64p_build.sh also have to be changed slightly
 
 {{{
 ./m64p_get.sh
-./m64p_build.sh CROSS_COMPILE=x86_64-static-mingw32- HOST_CPU=x86_64 UNAME=MINGW LTO=1
+./m64p_build.sh CROSS_COMPILE=x86_64-static-mingw32- HOST_CPU=x86_64 UNAME=MINGW
 }}}
