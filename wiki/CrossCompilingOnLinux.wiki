@@ -84,3 +84,19 @@ The parameters for m64p_build.sh also have to be changed slightly
 ./m64p_get.sh
 ./m64p_build.sh CROSS_COMPILE=x86_64-static-mingw32- HOST_CPU=x86_64 UNAME=MINGW
 }}}
+
+== Building wxmupen64plus for windows ==
+
+wxmupen64plus needs wxwidgets >= 2.9. This is shipped in tonytheodore's mxe-multi-target branch. It just has to be compiled
+
+{{{
+make -C wxwidgets
+}}}
+
+wxmupen64plus uses a different build system which needs to be configured slightly different. And the data files aren't automatically copied.
+
+{{{
+hg clone --cwd ./source/ https://bitbucket.org/auria/wxmupen64plus
+(MXE="$(pwd)/mxe";BASE="$(pwd)"; target=i686-pc-mingw32; cd source/wxmupen64plus/ && WINDRES=${target}-windres CC="${target}-gcc" CXX="${target}-g++" ./waf configure --wxinclude="${MXE}/usr/${target}/include/wx-2.9/" --wxconfig="${target}-wx-config-nounicode" --mupenapi="${BASE}/source/mupen64plus-core/src/api/" --sdlconfig="${target}-sdl-config" --wxhome="${MXE}/usr/${target}/" --targetos=windows --debugger=false --prefix=/ --bindir=/ --datadir=wxm64pdata/  && ./waf && ./waf --destdir="${BASE}/test/" install)
+cp -r ./source/wxmupen64plus/data ./test/wxm64pdata
+}}}
