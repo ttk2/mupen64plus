@@ -74,7 +74,7 @@ The support for x86_64 is not yet integrated in MXE but development was started 
 
 {{{
 git clone -b multi-target https://github.com/tonytheodore/mxe.git mxe-multi-target
-make MXE_TARGETS=x86_64-static-mingw32  -C mxe-multi-target gcc sdl libpng freetype speex libsamplerate pthreads freeglut glew zlib
+make MXE_TARGETS=x86_64-w64-mingw32  -C mxe-multi-target gcc sdl libpng freetype speex libsamplerate pthreads freeglut glew zlib
 export PATH="$(pwd)/mxe-multi-target/usr/bin/:$PATH"
 }}}
 
@@ -82,7 +82,7 @@ The parameters for m64p_build.sh also have to be changed slightly
 
 {{{
 ./m64p_get.sh
-./m64p_build.sh CROSS_COMPILE=x86_64-static-mingw32- HOST_CPU=x86_64 UNAME=MINGW
+./m64p_build.sh CROSS_COMPILE=x86_64-w64-mingw32- HOST_CPU=x86_64 UNAME=MINGW
 }}}
 
 == Building wxmupen64plus for windows ==
