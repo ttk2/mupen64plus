@@ -32,6 +32,23 @@ First the scripts must be retreived using Git
 git clone -b stable http://github.com/mxe/mxe.git
 }}}
 
+It is important to make SDL a shared library used by the plugins, ui and core.
+The mxe/src/sdl.mk build script has to be modified to not include the
+"--disable-shared" line.
+
+{{{
+--- a/src/sdl.mk
++++ b/src/sdl.mk
+@@ -19,7 +19,6 @@ define $(PKG)_BUILD
+     $(SED) -i 's,-mwindows,-lwinmm -mwindows,' '$(1)/configure'
+     cd '$(1)' && ./configure \
+         --host='$(TARGET)' \
+-        --disable-shared \
+         --prefix='$(PREFIX)/$(TARGET)' \
+         --enable-threads \
+         --enable-directx \
+}}}
+
 Now it is possible to build the dependencies
 
 {{{
@@ -54,6 +71,9 @@ The general principle of getting the source and checking it out is explained in 
 ./m64p_get.sh
 ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW
 }}}
+
+Don't forget to copy the SDL.dll from mxe/usr/i686-pc-mingw32/bin/SDL.dll into
+the test directory (otherwise mupen64plus cannot find it).
 
 == Building extra plugins ==
 
@@ -100,3 +120,9 @@ hg clone --cwd ./source/ https://bitbucket.org/auria/wxmupen64plus
 (MXE="$(pwd)/mxe";BASE="$(pwd)"; target=i686-pc-mingw32; cd source/wxmupen64plus/ && WINDRES=${target}-windres CC="${target}-gcc" CXX="${target}-g++" ./waf configure --wxinclude="${MXE}/usr/${target}/include/wx-2.9/" --wxconfig="${target}-wx-config-nounicode" --mupenapi="${BASE}/source/mupen64plus-core/src/api/" --sdlconfig="${target}-sdl-config" --wxhome="${MXE}/usr/${target}/" --targetos=windows --debugger=false --prefix=/ --bindir=/ --datadir=wxm64pdata/  && ./waf && ./waf --destdir="${BASE}/test/" install)
 cp -r ./source/wxmupen64plus/data ./test/wxm64pdata
 }}}
+
+== Why must the SDL.dll be a shared library/dll? ==
+
+SDL has an implicit global state (a state not managed by the user of the library). Such a state is always bound to library and SDL initialises it on windows by overwriting the main function of the program (mupen64plus-ui-console). Each plugin would have its own version of the SDL library when it is linked as static library. Thus each plugin would have its own global state and only the global state of mupen64plus-ui-console is initialised. All other SDL libraries would have only parts of the information available and some calls to the library would fail in one plugin but work correctly in another one.
+
+Using a common, shared SDL library as DLL is currently the only way to avoid such problems.
