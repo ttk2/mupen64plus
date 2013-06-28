@@ -1,5 +1,44 @@
 #summary Mupen64Plus Release Notes
 
+==!Mupen64Plus v2.0 - July 4, 2013==
+===All Modules===
+ * New: MS Visual Studio 2012 project files
+ * Makefiles: support for ARM, PPC, and MINGW architectures
+ * Makefiles: support for cross-compiling (MXE win32 builds under Unix)
+ * Support (building from source) for new SDL 2.0 library
+===Audio-SDL Plugin===
+ * Add support for resampling with speexdsp library
+ * Add more resampling quality options
+ * Bugfix: Don't assume OSS is installed in all linux systems.
+ * Make SDL volume handling the default, since OSS is no longer included in the kernel.
+ * Minor refactoring of volume handling code.
+===Console-UI Front End Application===
+ * Only build system changes
+===Core Emulator Library===
+ * Fixes for various games (DK64, Zelda, Blast Corps)
+ * Add Ari64's dynamic recompiler for x86 (32-bit) and ARM
+ * Improved PJ64 savestate loading
+ * Support video window resizing (with help from video plugin and front-end application)
+ * Auto-detect savestate type (!Mupen64Plus or PJ64) when loading from a slot
+ * Many various code cleanups in core from casualjames
+ * Debugger code cleanup
+===Input-SDL Plugin===
+ * Re-write auto-configuration logic to be more user friendly.  Add new 'mode' parameter.
+ * Support for 6 new joysticks
+ * Work-around for buggy xboxdrv which results in no rumble
+ * Bugfix: crash when rumble used with controller #4
+===Video-Glide64mk2 Plugin===
+ * Brand new video plugin which has been ported to !Mupen64Plus
+===Video-Rice Plugin===
+ * Support for resizable video window
+ * Add support to build and run with OpenGL ES 2.0
+ * Improve hi-resolution texture loading support
+ * Fix texture CRC calculation for non-x86 (or NO_ASM) platforms
+===RSP-HLE Plugin===
+ * Add support for MusyX ucode detection
+ * Support JPEG decoding used in Pokemon Stadium Japan
+ * Lots of refactoring to clean up code
+
 ==!Mupen64Plus v1.99.5 - March 10, 2012==
 ===Audio-SDL Plugin===
  * added version number to SDL-audio plugin config parameters, to support future changes
