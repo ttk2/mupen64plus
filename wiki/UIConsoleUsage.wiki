@@ -49,7 +49,7 @@ Parameters:
                             with dashes to use code variables (ex 1-2 to use cheat 1 option 2)
 }}}
 
-=Exemples=
+=Examples=
 ==Cheats==
 To list the available cheats in the rom:
 {{{
