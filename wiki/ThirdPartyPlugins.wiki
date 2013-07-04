@@ -6,7 +6,7 @@ If you have made a plugin for mupen64plus which is not in this section, please c
 
 = Official Plugins =
 
-!Mupen64Plus has 4 of its own official plugins: mupen64plus-input-sdl, mupen64plus-audio-sdl, mupen64plus-rsp-hle, and mupen64plus-video-rice. If you have a problem with one of them, you should report it via [http://code.google.com/p/mupen64plus/issues/list the issues list]. 
+!Mupen64Plus has 5 of its own official plugins: mupen64plus-input-sdl, mupen64plus-audio-sdl, mupen64plus-rsp-hle, mupen64plus-video-rice, and mupen64plus-video-glide64mk2. If you have a problem with one of them, you should report it via [http://code.google.com/p/mupen64plus/issues/list the issues list]. 
 
 = Third-Party Front-end and Launcher Applications =
 
