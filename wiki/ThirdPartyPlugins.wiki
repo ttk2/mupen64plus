@@ -14,14 +14,15 @@ Front-ends are applications which use the !Mupen64Plus core emulator and compati
 
 == Front-End Applications under active development ==
 || *Application Name* || *Description* ||
-|| [http://openemu.org/ OpenEmu] || OSX application which includes many different emulators. ([https://github.com/OpenEmu/OpenEmu Development Site]) ||
-|| [http://m64py.sourceforge.net/ m64py] || Python-based GUI Front-end using !PyQt ||
+|| [http://svn.mudlord.info/winmupen/ winmupen] || Windows-specific GUI Front-end ||
 || [http://bitbucket.org/auria/wxmupen64plus/wiki/Home wxMupen64Plus] || A frontend with full support for configuration (mostly tested on OSX at this point) ||
-|| [http://sourceforge.net/userapps/mediawiki/vknecht/index.php?title=CuteMupen CuteMupen] || GUI front-end using Qt ||
+|| [http://m64py.sourceforge.net/ m64py] || Python-based GUI Front-end using !PyQt ||
+|| [http://openemu.org/ OpenEmu] || OSX application which includes many different emulators. ([https://github.com/OpenEmu/OpenEmu Development Site]) ||
 
 == Front-end Applications not under active development ==
 || *Application Name* || *Description* ||
 || [http://www.emutalk.net/showthread.php?t=50438 Gtk64] || GUI Front-end based on the object oriented GTKmm library ||
+|| [http://sourceforge.net/userapps/mediawiki/vknecht/index.php?title=CuteMupen CuteMupen] || GUI front-end using Qt ||
 
 == Launchers ==
 The difference between a full Front-End application and a Launcher application is that a Front-End application links directly with the !Mupen64Plus libraries and can integrate very closely with the emulator to provide features like GUI emulator controls, an integrated video window, and graphical debugger.  A Launcher application does not link directly with the !Mupen64Plus libraries, but uses the "mupen64plus-ui-console" command-line application to run the emulator.  This type of application is easier to develop, but cannot provide the more advanced features.
