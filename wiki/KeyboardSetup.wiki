@@ -47,6 +47,6 @@ When using the keyboard, the analog stick is normally moved by its full range wh
 
 You may set your own key bindings for the emulator core and input plugins, by editing the !Mupen64Plus config file.  On Linux or OSX, this is located at `~/.config/mupen64plus/`, and on Windows it is in the "Application Data" sub-folder of your user folder.  On Windows XP and prior, this is `C:\Documents and Settings\username\Application Data\Mupen64Plus\`, while on Windows Visa and newer this is `C:\Users\username\AppData\Mupen64Plus`.
 
-See http://svn.libsdl.org/tags/SDL/release-1.2.7/include/SDL_keysym.h for Key IDs.
+See http://www.libsdl.org/release/SDL-1.2.15/include/SDL_keysym.h for Key IDs.
 
 For documentation about the keyboard settings in this configuration file, refer to our Emuwiki site.  The [http://mupen64plus.retrouprising.com/mediawiki/index.php?title=Mupen64Plus_Core_Parameters Core Parameters] page gives the names of the config parameters to set up the Emulator Core key commands, while the [http://mupen64plus.retrouprising.com/mediawiki/index.php?title=Mupen64Plus_Plugin_Parameters#Input-SDL Plugin Parameters] page tells how to configure the controls for the input plugin.
