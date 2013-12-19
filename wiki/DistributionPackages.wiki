@@ -9,6 +9,7 @@ This is a list of official distribution packages or work which will result in an
 || [http://www.freebsd.org/cgi/cvsweb.cgi/ports/emulators/mupen64plus/ FreeBSD] || maintained || ||
 || [http://packages.gentoo.org/package/games-emulation/mupen64plus Gentoo] || maintained || ||
 || [http://maintainers.mandriva.com/viewpkg.php?pkg=17794 Mandriva] || maintained || Part of contrib ||
+|| [http://www.openbsd.org/cgi-bin/cvsweb/ports/meta/mupen64plus/ OpenBSD] || maintained || ||
 || [https://build.opensuse.org/package/show?package=mupen64&project=Emulators openSUSE] || maintained || ||
 || [http://packages.sabayon.org/quicksearch?q=mupen64plus sabayon] || indirectly maintained || ||
 || [https://launchpad.net/ubuntu/+source/mupen64plus Ubuntu] || indirectly maintained || The Debian package will be synced by Ubuntu from time to time and are not directly maintained by the Ubuntu maintainers. Newer versions of the package (directly uploaded from Debian) can be found in the [https://launchpad.net/~sven-eckelmann/+archive/ppa Debian maintainers PPA]. There is also an [https://launchpad.net/~sven-eckelmann/+archive/ppa-mupen64plus extra repository] which gets random experimental versions of the packages, but not necessarily newer versions. ||
