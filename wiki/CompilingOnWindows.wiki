@@ -8,20 +8,20 @@ This guide is for people who want to play with the latest !Mupen64Plus code unde
 == Requirements ==
 
   * Build environment (Visual Studio .NET 2005 or 2008)
-  * !TortoiseHg (http://tortoisehg.bitbucket.org/)
+  * !Git-Client (http://git-scm.com/downloads/guis)
 
 == Instructions ==
 
-1. Use your !TortoiseHg client to clone the following repositories (put them all in the same parent directory):
+1. Use your !Git-Client client to clone the following repositories (put them all in the same parent directory):
 
- * http://bitbucket.org/richard42/mupen64plus-audio-sdl/
- * http://bitbucket.org/richard42/mupen64plus-core/
- * http://bitbucket.org/richard42/mupen64plus-input-sdl/
- * http://bitbucket.org/richard42/mupen64plus-rsp-hle/
- * http://bitbucket.org/richard42/mupen64plus-ui-console/
- * http://bitbucket.org/richard42/mupen64plus-video-rice/
- * http://bitbucket.org/richard42/mupen64plus-rom/
- * http://bitbucket.org/richard42/mupen64plus-win32-deps/
+ * https://github.com/mupen64plus/mupen64plus-audio-sdl.git
+ * https://github.com/mupen64plus/mupen64plus-core.git
+ * https://github.com/mupen64plus/mupen64plus-input-sdl.git
+ * https://github.com/mupen64plus/mupen64plus-rsp-hle.git
+ * https://github.com/mupen64plus/mupen64plus-ui-console.git
+ * https://github.com/mupen64plus/mupen64plus-video-rice.git
+ * https://github.com/mupen64plus/mupen64plus-rom.git
+ * https://github.com/mupen64plus/mupen64plus-win32-deps.git
 
 2. Open up the Visual Studio solution file at: mupen64plus-ui-console\projects\msvc8\mupen64plus-ui-console.sln
 
