@@ -80,12 +80,11 @@ the test directory (otherwise mupen64plus cannot find it).
 It is possible to build extra components previously downloaded. For example the extra plugins from wahrhaft can be retrieved and build after ./m64p_get.sh was run.
 
 {{{
-for component in rsp-z64 video-arachnoid video-glide64 video-z64; do
-echo "************************************ Downloading ${component} plugin"
-hg clone --cwd source https://bitbucket.org/wahrhaft/mupen64plus-${component}
-done
-M64P_COMPONENTS="rsp-z64 video-arachnoid video-glide64 video-z64" ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW
+M64P_COMPONENTS="rsp-z64 video-arachnoid video-glide64 video-z64 rsp-cxd4" ./m64p_get.sh
+M64P_COMPONENTS="rsp-z64 video-arachnoid video-glide64 video-z64 rsp-cxd4" ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW
 M64P_COMPONENTS="rsp-z64" ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW HLEVIDEO=1
+M64P_COMPONENTS="rsp-cxd4" ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW SSE=SSSE3
+M64P_COMPONENTS="rsp-cxd4" ./m64p_build.sh CROSS_COMPILE=i686-pc-mingw32- HOST_CPU=i686 UNAME=MINGW SSE=none
 }}}
 
 == Building x86_64 testbuilds for windows ==
