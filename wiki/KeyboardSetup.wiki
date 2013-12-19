@@ -49,4 +49,4 @@ You may set your own key bindings for the emulator core and input plugins, by ed
 
 See http://www.libsdl.org/release/SDL-1.2.15/include/SDL_keysym.h for Key IDs.
 
-For documentation about the keyboard settings in this configuration file, refer to our Emuwiki site.  The [http://mupen64plus.retrouprising.com/mediawiki/index.php?title=Mupen64Plus_Core_Parameters Core Parameters] page gives the names of the config parameters to set up the Emulator Core key commands, while the [http://mupen64plus.retrouprising.com/mediawiki/index.php?title=Mupen64Plus_Plugin_Parameters#Input-SDL Plugin Parameters] page tells how to configure the controls for the input plugin.
+For documentation about the keyboard settings in this configuration file, refer to our Emuwiki site.  The [https://github.com/mupen64plus/mupen64plus-core/wiki/Mupen64Plus-Core-Parameters Core Parameters] page gives the names of the config parameters to set up the Emulator Core key commands, while the [https://github.com/mupen64plus/mupen64plus-core/wiki/Mupen64Plus-Plugin-Parameters#wiki-InputSDL Plugin Parameters] page tells how to configure the controls for the input plugin.
