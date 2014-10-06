@@ -28,6 +28,7 @@ Front-ends are applications which use the !Mupen64Plus core emulator and compati
 The difference between a full Front-End application and a Launcher application is that a Front-End application links directly with the !Mupen64Plus libraries and can integrate very closely with the emulator to provide features like GUI emulator controls, an integrated video window, and graphical debugger.  A Launcher application does not link directly with the !Mupen64Plus libraries, but uses the "mupen64plus-ui-console" command-line application to run the emulator.  This type of application is easier to develop, but cannot provide the more advanced features.
 
 || *Name* || *Description* ||
+|| [http://www.emutalk.net/threads/54976-Mupen64Plus-Qt Mupen64Plus-Qt] || Cross-platform launcher based on CEN64-Qt ||
 || [http://sjtrny.com/mupenlaunch/ MupenLaunch] || Nice-looking Mac OSX Launcher written in Objective C ||
 || [http://mupen64plus.googlecode.com/svn/wiki/Mupen64Loader.bat Mupen64Loader.bat] || Windows batch file (tested on XP) from Supernatendo on 2010-05-11. This script simplifies the use of the !Mupen64Plus console UI for Windows XP users. ||
 || [http://speedofmac.com/speedofmac_mp64+_launcher.html SpeedofMac MP64+ GUI] || Launcher application for Mac OSX written with !AppleScript and Perl ||
