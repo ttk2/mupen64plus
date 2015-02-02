@@ -57,7 +57,7 @@ You can enable mouse control of the analog stick by setting the "mouse" paramete
 When the mouse is enabled, !Mupen64Plus will "grab" the mouse, so you will not see the pointer, even when running in windowed mode.  To toggle the mouse grab while playing a game, press the Left Control and Left Alt keys together.
 
 ===Special Macintosh Instructions===
-*mackentack* has been kind enough to write up a nice tutorial for Mac OSX users with XBox 360 controllers [http://laletfira.dip.jp/uramac/?p=39 here].  This explains how to download !Mupen64Plus 1.99.3 and the *!SpeedOfMac* launcher, and set up the configuration for the XBox 360 controller.
+To use an Xbox360 controller with a Macintosh, you can use the !TattieBogle Driver from [http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver tattiebogle.net].  There is also an image which demonstrates the button mappings on [http://imgur.com/yb8rV imgur].
 
 ==Ok, it's working, now what?==
 
