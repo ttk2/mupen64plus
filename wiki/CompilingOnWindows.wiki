@@ -12,13 +12,14 @@ This guide is for people who want to play with the latest !Mupen64Plus code unde
 
 == Instructions ==
 
-1. Use your !Git-Client client to clone the following repositories (put them all in the same parent directory):
+1. Use your Git client client to clone the following repositories (put them all in the same parent directory):
 
  * https://github.com/mupen64plus/mupen64plus-audio-sdl.git
  * https://github.com/mupen64plus/mupen64plus-core.git
  * https://github.com/mupen64plus/mupen64plus-input-sdl.git
  * https://github.com/mupen64plus/mupen64plus-rsp-hle.git
  * https://github.com/mupen64plus/mupen64plus-ui-console.git
+ * https://github.com/mupen64plus/mupen64plus-video-glide64mk2.git
  * https://github.com/mupen64plus/mupen64plus-video-rice.git
  * https://github.com/mupen64plus/mupen64plus-rom.git
  * https://github.com/mupen64plus/mupen64plus-win32-deps.git
