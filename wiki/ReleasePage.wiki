@@ -1,5 +1,70 @@
 #summary Mupen64Plus Release Notes
 
+==!Mupen64Plus v2.5 - April 26, 2015==
+===All Modules===
+ * Move from bitbucket (Mercurial) to !GitHub
+ * Travis CI integration with !GitHub for continuous automated build regression testing
+ * New: MS Visual Studio 2013 project files
+ * Finish integration with SDL2.0, and build against SDL2 by default
+===Audio-SDL Plugin===
+ * Add audioresource support for integration with Linux-based Nemo Mobile OS
+===Console-UI Front End Application===
+ * Update man page document
+ * Add application desktop file and icons
+ * New option: load savestate immediately on emulator startup
+ * Compile-time flag to support building ui-console as a library (used by Android frontend)
+===Core Emulator Library===
+ * Game-specific fixes: Banjo Tooie, Zelda Ocarina of Time, DK64, Hydro Thunder, others
+ * Game-specific override for # of clock cycles per cpu instruction
+ * New Dynarec: Speed improvements, accuracy fixes, build support for MSVC
+ * Cheat fixes for WWF No Mercy, Bomberman Hero, Super Mario 64, and Pokemon Stadium (E)
+ * Major R4300 CPU core refactoring in many subsystems to improve code organization
+ * Rewrite speed limiter code to improve performance and audio synchronization
+ * Separate the logic of the Pure Interpreter from the Cached Interpreter
+ * Regression test improvements
+ * Support for building against OpenGL ES
+ * Build system improvements for ARM / Raspberry Pi
+===Input-SDL Plugin===
+ * SDL2: use SDL1.2 keysyms in the mupen64plus.cfg file Input section for consistency
+ * SDL2: use prioritization to decide among multiple matching auto-config sections (for XInput)
+ * New auto-config sections for: Wiimote Classic, Wii U Gamecube / Pro, MS !SideWinder !GamePad Pro, 17 others
+ * When Mouse=True but pointer is un-grabbed, fall back to joystick settings for analog x/y
+ * New feature: prevent mouse/trackpad auto-centering behavior by pressing left-Windows key
+===Video-Glide64mk2 Plugin===
+ * Fix colors in compressed fxt1 textures by importing mesa code
+ * Replace patented S3TC algorithm with compatible S2TC
+ * Enable the dump_cache to allow loading of dat files
+ * Bugfix: work around problem in OSD callback whereby core code doesn't re-activate shader
+ * Bugfix: Resident Evil II hang
+ * Allow user override of game-specific settings via mupen64plus.cfg
+ * New feature: option to enable full-scene antialiasing
+ * Code cleanup to remove dead section of code
+ * Add OpenGL ES support (2.0)
+ * Add config option to force polygon offset values (fixes artifacts on certains games / renderers)
+ * Fix broken C version of MulMatricesC
+ * New optional frameskip feature, which drops frames instead of rendering if game is going slow
+ * Fix texture pack read failure on some 64-bit platforms
+ * Correct N64 ROM header analysis for PAL/NTSC detection
+ * Bugfix: use memmove() instead of memcpy() for overlapping buffers
+ * Win32: don't set gamma table because it breaks monitor calibration
+===Video-Rice Plugin===
+ * Game-specific hack-fix to show last heart and map arrows in Zelda OoT & MM.
+ * Lots of code cleanup, removal of deprecated code, and simplifications
+ * Modernize OpenGL interfaces, remove code for supporting old opengl versions
+ * Graphics fixes for: Fog, RDP !InsertMatrix command
+ * Fix for INI file loading under Windows
+ * Minor OpenGL ES fixes
+ * Add config option to force polygon offset values (fixes artifacts on certains games / renderers)
+ * Bugfix: crash if !RiceVideoLinux.ini not found
+===RSP-HLE Plugin===
+ * Game-specific fixes: Bottom of the 9th, !IndianaJones, !BattleForNaboo, Conkers Bad Fur Day
+ * Support for MusyX microcodes
+ * Improve audio microcode identification
+ * Huge quantity of code cleanups and refactoring to improve organization
+ * Add support for additional audio commands: #16, POLEF, RESAMPLE_ZOH
+ * Multiple bugfixes in audio processing code
+ * Bugfix: microcode detection could sometimes fail after reset
+
 ==!Mupen64Plus v2.0 - July 4, 2013==
 ===All Modules===
  * New: MS Visual Studio 2012 project files
