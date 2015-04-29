@@ -14,13 +14,13 @@ Front-ends are applications which use the !Mupen64Plus core emulator and compati
 
 == Front-End Applications under active development ==
 || *Application Name* || *Description* ||
-|| [http://svn.mudlord.info/winmupen/ winmupen] || Windows-specific GUI Front-end ||
-|| [http://bitbucket.org/auria/wxmupen64plus/wiki/Home wxMupen64Plus] || A frontend with full support for configuration (mostly tested on OSX at this point) ||
 || [http://m64py.sourceforge.net/ m64py] || Python-based GUI Front-end using !PyQt ||
 || [http://openemu.org/ OpenEmu] || OSX application which includes many different emulators. ([https://github.com/OpenEmu/OpenEmu Development Site]) ||
 
 == Front-end Applications not under active development ==
 || *Application Name* || *Description* ||
+|| [http://www.mudlord.info/emulators/ winmupen] || Windows-specific GUI Front-end ||
+|| [http://bitbucket.org/auria/wxmupen64plus/wiki/Home wxMupen64Plus] || A frontend with full support for configuration (mostly tested on OSX at this point) ||
 || [http://www.emutalk.net/showthread.php?t=50438 Gtk64] || GUI Front-end based on the object oriented GTKmm library ||
 || [http://sourceforge.net/userapps/mediawiki/vknecht/index.php?title=CuteMupen CuteMupen] || GUI front-end using Qt ||
 
