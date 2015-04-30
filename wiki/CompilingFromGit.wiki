@@ -10,7 +10,7 @@ This guide is for people who want to play with the latest !Mupen64Plus code unde
  * Build environment (GCC, G++, GNU Make, pkg-config, etc)
  * Git distributed SCM
  * Development packages for dependencies
-  # SDL 1.2
+  # SDL 1.2 or 2.0
   # libpng
   # FreeType 2
   # zlib
