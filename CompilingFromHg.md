@@ -1,0 +1,1 @@
+This page is now obsolete. Please check the new instructions at [CompilingFromGit](CompilingFromGit.md)

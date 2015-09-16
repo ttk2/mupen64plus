@@ -1,0 +1,6 @@
+**Mupen64Plus** is a cross-platform plugin-based N64 emulator which is capable of accurately playing many games.
+
+# News #
+
+**August 15, 2015**
+Due to the imminent shutdown of Google Code, we have migrated our project away from Google Code.  Our 'home' website has moved from here to our own web domain, at [www.mupen64plus.org](http://www.mupen64plus.org)!  Thanks to Conchúr Navid for the web design of the new site.  All of the user-level wiki documentation from Google Code has been moved to our own wiki server, and is listed [here](http://mupen64plus.org/docs/) on mupen64plus.org.  The API (developer-level) documentation is also hosted [on our wiki here](http://mupen64plus.org/wiki/index.php?title=Mupen64Plus_v2.0_Core_API_v1.0).  All of the old file downloads from the Google Code download section are available [here on mupen64plus.org](http://www.mupen64plus.org/old-releases/). The user issue reports have been migrated to [a meta-repository on Github](https://github.com/mupen64plus/mupen64plus-user-issues/issues) which we will use solely for user-level bug reports and feature requests.  Thanks to everyone who gave suggestions and help during this migration process.
